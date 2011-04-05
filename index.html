@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset=utf-8 />
-	<title>BC Protoype</title>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset-fonts-grids/reset-fonts-grids.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/proto.css">
+<meta charset=utf-8 />
+<title>BC Protoype - theWall</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset-fonts-grids/reset-fonts-grids.css">
+<link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+<link rel="stylesheet" type="text/css" href="assets/css/proto.css">
+<link rel="stylesheet" type="text/css" href="assets/css/wall.css">
 </head>
 <body>
-	<div id="header"><p>FPO header</p></div>
-	<div id="content">
-		<div class="header"></div>	
-	</div>
-	<div id="footer"><p>FPO footer</p></div>
-</body>
+<div id="header">
+  <p>FPO header</p>
+</div>
+<div id="content">
+  <div id="the-wall">
+    <div id="wall-solicitations">
+      <h1>Solicitations</h1>
+      <ul id="content-types">
+        <li>Share a:</li>
+        <li class="content-type review"><a href="#review">Review</a></li>
+        <li class="content-type question"><a href="#question">Question</a></li>
+        <li class="content-type photo"><a href="#photo">Photo</a></li>
+        <li class="content-type video"><a href="#video">Video</a></li>
+      </ul>
+      <div class="clearb"></div>
+      <div class="solicitation review">
+        <h2>Reviews Solicitation</h2>
+        <div class="collapsed">
+          <h3>Hey Bryan Lence, write a Review. Others want your opinion.</h3>
+          <input type="text" placeholder="Let 'er rip" name="collapsed-review-content" id="collapsed-review-content" />
+        </div>
+        <div class="expanded">
+          <form>
+            <h3>Hey Bryan, review this product</h3>
+            <div class="step">
+              <h4>Step 1: Survey</h4>
+              <dl class="survey-options">
+                <dt>How does this item fit?</dt>
+                <dd>Small</dd>
+                <dd>True to Size</dd>
+                <dd class="last">Large</dd>
+                <dt>How durable is this item</dt>
+                <dd>Not very</dd>
+                <dd>Average</dd>
+                <dd class="last">Very</dd>
+                <dt>Would you recommend this to a friend?</dt>
+                <dd>Yes</dd>
+                <dd class="last">No</dd>
+              </dl>
+              <a class="btn-submit-survey">Just submit this survey &gt;</a> </div>
+            <div class="step">
+              <h4>Step 2: Text Review <span>(optional)</span></h4>
+              <div class="faux-label"> <span>Overall Rating</span>
+                <div class="faux-col"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
+              </div>
+              <div class="faux-label"> <span>Review Title</span>
+                <div class="faux-col">
+                  <input type="text" name="review-title" id="review-title" />
+                </div>
+              </div>
+              <div class="faux-label"> <span>Your Review</span>
+                <div class="faux-col">
+                  <textarea name="review-content" id="review-content"></textarea>
+                </div>
+              </div>
+              <div class="faux-label"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+                <div class="faux-col"><span>From your computer</span>
+                  <input type="file" name="upload-photo" id="upload-photo" />
+                  <div class="clearb"></div>
+                  <span>From another website</span>
+                  <input type="text" name="hotlink-photo" id="hotlink-photo" placeholder="http://" />
+                </div>
+              </div>
+              <ul class="button-row">
+                <li><a href="#submit-review">Add Your Review</a></li>
+                <li><a href="#share">Sign in to share on Facebook</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="solicitation question">
+        <h2>Question Solicitation</h2>
+      </div>
+      <div class="solicitation photo">
+        <h2>Photo Solicitation</h2>
+      </div>
+      <div class="solicitation video">
+        <h2>Video Solicitation</h2>
+      </div>
+    </div>
+    <div id="wall-content">
+      <h1>Content</h1>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <p>FPO footer</p>
+</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+</body>
 </html>
