@@ -12,3 +12,8 @@
   background: #eee;
   margin: 10px 0;
 }
+
+/* line 14, src/wall.scss */
+.hidden {
+  display: none;
+}
