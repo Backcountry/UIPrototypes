@@ -14,21 +14,23 @@
 </div>
 <div id="content">
   <div id="the-wall">
-    <div id="wall-solicitations">
+    <section id="wall-solicitations">
       <h1>Solicitations</h1>
-      <ul id="content-types">
+      <nav id="content-types">
         <li>Share a:</li>
-        <li class="content-type review"><a href="#review">Review</a></li>
-        <li class="content-type question"><a href="#question">Question</a></li>
-        <li class="content-type photo"><a href="#photo">Photo</a></li>
-        <li class="content-type video"><a href="#video">Video</a></li>
-      </ul>
+		<a class="content-type review" href="#review"><b>Review</b></a>
+		<a class="content-type question" href="#question"><b>Question</b></a>
+		<a class="content-type photo" href="#photo"><b>Photo</b></a>
+        <a class="content-type video" href="#video"><b>Video</b></a>
+      </nav>
       <div class="clearb"></div>
-      <div class="solicitation review collapsed">
-        <h2>Reviews Solicitation</h2>
+      <section class="solicitation review collapsed">
         <form action="#something" method="post">
           <div class="collapsed">
-            <h3>Hey Bryan Lence, write a Review. Others want your opinion.</h3>
+            <header>
+              <h1>Hey Bryan Lence, write a Review. Others want your opinion.</h1>
+              <h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
+            </header>
             <div class="step">
               <h4 class="hidden">Step 1: Survey</h4>
               <dl class="survey-options hidden">
@@ -55,7 +57,7 @@
                   <input type="text" name="review-title" id="review-title" />
                 </div>
               </div>
-              <div class="faux-label"><span class="hidden">Your Review</span>
+              <div class="faux-label hidden"><span>Your Review</span>
                 <div class="faux-col">
                   <textarea name="review-content" id="review-content"></textarea>
                 </div>
@@ -75,20 +77,20 @@
             </div>
           </div>
         </form>
-      </div>
-      <div class="solicitation question collapsed">
+      </section>
+      <section class="solicitation question collapsed">
         <h2>Question Solicitation</h2>
-      </div>
-      <div class="solicitation photo collapsed">
+      </section>
+      <section class="solicitation photo collapsed">
         <h2>Photo Solicitation</h2>
-      </div>
-      <div class="solicitation video collapsed">
+      </section>
+      <section class="solicitation video collapsed">
         <h2>Video Solicitation</h2>
-      </div>
-    </div>
-    <div id="wall-content">
+      </section>
+    </section>
+    <section id="wall-content">
       <h1>Content</h1>
-    </div>
+    </section>
   </div>
 </div>
 <div id="footer">
@@ -97,9 +99,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function() {
-	$('#review-content').click(function(){
-		//alert('what');
-		$('.solicitation.review .hidden').fadeIn();
+	$('.cta.display-form').click(function(){
+		$(this).fadeOut();
+		$('.solicitation.review .hidden').delay(250).fadeIn();
 	});
 });
 </script>

@@ -17,3 +17,13 @@
 .hidden {
   display: none;
 }
+
+/* line 18, src/wall.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 22, src/wall.scss */
+section.solicitation {
+  border: 1px solid pink;
+}
