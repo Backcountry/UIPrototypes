@@ -18,71 +18,102 @@
       <h1>Solicitations</h1>
       <nav id="content-types">
         <li>Share a:</li>
-		<a class="content-type review" href="#review"><b>Review</b></a>
-		<a class="content-type question" href="#question"><b>Question</b></a>
-		<a class="content-type photo" href="#photo"><b>Photo</b></a>
-        <a class="content-type video" href="#video"><b>Video</b></a>
-      </nav>
+        <a class="content-type review" href="#review"><b>Review</b></a> <a class="content-type question" href="#question"><b>Question</b></a> <a class="content-type photo" href="#photo"><b>Photo</b></a> <a class="content-type video" href="#video"><b>Video</b></a> </nav>
       <div class="clearb"></div>
       <section class="solicitation review collapsed">
         <form action="#something" method="post">
-          <div class="collapsed">
-            <header>
-              <h1>Hey Bryan Lence, write a Review. Others want your opinion.</h1>
-              <h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
-            </header>
-            <div class="step">
-              <h4 class="hidden">Step 1: Survey</h4>
-              <dl class="survey-options hidden">
-                <dt>How does this item fit?</dt>
-                <dd>Small</dd>
-                <dd>True to Size</dd>
-                <dd class="last">Large</dd>
-                <dt>How durable is this item</dt>
-                <dd>Not very</dd>
-                <dd>Average</dd>
-                <dd class="last">Very</dd>
-                <dt>Would you recommend this to a friend?</dt>
-                <dd>Yes</dd>
-                <dd class="last">No</dd>
-              </dl>
-              <a class="btn-submit-survey hidden">Just submit this survey &gt;</a> </div>
-            <div class="step">
-              <h4 class="hidden">Step 2: Text Review <span>(optional)</span></h4>
-              <div class="faux-label hidden"> <span>Overall Rating</span>
-                <div class="faux-col"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
-              </div>
-              <div class="faux-label hidden"><span>Review Title</span>
-                <div class="faux-col">
-                  <input type="text" name="review-title" id="review-title" />
-                </div>
-              </div>
-              <div class="faux-label hidden"><span>Your Review</span>
-                <div class="faux-col">
-                  <textarea name="review-content" id="review-content"></textarea>
-                </div>
-              </div>
-              <div class="faux-label hidden"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
-                <div class="faux-col"><span>From your computer</span>
-                  <input type="file" name="upload-photo" id="upload-photo" />
-                  <div class="clearb"></div>
-                  <span>From another website</span>
-                  <input type="text" name="hotlink-photo" id="hotlink-photo" placeholder="http://" />
-                </div>
-              </div>
-              <ul class="button-row hidden">
-                <li><a href="#submit-review">Add Your Review</a></li>
-                <li><a href="#share">Sign in to share on Facebook</a></li>
-              </ul>
+          <header>
+            <h1>Hey Bryan Lence, write a Review. Others want your opinion.</h1>
+            <h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
+          </header>
+          <div class="step">
+            <h4>Step 1: Survey</h4>
+            <dl class="survey-options">
+              <dt>How does this item fit?</dt>
+              <dd>Small</dd>
+              <dd>True to Size</dd>
+              <dd class="last">Large</dd>
+              <dt>How durable is this item</dt>
+              <dd>Not very</dd>
+              <dd>Average</dd>
+              <dd class="last">Very</dd>
+              <dt>Would you recommend this to a friend?</dt>
+              <dd>Yes</dd>
+              <dd class="last">No</dd>
+            </dl>
+            <a class="btn-submit-survey">Just submit this survey &gt;</a> </div>
+          <div class="step">
+            <h4>Step 2: Text Review <span>(optional)</span></h4>
+            <div class="faux-label"> <span>Overall Rating</span>
+              <div class="faux-col"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
             </div>
+            <div class="faux-label"><span>Review Title</span>
+              <div class="faux-col">
+                <input type="text" name="review-title" id="review-title" />
+              </div>
+            </div>
+            <div class="faux-label"><span>Your Review</span>
+              <div class="faux-col">
+                <textarea name="review-content" id="review-content"></textarea>
+              </div>
+            </div>
+            <div class="faux-label"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+              <div class="faux-col"><span>From your computer</span>
+                <input type="file" name="upload-photo" id="upload-photo" />
+                <div class="clearb"></div>
+                <span>From another website</span>
+                <input type="text" name="hotlink-photo" id="hotlink-photo" placeholder="http://" />
+              </div>
+            </div>
+            <ul class="button-row">
+              <li><a href="#submit-review">Add Your Review</a></li>
+              <li><a href="#share">Sign in to share on Facebook</a></li>
+            </ul>
           </div>
         </form>
       </section>
       <section class="solicitation question collapsed">
-        <h2>Question Solicitation</h2>
+        <header>
+          <h1>Hey Bryan, ask a question.</h1>
+        </header>
+        <form action="#something" method="post">
+          <div class="faux-label"><span>Your Question</span>
+            <div class="faux-col">
+              <textarea id="question-content" name="question-content"></textarea>
+            </div>
+          </div>
+          <div class="faux-label"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+            <div class="faux-col"><span>From your computer</span>
+              <input type="file" id="upload-photo" name="upload-photo">
+              <div class="clearb"></div>
+              <span>From another website</span>
+              <input type="text" placeholder="http://" id="hotlink-photo" name="hotlink-photo">
+            </div>
+          </div>
+        </form>
       </section>
       <section class="solicitation photo collapsed">
-        <h2>Photo Solicitation</h2>
+        <h1>Got a picture of this gear in action?</h1>
+        <form action="#something" method="post">
+          <div class="faux-label"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+            <div class="faux-col"><span>From your computer</span>
+              <input type="file" id="upload-photo" name="upload-photo">
+              <div class="clearb"></div>
+              <span>From another website</span>
+              <input type="text" placeholder="http://" id="hotlink-photo" name="hotlink-photo">
+            </div>
+          </div>
+          <div class="faux-label"><span>Title</span>
+            <div class="faux-col">
+              <input type="text" name="photo-title" id="photo-title"/>
+            </div>
+          </div>
+          <div class="faux-label"><span>Description</span>
+            <div class="faux-col">
+              <textarea  id="photo-content" name="photo-content" placeholder="Optional"></textarea>
+            </div>
+          </div>
+        </form>
       </section>
       <section class="solicitation video collapsed">
         <h2>Video Solicitation</h2>
@@ -99,10 +130,22 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function() {
+
+	map = {"content-type review":".solicitation.review", "content-type question":".solicitation.question", 
+		   "content-type photo":".solicitation.photo", "content-type video":".solicitation.video"};
+
 	$('.cta.display-form').click(function(){
 		$(this).fadeOut();
-		$('.solicitation.review .hidden').delay(250).fadeIn();
+		$('div.step').delay(250).fadeIn();
 	});
+	
+	$('#content-types a').click(function(event){
+		event.preventDefault();
+		toDisplay = map[$(this).attr('class')];
+		$('section.solicitation').hide();
+		$(toDisplay).show();
+	});
+	
 });
 </script>
 </body>
