@@ -1,28 +1,42 @@
+$the-wall-width:100%;
+/* 562px */
+$the-wall-indent:130px;
+$the-wall-primary-color:#666;
+
+/* misc */
+.hidden{display:none;}
+textarea { resize:vertical;}
+.clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
+
 #the-wall {
-	width:562px;
-	margin:10px auto;
-	font-family:Arial, Verdana, sans-serif;
-	text-align:left;
-	border:2px solid blue;
-}
-
-.solicitation {
-	background:#eee;
-	margin:10px 0;
-}
-
-.hidden, div.step {
-	display:none;
-}
-
-textarea {
-	resize:vertical;
+	width:$the-wall-width; margin:10px auto; font-family:Arial, Verdana, sans-serif; text-align:left; border:1px solid $the-wall-primary-color;
 }
 
 section.solicitation {
-	border:1px solid pink;
+	margin:10px 0; border:1px solid pink;	
+	&+ .solicitation { display:none }
 }
 
-.solicitation + .solicitation {
-	display:none;
+.upc {
+	.vcard {
+		float:left; width:100px; color:$the-wall-primary-color;
+		h2 {
+			font-size:12px; font-style:italic; color:$the-wall-primary-color;
+		}
+		> img {
+			height:72px; width:72px; background:#eee; display:block; clear:both
+		}
+		li {
+			display:inline;
+		}
+		li img {
+			height:19px; width:19px; display:inline-block; border:1px solid red;
+		}
+	}
+	
+	.upc-content, .upc-replies { margin:0 0 0 $the-wall-indent; display:block; }
+	.upc-replies article > div  { margin:0 0 0 $the-wall-indent - 6; display:block;}		
+	.upc-single, .upc-replies article{ border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;}	
 }
+		
+		

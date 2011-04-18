@@ -3,36 +3,9 @@
 <head>
 	<meta charset=utf-8 />
 	<title>BC Protoype - theWall</title>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset-fonts-grids/reset-fonts-grids.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/screen.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/proto.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/wall.css">
-	<style>
-		.upc .vcard{
-			float:left; width:100px;
-		}
-		.upc .upc-content, .upc .upc-replies article > div, .upc .upc-replies {
-			/* make a variable: default indentation */
-			margin:0 0 0 130px;
-			display:block;
-		}
-		.upc .upc-replies article > div, .upc .upc-replies {
-			/* make a variable: default indentation */
-			margin:0 0 0 124px;
-		}
-		
-		.upc .upc-single, .upc-replies article{
-			border-bottom:1px solid #ddd;
-			display:block;
-			margin-bottom:10px;
-		}		
-		
-		.upc .upc-replies {
-			/* make a variable: default indentation */
-			margin:0 0 0 130px;
-			display:block;
-		}
-	</style>
 </head>
 <body>
 <h1>Backcountry.com</h1>
@@ -42,7 +15,6 @@
 <div id="content">
   <div id="the-wall">
     <section id="wall-solicitations">
-      <h1>Solicitations</h1>
       <nav id="content-types">
         <h1>Share a:</h1>
         <a class="content-type review" href="#review">Review</a>
@@ -57,7 +29,7 @@
             <h1>Hey Bryan Lence, write a Review. Others want your opinion.</h1>
             <h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
           </header>
-          <div class="step">
+          <div class="hidden step">
             <h3>Step 1: Survey</h3>
             <dl class="survey-options">
               <dt>How does this item fit?</dt>
@@ -73,7 +45,7 @@
               <dd class="last">No</dd>
             </dl>
             <a class="btn-submit-survey">Just submit this survey &gt;</a> </div>
-          <div class="step">
+          <div class="hidden step">
             <h3>Step 2: Text Review <span>(optional)</span></h3>
             <div class="faux-label"> <span>Overall Rating</span>
               <div class="faux-col"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
@@ -153,15 +125,15 @@
     <section id="wall-content">
 		<nav>
 			<h1>Product Wall</h1>
-        	<a href="#allcontent"><b>Show All</b></a>
-	        <a href="#only-reviews"><b>Reviews</b></a>
-	        <a href="#only-questions"><b>Questions</b></a>
-	        <a href="#only-photos"><b>Photos</b></a>
-	        <a href="#only-videos"><b>Videos</b></a>
+        	<a href="#all-content">Show All</a>
+	        <a href="#only-reviews">Reviews</a>
+	        <a href="#only-questions">Questions</a>
+	        <a href="#only-photos">Photos</a>
+	        <a href="#only-videos">Videos</a>
         </nav>
         <article id="hreview-Great-Rope" class="upc hreview">
 			<section class="upc-single">
-				<section class="reviewer vcard">
+				<section class="author vcard">
 					<img src="#user72x72" alt="Tom Pierce" />
 					<h1 class="fn">Tom Pierce</h1>				
 					<ul>
@@ -195,7 +167,7 @@
 				</section>
 			</section>
 			<section class="upc-replies">				
-				<article>
+				<article class="clearfix">
 					<section class="commenter vcard">
 						<img src="#user72x72" alt="Tom Pierce" />
 						<h1 class="fn">Tom Pierce</h1>				
@@ -216,7 +188,7 @@
 						</ul>						
 					</div>					
 				</article>
-				<article>
+				<article class="clearfix">
 					<section class="commenter vcard">
 						<img src="#user72x72" alt="Tom Pierce" />
 						<h1 class="fn">Tom Pierce</h1>				
@@ -241,7 +213,7 @@
         </article>
         <article class="upc question">
 			<section class="upc-single">
-				<section class="reviewer vcard">
+				<section class="author vcard">
 					<img src="#user72x72" alt="Tom Pierce" />
 					<h1 class="fn">Tom Pierce</h1>				
 					<ul>
@@ -251,8 +223,8 @@
 					<h2>Member since <em>12/31/2000</em></h2>
 				</section>
 				<section class="upc-content">
-					<abbr class="rating" title="5"><img src="#image-with-five-stars" alt="5" /></abbr> 
-					<h1><a href="#url-to-ucp" class="summary" rel="self bookmark">Great Rope</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>				
+					<h5 class="upc-status unanswered"><em>unanswered question</em></h5>
+					<h1><a href="#url-to-ucp" class="summary" rel="self bookmark">Good Rope fo the price</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">4 days ago</abbr></h1>				
 					<!-- meta data for spiders -->
 					<span class="hidden">
 						<span class="type">product</span>
@@ -275,7 +247,7 @@
 				</section>
 			</section>
 			<section class="upc-replies">				
-				<article>
+				<article class="clearfix">
 					<section class="commenter vcard">
 						<img src="#user72x72" alt="Tom Pierce" />
 						<h1 class="fn">Tom Pierce</h1>				
@@ -286,7 +258,7 @@
 						<h2>Member since <em>12/31/2000</em></h2>
 					</section>				
 					<div>
-						<h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>									
+						<h5 class="upc-status"><em>answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr></h5>
 						<blockquote class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
 						dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
 						Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p></blockquote>			
@@ -296,7 +268,7 @@
 						</ul>						
 					</div>					
 				</article>
-				<article>
+				<article class="clearfix">
 					<section class="commenter vcard">
 						<img src="#user72x72" alt="Tom Pierce" />
 						<h1 class="fn">Tom Pierce</h1>				
@@ -307,7 +279,7 @@
 						<h2>Member since <em>12/31/2000</em></h2>
 					</section>				
 					<div>
-						<h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>									
+						<h5 class="upc-status best-answer"><em>best answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">1 day ago</abbr></h5>
 						<blockquote class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
 						dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
 						Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p></blockquote>			
@@ -325,26 +297,8 @@
 <div id="footer">
   <p>FPO footer</p>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
-<script>
-$(document).ready(function() {
-
-	map = {"content-type review":".solicitation.review", "content-type question":".solicitation.question", 
-		   "content-type photo":".solicitation.photo", "content-type video":".solicitation.video"};
-
-	$('.cta.display-form').click(function(){
-		$(this).fadeOut();
-		$('div.step').delay(250).fadeIn();
-	});
-	
-	$('#content-types a').click(function(event){
-		event.preventDefault();
-		toDisplay = map[$(this).attr('class')];
-		$('section.solicitation').hide();
-		$(toDisplay).show();
-	});
-	
-});
-</script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>-->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/the-Wall.js" type="text/javascript"></script>
 </body>
 </html>

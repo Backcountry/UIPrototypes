@@ -1,34 +1,88 @@
-/* line 1, src/wall.scss */
-#the-wall {
-  width: 562px;
-  margin: 10px auto;
-  font-family: Arial, Verdana, sans-serif;
-  text-align: left;
-  border: 2px solid blue;
-}
-
-/* line 9, src/wall.scss */
-.solicitation {
-  background: #eee;
-  margin: 10px 0;
-}
-
-/* line 14, src/wall.scss */
-.hidden, div.step {
+/* 562px */
+/* misc */
+/* line 7, src/wall.scss */
+.hidden {
   display: none;
 }
 
-/* line 18, src/wall.scss */
+/* line 8, src/wall.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 22, src/wall.scss */
-section.solicitation {
-  border: 1px solid pink;
+/* line 9, src/wall.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
-/* line 26, src/wall.scss */
-.solicitation + .solicitation {
+/* line 11, src/wall.scss */
+#the-wall {
+  width: 100%;
+  margin: 10px auto;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: left;
+  border: 1px solid #666666;
+}
+
+/* line 15, src/wall.scss */
+section.solicitation {
+  margin: 10px 0;
+  border: 1px solid pink;
+}
+/* line 17, src/wall.scss */
+section.solicitation + .solicitation {
   display: none;
+}
+
+/* line 21, src/wall.scss */
+.upc .vcard {
+  float: left;
+  width: 100px;
+  color: #666666;
+}
+/* line 23, src/wall.scss */
+.upc .vcard h2 {
+  font-size: 12px;
+  font-style: italic;
+  color: #666666;
+}
+/* line 26, src/wall.scss */
+.upc .vcard > img {
+  height: 72px;
+  width: 72px;
+  background: #eee;
+  display: block;
+  clear: both;
+}
+/* line 29, src/wall.scss */
+.upc .vcard li {
+  display: inline;
+}
+/* line 32, src/wall.scss */
+.upc .vcard li img {
+  height: 19px;
+  width: 19px;
+  display: inline-block;
+  border: 1px solid red;
+}
+/* line 37, src/wall.scss */
+.upc .upc-content, .upc .upc-replies {
+  margin: 0 0 0 130px;
+  display: block;
+}
+/* line 38, src/wall.scss */
+.upc .upc-replies article > div {
+  margin: 0 0 0 124px;
+  display: block;
+}
+/* line 39, src/wall.scss */
+.upc .upc-single, .upc .upc-replies article {
+  border-bottom: 1px solid #666666;
+  display: block;
+  margin-bottom: 10px;
+  clear: both;
 }
