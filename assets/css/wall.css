@@ -11,7 +11,7 @@ textarea {
 }
 
 /* line 9, src/wall.scss */
-.clearfix:after {
+.clearfix:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
   height: 0;
@@ -25,7 +25,6 @@ textarea {
   margin: 10px auto;
   font-family: Arial, Verdana, sans-serif;
   text-align: left;
-  border: 1px solid #666666;
 }
 /* line 16, src/wall.scss */
 #the-wall #wall-content nav {

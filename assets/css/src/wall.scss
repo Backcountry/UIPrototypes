@@ -10,7 +10,7 @@ textarea { resize:vertical;}
 
 
 #the-wall {
-	width:$the-wall-width; margin:10px auto; font-family:Arial, Verdana, sans-serif; text-align:left; border:1px solid $the-wall-primary-color;
+	width:$the-wall-width; margin:10px auto; font-family:Arial, Verdana, sans-serif; text-align:left;
 		
 	#wall-content {
 		nav {
@@ -44,13 +44,13 @@ section.solicitation {
 	
 	.upc-content { margin:0 0 0 $the-wall-indent; display:block; }
 	.upc-single { border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;}	
-	.description {padding:0 0 10px 0}
+	.description { @extend .clearfix; padding:0 0 10px 0}
 	
 	.upc-replies {
 		margin:0 0 0 $the-wall-indent; display:block;
 		article {
-			border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;
-			&> div  { margin:0 0 0 $the-wall-indent - 6; display:block;}		
+			@extend .clearfix; border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;
+			&> div  { @extend .clearfix; margin:0 0 0 $the-wall-indent - 6; display:block;}		
 		}			
 	}
 	
