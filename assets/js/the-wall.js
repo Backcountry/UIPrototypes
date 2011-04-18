@@ -2,16 +2,18 @@ $(document).ready(function() {
 	/* solicitations */
 	map = {"content-type review":".solicitation.review", "content-type question":".solicitation.question", 
 		   "content-type photo":".solicitation.photo", "content-type video":".solicitation.video"};
+	
 	$('.cta.display-form').click(function(){
 		$(this).hide();
+		$(".solicitation.review").removeClass("collapsed");
 		$('div.step').removeClass("hidden");
 	});
 	
 	$('#content-types a').click(function(event){
 		event.preventDefault();
 		toDisplay = map[$(this).attr('class')];
-		$('section.solicitation').hide();
-		$(toDisplay).show();
+		$('section.solicitation').addClass("hidden")
+		$(toDisplay).removeClass("hidden");
 	});
 	
 	/* content */
