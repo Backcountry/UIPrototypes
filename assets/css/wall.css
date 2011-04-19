@@ -19,14 +19,20 @@ textarea {
   visibility: hidden;
 }
 
-/* line 12, src/wall.scss */
+/* line 10, src/wall.scss */
+.temp, .upc .vcard > img, .upc .vcard li img, .upc .cpi {
+  border: 1px solid red;
+  background: #eee;
+}
+
+/* line 13, src/wall.scss */
 #the-wall {
   width: auto;
   margin: 10px auto;
   font-family: Arial, Verdana, sans-serif;
   text-align: left;
 }
-/* line 16, src/wall.scss */
+/* line 17, src/wall.scss */
 #the-wall #wall-content nav {
   background: #eee;
   display: block;
@@ -34,16 +40,16 @@ textarea {
   overflow: auto;
   padding: 10px 5px;
 }
-/* line 18, src/wall.scss */
+/* line 19, src/wall.scss */
 #the-wall #wall-content nav h1 {
   float: left;
 }
-/* line 19, src/wall.scss */
+/* line 20, src/wall.scss */
 #the-wall #wall-content nav span {
   float: right;
 }
 
-/* line 24, src/wall.scss */
+/* line 25, src/wall.scss */
 section.solicitation {
   margin: 10px 0;
   display: block;
@@ -51,80 +57,96 @@ section.solicitation {
 }
 
 /* line 29, src/wall.scss */
+.upc {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #eee;
+  display: block;
+  margin: 0 0 20px 0;
+}
+/* line 32, src/wall.scss */
 .upc .vcard {
   float: left;
   width: 100px;
   color: #666666;
 }
-/* line 31, src/wall.scss */
+/* line 34, src/wall.scss */
 .upc .vcard h2 {
   font-size: 12px;
   font-style: italic;
   color: #666666;
 }
-/* line 34, src/wall.scss */
+/* line 37, src/wall.scss */
 .upc .vcard > img {
   height: 72px;
   width: 72px;
-  background: #eee;
   display: block;
   clear: both;
 }
-/* line 37, src/wall.scss */
+/* line 40, src/wall.scss */
 .upc .vcard li {
   display: inline;
 }
-/* line 40, src/wall.scss */
+/* line 43, src/wall.scss */
 .upc .vcard li img {
   height: 19px;
   width: 19px;
   display: inline-block;
-  border: 1px solid red;
 }
-/* line 45, src/wall.scss */
+/* line 48, src/wall.scss */
 .upc .upc-content {
   margin: 0 0 0 130px;
   display: block;
 }
-/* line 46, src/wall.scss */
+/* line 49, src/wall.scss */
 .upc .upc-single {
   border-bottom: 1px solid #666666;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 47, src/wall.scss */
+/* line 50, src/wall.scss */
 .upc .description {
   padding: 0 0 10px 0;
 }
-/* line 49, src/wall.scss */
+/* line 52, src/wall.scss */
 .upc .upc-replies {
   margin: 0 0 0 130px;
   display: block;
 }
-/* line 51, src/wall.scss */
+/* line 54, src/wall.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #666666;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 53, src/wall.scss */
+/* line 56, src/wall.scss */
 .upc .upc-replies article > div {
   margin: 0 0 0 124px;
   display: block;
 }
-
 /* line 59, src/wall.scss */
+.upc .cpi {
+  display: block;
+}
+
+/* line 62, src/wall.scss */
 .upc-tools {
   border-left: 1px solid #666666;
+  clear: both;
+  position: relative;
 }
-/* line 61, src/wall.scss */
+/* line 64, src/wall.scss */
 .upc-tools li {
   display: inline;
 }
+/* line 66, src/wall.scss */
+.upc-tools li.flag, .upc-tools li.delete {
+  position: absolute;
+  right: 0;
+}
 
-/* line 64, src/wall.scss */
+/* line 70, src/wall.scss */
 .upc-replies .upc-tools {
   margin-left: 124px;
 }

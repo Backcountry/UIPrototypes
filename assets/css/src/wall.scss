@@ -7,6 +7,7 @@ $the-wall-primary-color:#666;
 .hidden{display:none!important;}
 textarea { resize:vertical;}
 .clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
+.temp {border:1px solid red; background:#eee}
 
 
 #the-wall {
@@ -25,20 +26,22 @@ section.solicitation {
 	margin:10px 0;  display:block; background:#eee;
 }
 
-.upc {
+.upc {	
+	padding-bottom:10px; border-bottom:5px solid #eee; display:block; margin:0 0 20px 0;
+	
 	.vcard {
 		float:left; width:100px; color:$the-wall-primary-color;
 		h2 {
 			font-size:12px; font-style:italic; color:$the-wall-primary-color;
 		}
 		> img {
-			height:72px; width:72px; background:#eee; display:block; clear:both
+			height:72px; width:72px; display:block; clear:both; @extend .temp;
 		}
 		li {
 			display:inline;
 		}
 		li img {
-			height:19px; width:19px; display:inline-block; border:1px solid red;
+			height:19px; width:19px; display:inline-block; @extend .temp;
 		}
 	}
 	
@@ -53,12 +56,15 @@ section.solicitation {
 			&> div  { @extend .clearfix; margin:0 0 0 $the-wall-indent - 6; display:block;}		
 		}			
 	}
-	
+	.cpi {display:block; @extend .temp}
 }
 		
 .upc-tools {
-	border-left:1px solid $the-wall-primary-color;	
-	li {display:inline;}
+	border-left:1px solid $the-wall-primary-color; clear:both; position:relative;
+	li {
+		display:inline; 
+		&.flag, &.delete {position:absolute; right:0;}
+	}	
 }
 
 .upc-replies .upc-tools {margin-left:$the-wall-indent - 6}	
