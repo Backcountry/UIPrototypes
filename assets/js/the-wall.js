@@ -12,8 +12,8 @@ var takeMeTo = function(){
 };
 
 var expandCommentsForm = function(){
-	$(".add-upc-reply div textarea").click(function(){
-		$(this).parent().parent().removeClass("collapsed");
+	$(".add-upc-reply.collapsed textarea").click(function(){
+		$(this).parent().parent().parent().removeClass("collapsed");
 	});
 }
 

@@ -1,13 +1,12 @@
 $the-wall-width:auto;
 /* 562px */
-$the-wall-indent:130px;
+$the-wall-indent:104px;
 $the-wall-primary-color:#ccc;
 $the-wall-secondary-color:#8b8b8b;
 $the-wall-primary-background:#e7e7e9;
 
 /* misc */
 .hidden{display:none!important;}
-textarea { resize:vertical;}
 .clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
 .temp {border:1px solid red; background:#eee}
 
@@ -29,7 +28,17 @@ section.solicitation {
 	h1 { font-size:22px; font-weight:bold;}
 	h2 {
 		font-size:16px; margin:13px 0 10px 0;
-		a {color:#039; text-decoration:none;}
+		a {color:#039; text-decoration:none; font-weight:bold;}
+	}
+	form {
+		.faux-label {
+			@extend .clearfix; clear:both; display:block; 
+			span {float:left; width:105px; height:30px; display:block; } 
+			.faux-col {
+				margin:0 0 0 115px; display:block; overflow:hidden;
+				textarea { height:90px; }
+			}
+		}
 	}
 }
 
@@ -37,7 +46,7 @@ section.solicitation {
 	padding-bottom:10px; border-bottom:5px solid #eee; display:block; margin:0 0 20px 0;
 	
 	.vcard {
-		float:left; width:100px; color:#8b8b8b; font-size:12px;
+		float:left; width:75px; color:#8b8b8b; font-size:12px;
 		h1 {margin:0 0 8px 0;}
 		h2 {
 			font-size:11px; font-style:italic; color:$the-wall-primary-color; margin:0 0 8px 0;
@@ -64,7 +73,7 @@ section.solicitation {
 	}
 	
 	.upc-status em { display:inline-block; background:#333; color:#fff; font-size:12px; padding:5px; }
-	.dtreviewed { font-size:12px; font-weight:normal; }
+	.dtreviewed { font-size:12px; font-weight:normal; color:#ddd; }
 	.upc-single { border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;}	
 	.description {
 		@extend .clearfix; margin:25px 0 10px 0;
@@ -78,7 +87,7 @@ section.solicitation {
 			&> div  { @extend .clearfix; margin:0 0 0 $the-wall-indent - 6; display:block;}		
 		}
 		form {
-			margin:0 53px 36px $the-wall-indent - 6; display:block; clear:both; background:$the-wall-primary-color; padding:5px; overflow:auto;
+			margin:-20px 53px 36px $the-wall-indent - 6; display:block; clear:both; background:$the-wall-primary-color; padding:5px; overflow:auto;
 			textarea{ width:100%; height:81px; border:0; margin:0; padding:0;}
 			&.collapsed textarea { height:13px;}
 			.add-upc-reply {font-size:10px; color:#fff; text-decoration:none; background:orange; padding:5px 10px; display:inline-block; float:right; margin:5px 0;}
@@ -89,12 +98,24 @@ section.solicitation {
 	.cpi {display:block; @extend .temp; margin:10px 0;}
 }
 		
+		
+	$upc-tools-side-padding:10px;
+	$upc-tools-bottom-padding:5px;
+	
 .upc-tools {
-	border-left:1px solid $the-wall-primary-color; clear:both; position:relative;
+	border-left:1px solid $the-wall-primary-color; clear:both; position:relative; font-size:12px; padding:0 0 $upc-tools-bottom-padding $upc-tools-side-padding;
 	li {
 		display:inline; 
-		&.flag, &.delete {position:absolute; right:0;}
+		&.flag, &.delete {position:absolute; right:$upc-tools-side-padding; bottom:$upc-tools-bottom-padding; }
 	}	
 }
 
 .upc-replies .upc-tools {margin-left:$the-wall-indent - 6}
+
+.textarea-wrapper {
+	background:#fff; padding:0; display:block; clear:both;
+	.inner {
+		background:#fff; border: 1px solid #B0B0B0; clear: both; display: block; padding: 5px;
+		textarea { margin:0; padding:0; width:100%; border:0; min-height:17px; resize:vertical;}
+	}
+}
