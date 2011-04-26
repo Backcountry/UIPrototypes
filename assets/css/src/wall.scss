@@ -60,14 +60,16 @@ section.solicitation {
 		}
 		
 	}
-	form {
+}
+
+form.wall-interaction {
 		.faux-label {
 			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0;
 			> span {
 				float:left; width:100px; height:30px; display:block; font-size:14px; font-weight:bold; text-align:right;
 				em, a { font-weight:normal;}
 				em { font-style:italic}
-				a { font-size:10px; display:block}
+				a { font-size:10px; display:block; margin:3px 0;}
 			} 
 			.faux-col {
 				margin:0 0 0 122px; display:block; overflow:hidden;
@@ -88,7 +90,6 @@ section.solicitation {
 			}
 		}
 	}
-}
 
 .upc {	
 	padding-bottom:10px; border-bottom:5px solid #eee; display:block; margin:0 0 20px 0;
@@ -138,8 +139,8 @@ section.solicitation {
 			margin:-20px 53px 36px $the-wall-indent - 6; display:block; clear:both; background:$the-wall-primary-color; padding:5px; overflow:auto;
 			textarea{ width:100%; height:81px; border:0; margin:0; padding:0;}
 			&.collapsed textarea { height:13px;}
-			.add-upc-reply {font-size:10px; color:#fff; text-decoration:none; background:orange; padding:5px 10px; display:inline-block; float:right; margin:5px 0;}
-			&.collapsed .add-upc-reply {display:none;}
+			.submit-upc-reply {font-size:10px; color:#fff; text-decoration:none; background:orange; padding:5px 10px; display:inline-block; float:right; margin:5px 0;}
+			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{display:none;}
 		}
 		.description  { margin:5px 0;}
 	}

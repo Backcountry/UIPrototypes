@@ -6,7 +6,7 @@
 }
 
 /* line 10, src/wall.scss */
-.clearfix:after, section.solicitation .step .survey-options li:after, section.solicitation form .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
+.clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
   height: 0;
@@ -149,14 +149,15 @@ section.solicitation .step h5 .btn-submit-survey {
   -moz-border-radius: 8px;
   background: orange;
 }
-/* line 64, src/wall.scss */
-section.solicitation form .faux-label {
+
+/* line 66, src/wall.scss */
+form.wall-interaction .faux-label {
   clear: both;
   display: block;
   margin: 0 0 15px 0;
 }
-/* line 66, src/wall.scss */
-section.solicitation form .faux-label > span {
+/* line 68, src/wall.scss */
+form.wall-interaction .faux-label > span {
   float: left;
   width: 100px;
   height: 30px;
@@ -165,51 +166,52 @@ section.solicitation form .faux-label > span {
   font-weight: bold;
   text-align: right;
 }
-/* line 68, src/wall.scss */
-section.solicitation form .faux-label > span em, section.solicitation form .faux-label > span a {
+/* line 70, src/wall.scss */
+form.wall-interaction .faux-label > span em, form.wall-interaction .faux-label > span a {
   font-weight: normal;
 }
-/* line 69, src/wall.scss */
-section.solicitation form .faux-label > span em {
+/* line 71, src/wall.scss */
+form.wall-interaction .faux-label > span em {
   font-style: italic;
 }
-/* line 70, src/wall.scss */
-section.solicitation form .faux-label > span a {
+/* line 72, src/wall.scss */
+form.wall-interaction .faux-label > span a {
   font-size: 10px;
   display: block;
+  margin: 3px 0;
 }
-/* line 72, src/wall.scss */
-section.solicitation form .faux-label .faux-col {
+/* line 74, src/wall.scss */
+form.wall-interaction .faux-label .faux-col {
   margin: 0 0 0 122px;
   display: block;
   overflow: hidden;
 }
-/* line 74, src/wall.scss */
-section.solicitation form .faux-label .faux-col textarea {
+/* line 76, src/wall.scss */
+form.wall-interaction .faux-label .faux-col textarea {
   height: 90px;
 }
-/* line 75, src/wall.scss */
-section.solicitation form .faux-label .faux-col span {
+/* line 77, src/wall.scss */
+form.wall-interaction .faux-label .faux-col span {
   display: block;
   font-weight: normal;
   font-size: 12px;
 }
-/* line 78, src/wall.scss */
-section.solicitation form .faux-label.add-a-photo .faux-col input {
+/* line 80, src/wall.scss */
+form.wall-interaction .faux-label.add-a-photo .faux-col input {
   margin: 0 0 15px 0;
 }
-/* line 82, src/wall.scss */
-section.solicitation form .button-row li {
+/* line 84, src/wall.scss */
+form.wall-interaction .button-row li {
   display: inline-block;
 }
-/* line 84, src/wall.scss */
-section.solicitation form .button-row li.btn {
+/* line 86, src/wall.scss */
+form.wall-interaction .button-row li.btn {
   padding: 0 40px 0 0;
   border-right: 1px solid #333;
   margin: 0 10px 0 0;
 }
-/* line 86, src/wall.scss */
-section.solicitation form .button-row li.btn a {
+/* line 88, src/wall.scss */
+form.wall-interaction .button-row li.btn a {
   display: block;
   -moz-border-radius: 8px;
   background: orange;
@@ -219,32 +221,32 @@ section.solicitation form .button-row li.btn a {
   font-weight: bold;
 }
 
-/* line 93, src/wall.scss */
+/* line 94, src/wall.scss */
 .upc {
   padding-bottom: 10px;
   border-bottom: 5px solid #eee;
   display: block;
   margin: 0 0 20px 0;
 }
-/* line 96, src/wall.scss */
+/* line 97, src/wall.scss */
 .upc .vcard {
   float: left;
   width: 75px;
   color: #8b8b8b;
   font-size: 12px;
 }
-/* line 98, src/wall.scss */
+/* line 99, src/wall.scss */
 .upc .vcard h1 {
   margin: 0 0 8px 0;
 }
-/* line 99, src/wall.scss */
+/* line 100, src/wall.scss */
 .upc .vcard h2 {
   font-size: 11px;
   font-style: italic;
   color: #cccccc;
   margin: 0 0 8px 0;
 }
-/* line 102, src/wall.scss */
+/* line 103, src/wall.scss */
 .upc .vcard > img {
   height: 72px;
   width: 72px;
@@ -252,35 +254,35 @@ section.solicitation form .button-row li.btn a {
   clear: both;
   margin: 0 0 8px 0;
 }
-/* line 105, src/wall.scss */
+/* line 106, src/wall.scss */
 .upc .vcard ul {
   margin: 0 0 8px 0;
 }
-/* line 107, src/wall.scss */
+/* line 108, src/wall.scss */
 .upc .vcard ul li {
   display: inline;
 }
-/* line 109, src/wall.scss */
+/* line 110, src/wall.scss */
 .upc .vcard ul li img {
   height: 19px;
   width: 19px;
   display: inline-block;
 }
-/* line 115, src/wall.scss */
+/* line 116, src/wall.scss */
 .upc .upc-content {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 117, src/wall.scss */
+/* line 118, src/wall.scss */
 .upc .upc-content h1 {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 119, src/wall.scss */
+/* line 120, src/wall.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
 }
-/* line 123, src/wall.scss */
+/* line 124, src/wall.scss */
 .upc .upc-status em {
   display: inline-block;
   background: #333;
@@ -288,46 +290,46 @@ section.solicitation form .button-row li.btn a {
   font-size: 12px;
   padding: 5px;
 }
-/* line 124, src/wall.scss */
+/* line 125, src/wall.scss */
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
   color: #ddd;
 }
-/* line 125, src/wall.scss */
+/* line 126, src/wall.scss */
 .upc .upc-single {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 126, src/wall.scss */
+/* line 127, src/wall.scss */
 .upc .description {
   margin: 25px 0 10px 0;
 }
-/* line 128, src/wall.scss */
+/* line 129, src/wall.scss */
 .upc .description p {
   font-size: 12px;
   line-height: 17px;
 }
-/* line 131, src/wall.scss */
+/* line 132, src/wall.scss */
 .upc .upc-replies {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 133, src/wall.scss */
+/* line 134, src/wall.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin: 0 0 20px 0;
   clear: both;
 }
-/* line 135, src/wall.scss */
+/* line 136, src/wall.scss */
 .upc .upc-replies article > div {
   margin: 0 0 0 98px;
   display: block;
 }
-/* line 137, src/wall.scss */
+/* line 138, src/wall.scss */
 .upc .upc-replies form {
   margin: -20px 53px 36px 98px;
   display: block;
@@ -336,7 +338,7 @@ section.solicitation form .button-row li.btn a {
   padding: 5px;
   overflow: auto;
 }
-/* line 139, src/wall.scss */
+/* line 140, src/wall.scss */
 .upc .upc-replies form textarea {
   width: 100%;
   height: 81px;
@@ -344,12 +346,12 @@ section.solicitation form .button-row li.btn a {
   margin: 0;
   padding: 0;
 }
-/* line 140, src/wall.scss */
+/* line 141, src/wall.scss */
 .upc .upc-replies form.collapsed textarea {
   height: 13px;
 }
-/* line 141, src/wall.scss */
-.upc .upc-replies form .add-upc-reply {
+/* line 142, src/wall.scss */
+.upc .upc-replies form .submit-upc-reply {
   font-size: 10px;
   color: #fff;
   text-decoration: none;
@@ -359,21 +361,21 @@ section.solicitation form .button-row li.btn a {
   float: right;
   margin: 5px 0;
 }
-/* line 142, src/wall.scss */
-.upc .upc-replies form.collapsed .add-upc-reply {
+/* line 143, src/wall.scss */
+.upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
-/* line 144, src/wall.scss */
+/* line 145, src/wall.scss */
 .upc .upc-replies .description {
   margin: 5px 0;
 }
-/* line 146, src/wall.scss */
+/* line 147, src/wall.scss */
 .upc .cpi {
   display: block;
   margin: 10px 0;
 }
 
-/* line 153, src/wall.scss */
+/* line 154, src/wall.scss */
 .upc-tools {
   border-left: 1px solid #cccccc;
   clear: both;
@@ -381,30 +383,30 @@ section.solicitation form .button-row li.btn a {
   font-size: 12px;
   padding: 0 0 5px 10px;
 }
-/* line 155, src/wall.scss */
+/* line 156, src/wall.scss */
 .upc-tools li {
   display: inline;
 }
-/* line 157, src/wall.scss */
+/* line 158, src/wall.scss */
 .upc-tools li.flag, .upc-tools li.delete {
   position: absolute;
   right: 10px;
   bottom: 5px;
 }
 
-/* line 161, src/wall.scss */
+/* line 162, src/wall.scss */
 .upc-replies .upc-tools {
   margin-left: 98px;
 }
 
-/* line 163, src/wall.scss */
+/* line 164, src/wall.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 165, src/wall.scss */
+/* line 166, src/wall.scss */
 .textarea-wrapper .inner {
   background: #fff;
   border: 1px solid #B0B0B0;
@@ -412,7 +414,7 @@ section.solicitation form .button-row li.btn a {
   display: block;
   padding: 5px;
 }
-/* line 167, src/wall.scss */
+/* line 168, src/wall.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
