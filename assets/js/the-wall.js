@@ -25,14 +25,17 @@ $(document).ready(function() {
 		toDisplay = map[$(this).attr('class')];
 		$('section.solicitation').addClass("hidden")
 		$(toDisplay).removeClass("hidden");
+		
+		if($('.solicitation.review').hasClass('collapsed')){
+			$('.solicitation.review').removeClass('collapsed');
+		}
+		
 	});
 	
 	/* expand review form */
 	$('.cta.display-form').click(function(event){
 		event.preventDefault();
-		$(this).hide();
 		$(".solicitation.review").removeClass("collapsed");
-		$('div.step').removeClass("hidden");
 	});
 	
 	/* content */
