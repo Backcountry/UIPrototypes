@@ -1,3 +1,27 @@
+@import "compass";
+@import "compass/css3/images";
+@import "compass/css3/shared";
+@import "compass/utilities/general/hacks";
+
+@mixin background-image($image-1, $image-2: false, $image-3: false, $image-4: false, $image-5: false, $image-6: false, $image-7: false, $image-8: false, $image-9: false, $image-10: false) {
+  $images: compact($image-1, $image-2, $image-3, $image-4, $image-5, $image-6, $image-7, $image-8, $image-9, $image-10);
+  $add-pie-bg: prefixed(-pie, $images) or -compass-list-size($images) > 1;
+  @if $experimental-support-for-svg and prefixed(-svg, $images) {
+    background-image: -svg($images);
+    background-size: 100%; }
+  @if $support-for-original-webkit-gradients and prefixed(-owg, $images) {
+    background-image: -owg($images); }
+  @if $experimental-support-for-webkit and prefixed(-webkit, $images) {
+    background-image: -webkit($images); }
+  @if $experimental-support-for-mozilla and prefixed(-moz, $images) {
+    background-image: -moz($images); }
+  @if $experimental-support-for-opera and prefixed(-o, $images) {
+    background-image: -o($images); }
+  @if $experimental-support-for-pie and $add-pie-bg {
+    @warn "PIE does not support background-image. Use @include background(#{$images}) instead."; }
+  background-image: $images; }
+
+
 $the-wall-width:auto;
 /* 562px */
 $the-wall-indent:104px;
@@ -50,13 +74,14 @@ section.solicitation {
 				dt, dd {float:left; font-size:12px; }
 				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0}
 				dd {
-					margin:0 20px 0 0; -moz-border-radius:8px; background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block; padding:4px 8px; min-width:64px; text-align:center; cursor:pointer;
+					margin:0 20px 0 0; -moz-border-radius:8px; background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block; padding:0 4px 4px; min-width:64px; text-align:center; cursor:pointer; line-height:24px;
 					&.selected {background:#702627; color:#fff; text-shadow:0 0 0 ;}
 				}
 			}			
 		}
 		h5 {
-			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; background:orange;}
+			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; @include background-image(linear-gradient(white, #aaaaaa)); 
+  }
 		}
 		
 	}

@@ -1,425 +1,97 @@
-/* 562px */
-/* misc */
-/* line 9, src/wall.scss */
-.hidden {
-  display: none!important;
-}
+/*
+Syntax error: Undefined operation: "-compass-list-size(compact(linear-gradient(white, #aaaaaa), false, false, false, false, false, false, false, false, false)) gt 1".
+        on line 8 of /var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss, in `background-image'
+        from line 83 of /var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss
 
-/* line 10, src/wall.scss */
-.clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-/* line 11, src/wall.scss */
-.temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
-  border: 1px solid red;
-  background: #eee;
-}
-
-/* line 14, src/wall.scss */
-#the-wall {
-  width: auto;
-  margin: 10px;
-  font-family: Arial, Verdana, sans-serif;
-  text-align: left;
-  min-width: 600px;
-}
-/* line 18, src/wall.scss */
-#the-wall #content-types h1 {
-  float: left;
-  margin: 0 5px 0 0;
-  color: #3d3d3d;
-}
-/* line 19, src/wall.scss */
-#the-wall #content-types a {
-  display: inline-block;
-  font-weight: bold;
-  min-width: 107px;
-}
-/* line 23, src/wall.scss */
-#the-wall #wall-content nav {
-  background: #e7e7e9;
-  display: block;
-  margin: 10px 0;
-  overflow: auto;
-  padding: 10px 5px;
-}
-/* line 25, src/wall.scss */
-#the-wall #wall-content nav h1 {
-  float: left;
-}
-/* line 26, src/wall.scss */
-#the-wall #wall-content nav span {
-  float: right;
-}
-
-/* line 31, src/wall.scss */
-section.solicitation {
-  margin: 10px 0;
-  display: block;
-  background: #e7e7e9;
-  padding: 10px;
-}
-/* line 33, src/wall.scss */
-section.solicitation h1 {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0 0 20px 0;
-}
-/* line 34, src/wall.scss */
-section.solicitation h2 {
-  font-size: 16px;
-  margin: 13px 0 10px 0;
-}
-/* line 36, src/wall.scss */
-section.solicitation h2 a {
-  color: #039;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* line 38, src/wall.scss */
-section.solicitation .display-form {
-  display: none;
-}
-/* line 39, src/wall.scss */
-section.solicitation.collapsed .display-form {
-  display: block;
-}
-/* line 41, src/wall.scss */
-section.solicitation.collapsed .step {
-  display: none;
-}
-/* line 44, src/wall.scss */
-section.solicitation .step {
-  display: block;
-  margin: 0 0 10px 0;
-}
-/* line 46, src/wall.scss */
-section.solicitation .step h3 {
-  background: #dadada;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px;
-  margin: 0 -10px 20px -10px;
-}
-/* line 48, src/wall.scss */
-section.solicitation .step .survey-options li {
-  margin: 10px 0 20px 0;
-}
-/* line 50, src/wall.scss */
-section.solicitation .step .survey-options li dt, section.solicitation .step .survey-options li dd {
-  float: left;
-  font-size: 12px;
-}
-/* line 51, src/wall.scss */
-section.solicitation .step .survey-options li dt {
-  width: 100px;
-  font-size: 14px;
-  text-align: right;
-  margin: 0 20px 0 0;
-}
-/* line 52, src/wall.scss */
-section.solicitation .step .survey-options li dd {
-  margin: 0 20px 0 0;
-  -moz-border-radius: 8px;
-  background: #D6D7E0;
-  text-shadow: 1px 1px 1px #fff;
-  display: block;
-  padding: 4px 8px;
-  min-width: 64px;
-  text-align: center;
-  cursor: pointer;
-}
-/* line 54, src/wall.scss */
-section.solicitation .step .survey-options li dd.selected {
-  background: #702627;
-  color: #fff;
-  text-shadow: 0 0 0;
-}
-/* line 59, src/wall.scss */
-section.solicitation .step h5 .btn-submit-survey {
-  display: inline-block;
-  padding: 4px 8px;
-  margin: 0 0 0 320px;
-  cursor: pointer;
-  -moz-border-radius: 8px;
-  background: orange;
-}
-
-/* line 66, src/wall.scss */
-form.wall-interaction .faux-label {
-  clear: both;
-  display: block;
-  margin: 0 0 15px 0;
-}
-/* line 68, src/wall.scss */
-form.wall-interaction .faux-label > span {
-  float: left;
-  width: 100px;
-  height: 30px;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: right;
-}
-/* line 70, src/wall.scss */
-form.wall-interaction .faux-label > span em, form.wall-interaction .faux-label > span a {
-  font-weight: normal;
-}
-/* line 71, src/wall.scss */
-form.wall-interaction .faux-label > span em {
-  font-style: italic;
-}
-/* line 72, src/wall.scss */
-form.wall-interaction .faux-label > span a {
-  font-size: 10px;
-  display: block;
-  margin: 3px 0;
-}
-/* line 74, src/wall.scss */
-form.wall-interaction .faux-label .faux-col {
-  margin: 0 0 0 122px;
-  display: block;
-  overflow: hidden;
-}
-/* line 76, src/wall.scss */
-form.wall-interaction .faux-label .faux-col textarea {
-  height: 90px;
-}
-/* line 77, src/wall.scss */
-form.wall-interaction .faux-label .faux-col span {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
-}
-/* line 80, src/wall.scss */
-form.wall-interaction .faux-label.add-a-photo .faux-col input {
-  margin: 0 0 15px 0;
-}
-/* line 84, src/wall.scss */
-form.wall-interaction .button-row li {
-  display: inline-block;
-}
-/* line 86, src/wall.scss */
-form.wall-interaction .button-row li.btn {
-  padding: 0 40px 0 0;
-  border-right: 1px solid #333;
-  margin: 0 10px 0 0;
-}
-/* line 88, src/wall.scss */
-form.wall-interaction .button-row li.btn a {
-  display: block;
-  -moz-border-radius: 8px;
-  background: orange;
-  padding: 10px 5px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* line 94, src/wall.scss */
-.upc {
-  padding-bottom: 10px;
-  border-bottom: 5px solid #eee;
-  display: block;
-  margin: 0 0 20px 0;
-}
-/* line 97, src/wall.scss */
-.upc .vcard {
-  float: left;
-  width: 75px;
-  color: #8b8b8b;
-  font-size: 12px;
-}
-/* line 99, src/wall.scss */
-.upc .vcard h1 {
-  margin: 0 0 8px 0;
-}
-/* line 100, src/wall.scss */
-.upc .vcard h2 {
-  font-size: 11px;
-  font-style: italic;
-  color: #cccccc;
-  margin: 0 0 8px 0;
-}
-/* line 103, src/wall.scss */
-.upc .vcard > img {
-  height: 72px;
-  width: 72px;
-  display: block;
-  clear: both;
-  margin: 0 0 8px 0;
-}
-/* line 106, src/wall.scss */
-.upc .vcard ul {
-  margin: 0 0 8px 0;
-}
-/* line 108, src/wall.scss */
-.upc .vcard ul li {
-  display: inline;
-}
-/* line 110, src/wall.scss */
-.upc .vcard ul li img {
-  height: 19px;
-  width: 19px;
-  display: inline-block;
-}
-/* line 116, src/wall.scss */
-.upc .upc-content {
-  margin: 0 0 0 104px;
-  display: block;
-}
-/* line 118, src/wall.scss */
-.upc .upc-content h1 {
-  font-weight: bold;
-  font-size: 18px;
-}
-/* line 120, src/wall.scss */
-.upc .upc-content h1 a {
-  text-decoration: none;
-}
-/* line 124, src/wall.scss */
-.upc .upc-status em {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  font-size: 12px;
-  padding: 5px;
-}
-/* line 125, src/wall.scss */
-.upc .dtreviewed {
-  font-size: 12px;
-  font-weight: normal;
-  color: #ddd;
-}
-/* line 126, src/wall.scss */
-.upc .upc-single {
-  border-bottom: 1px solid #cccccc;
-  display: block;
-  margin-bottom: 10px;
-  clear: both;
-}
-/* line 127, src/wall.scss */
-.upc .description {
-  margin: 25px 0 10px 0;
-}
-/* line 129, src/wall.scss */
-.upc .description p {
-  font-size: 12px;
-  line-height: 17px;
-}
-/* line 132, src/wall.scss */
-.upc .upc-replies {
-  margin: 0 0 0 104px;
-  display: block;
-}
-/* line 134, src/wall.scss */
-.upc .upc-replies article {
-  border-bottom: 1px solid #cccccc;
-  display: block;
-  margin: 0 0 20px 0;
-  clear: both;
-}
-/* line 136, src/wall.scss */
-.upc .upc-replies article > div {
-  margin: 0 0 0 98px;
-  display: block;
-}
-/* line 138, src/wall.scss */
-.upc .upc-replies form {
-  margin: -20px 53px 36px 98px;
-  display: block;
-  clear: both;
-  background: #cccccc;
-  padding: 5px;
-  overflow: auto;
-}
-/* line 140, src/wall.scss */
-.upc .upc-replies form textarea {
-  width: 100%;
-  height: 81px;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-/* line 141, src/wall.scss */
-.upc .upc-replies form.collapsed textarea {
-  height: 13px;
-}
-/* line 142, src/wall.scss */
-.upc .upc-replies form .submit-upc-reply {
-  font-size: 10px;
-  color: #fff;
-  text-decoration: none;
-  background: orange;
-  padding: 5px 10px;
-  display: inline-block;
-  float: right;
-  margin: 5px 0;
-}
-/* line 143, src/wall.scss */
-.upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
-  display: none;
-}
-/* line 145, src/wall.scss */
-.upc .upc-replies .description {
-  margin: 5px 0;
-}
-/* line 147, src/wall.scss */
-.upc .cpi {
-  display: block;
-  margin: 10px 0;
-}
-
-/* line 154, src/wall.scss */
-.upc-tools {
-  border-left: 1px solid #cccccc;
-  clear: both;
-  position: relative;
-  font-size: 12px;
-  padding: 0 0 5px 10px;
-}
-/* line 156, src/wall.scss */
-.upc-tools li {
-  display: inline;
-}
-/* line 158, src/wall.scss */
-.upc-tools li.flag, .upc-tools li.delete {
-  position: absolute;
-  right: 10px;
-  bottom: 5px;
-}
-
-/* line 162, src/wall.scss */
-.upc-replies .upc-tools {
-  margin-left: 98px;
-}
-
-/* line 164, src/wall.scss */
-.textarea-wrapper {
-  background: #fff;
-  padding: 0;
-  display: block;
-  clear: both;
-}
-/* line 166, src/wall.scss */
-.textarea-wrapper .inner {
-  background: #fff;
-  border: 1px solid #B0B0B0;
-  clear: both;
-  display: block;
-  padding: 5px;
-}
-/* line 168, src/wall.scss */
-.textarea-wrapper .inner textarea {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border: 0;
-  min-height: 17px;
-  resize: vertical;
-}
+Backtrace:
+/var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss:8:in `background-image'
+/var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss:83
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:78:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:67:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/variable_node.rb:30:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:84:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:84:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:84:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:197:in `_render'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:169:in `render'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:169:in `render'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `compile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `run'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:92:in `recompile'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `call'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:34:in `update'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:32:in `modified'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.25/vendor/fssm/lib/fssm.rb:17:in `monitor'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:61:in `perform'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/lib/ruby/gems/1.8/gems/compass-0.10.6/bin/compass:26
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined operation: \"-compass-list-size(compact(linear-gradient(white, #aaaaaa), false, false, false, false, false, false, false, false, false)) gt 1\".\A         on line 8 of /var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss, in `background-image'\A         from line 83 of /var/lib/atguser/Desktop/UIPrototypes/assets/css/src/wall.scss"; }
