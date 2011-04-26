@@ -13,7 +13,12 @@ $the-wall-primary-background:#e7e7e9;
 
 #the-wall {
 	width:$the-wall-width; margin:10px; font-family:Arial, Verdana, sans-serif; text-align:left; min-width:600px;
-		
+	
+	#content-types {
+		h1 { float:left; margin:0 5px 0 0; color:#3d3d3d;}
+		a {display:inline-block; font-weight:bold; min-width:107px;}
+	}
+	
 	#wall-content {
 		nav {
 			background:$the-wall-primary-background; display:block; margin:10px 0; overflow:auto; padding:10px 5px;
@@ -25,18 +30,55 @@ $the-wall-primary-background:#e7e7e9;
 
 section.solicitation {
 	margin:10px 0;  display:block; background:$the-wall-primary-background; padding:10px; 
-	h1 { font-size:22px; font-weight:bold;}
+	h1 { font-size:22px; font-weight:bold; margin:0 0 20px 0;}
 	h2 {
 		font-size:16px; margin:13px 0 10px 0;
 		a {color:#039; text-decoration:none; font-weight:bold;}
 	}
+	.step {
+		margin:0 0 10px 0;
+		h3 {background:#dadada; font-size:18px; font-weight:bold; padding:15px; margin:0 -10px 20px -10px}
+		.survey-options {
+			li {
+				@extend .clearfix; margin:10px 0 20px 0;
+				dt, dd {float:left; font-size:12px; }
+				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0}
+				dd {
+					margin:0 20px 0 0; -moz-border-radius:8px; background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block; padding:4px 8px; min-width:64px; text-align:center; cursor:pointer;
+					&.selected {background:#702627; color:#fff; text-shadow:0 0 0 ;}
+				}
+			}			
+		}
+		h5 {
+			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; background:orange;}
+		}
+		
+	}
 	form {
 		.faux-label {
-			@extend .clearfix; clear:both; display:block; 
-			span {float:left; width:105px; height:30px; display:block; } 
+			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0;
+			> span {
+				float:left; width:100px; height:30px; display:block; font-size:14px; font-weight:bold; text-align:right;
+				em, a { font-weight:normal;}
+				em { font-style:italic}
+				a { font-size:10px; display:block}
+			} 
 			.faux-col {
-				margin:0 0 0 115px; display:block; overflow:hidden;
+				margin:0 0 0 122px; display:block; overflow:hidden;
 				textarea { height:90px; }
+				span { display:block; font-weight:normal; font-size:12px; }
+			}
+			&.add-a-photo .faux-col {
+				input {margin:0 0 15px 0;}
+			}
+		}
+		.button-row {
+			li {
+				display:inline-block;
+				&.btn {
+					padding:0 40px 0 0; border-right:1px solid #333; margin:0 10px 0 0;
+					a {display:block; -moz-border-radius:8px; background:orange; padding:10px 5px; text-decoration:none; color:#fff; font-weight:bold;}
+				}
 			}
 		}
 	}

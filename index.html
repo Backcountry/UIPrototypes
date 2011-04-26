@@ -25,29 +25,36 @@
       <section class="solicitation review collapsed">
         <form action="#something" method="post">
           <header>
-            <h1>Hey Bryan Lence, write a Review. Others want your opinion.</h1>
+            <h1>Hey Bryan Lence, review this product.</h1>
             <h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
           </header>
           <div class="hidden step">
             <h3>Step 1: Survey</h3>
-            <dl class="survey-options">
-              <dt>How does this item fit?</dt>
-              <dd>Small</dd>
-              <dd>True to Size</dd>
-              <dd class="last">Large</dd>
-              <dt>How durable is this item</dt>
-              <dd>Not very</dd>
-              <dd>Average</dd>
-              <dd class="last">Very</dd>
-              <dt>Would you recommend this to a friend?</dt>
-              <dd>Yes</dd>
-              <dd class="last">No</dd>
-            </dl>
-            <a class="btn-submit-survey">Just submit this survey &gt;</a> </div>
+            <ul class="survey-options">
+							<li>
+								<dt>How does this item fit?</dt>
+								<dd>Small</dd>
+								<dd class="selected">True to size</dd>
+								<dd class="last">Large</dd>							
+							</li>
+							<li>
+								<dt>How durable is this item</dt>
+								<dd>Not very</dd>
+								<dd>Average</dd>
+								<dd class="last">Very</dd>
+							</li>
+							<li>
+								<dt>Would you recommend this to a friend?</dt>
+								<dd>Yes</dd>
+								<dd class="last">No</dd>
+							</li>
+            </ul>
+            <h5><a class="btn-submit-survey">Just submit this survey &gt;</a></h5>
+					</div>
           <div class="hidden step">
           <h3>Step 2: Text Review <span>(optional)</span></h3>
           <div class="faux-label"> <span>Overall Rating</span>
-            <div class="faux-col"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
+            <div class="faux-col ratings"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
           </div>
           <div class="faux-label"><span>Review Title</span>
             <div class="faux-col">
@@ -62,7 +69,8 @@
                 </div>
               </div>
             </div>
-            <div class="faux-label"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+						</div>
+            <div class="faux-label add-a-photo"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
               <div class="faux-col"><span>From your computer</span>
                 <input type="file" name="upload-photo" id="upload-photo" />
                 <div class="clearb"></div>
@@ -71,8 +79,8 @@
               </div>
             </div>
             <ul class="button-row">
-              <li><a href="#submit-review">Add Your Review</a></li>
-              <li><a href="#share">Sign in to share on Facebook</a></li>
+              <li class="btn"><a href="#submit-review">Add Your Review</a></li>
+              <li class="fb-share"><a href="#share">Sign in to share on Facebook</a></li>
             </ul>
           </div>
         </form>
@@ -91,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="faux-label"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+          <div class="faux-label add-a-photo"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>					
             <div class="faux-col"><span>From your computer</span>
               <input type="file" id="upload-photo" name="upload-photo">
               <div class="clearb"></div>
@@ -99,12 +107,16 @@
               <input type="text" placeholder="http://" id="hotlink-photo" name="hotlink-photo">
             </div>
           </div>
+            <ul class="button-row">
+              <li class="btn"><a href="#submit-review">Add Your Question</a></li>
+              <li class="fb-share"><a href="#share">Sign in to share on Facebook</a></li>
+            </ul>					
         </form>
       </section>
       <section class="solicitation photo hidden">
         <h1>Got a picture of this gear in action?</h1>
         <form action="#something" method="post">
-          <div class="faux-label"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
+          <div class="faux-label add-a-photo"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
             <div class="faux-col"><span>From your computer</span>
               <input type="file" id="upload-photo" name="upload-photo">
               <div class="clearb"></div>
@@ -126,7 +138,11 @@
               </div>
             </div>
           </div>
-        </form>
+					<ul class="button-row">
+            <li class="btn"><a href="#submit-review">Add Your Photo</a></li>
+            <li class="fb-share"><a href="#share">Sign in to share on Facebook</a></li>
+          </ul>
+				</form>
       </section>
       <section class="solicitation video hidden">
         <h2>Video Solicitation</h2>
@@ -190,7 +206,7 @@
               <li class="flag"><a href="#flag">Flag</a></li>
             </ul>
           </article>
-          <article>
+          <article>					
             <section class="commenter vcard"> <img src="#user72x72" alt="Tom Pierce" />
               <h1 class="fn">Tom Pierce</h1>
               <ul>
@@ -212,6 +228,14 @@
               <li class="flag"><a href="#flag">Flag</a></li>
             </ul>
           </article>
+          <form class="add-upc-reply collapsed">
+            <div class="textarea-wrapper">
+              <div class="inner">
+                <textarea name="content" placeholder="Write a comment"></textarea>
+              </div>
+            </div>
+            <a href="#submit-content" class="button add-upc-reply">Post Your Comment</a>
+          </form>					
         </section>
       </article>
       <article id="hreview-Great-Rope" class="upc hreview">
@@ -263,7 +287,15 @@
               <li class="flag"><a href="#flag">Flag</a></li>
             </ul>
           </article>
-        </section>
+					<form class="add-upc-reply collapsed">
+            <div class="textarea-wrapper">
+              <div class="inner">
+                <textarea name="content" placeholder="Write a comment"></textarea>
+              </div>
+            </div>
+            <a href="#submit-content" class="button add-upc-reply">Post Your Comment</a>
+          </form>
+				</section>
       </article>
       <article class="upc question">
         <section class="upc-single">
@@ -340,7 +372,8 @@
               <li class="flag"><a href="#flag">Flag</a></li>
             </ul>
           </article>
-        </section>
+
+				</section>
       </article>
       <article class="upc photo">
         <section class="upc-single">
@@ -400,8 +433,8 @@
             </div>
             <a href="#submit-content" class="button add-upc-reply">Post Your Comment</a>
           </form>
-        </section>
-      </article>
+        </section>      
+			</article>
     </section>
   </div>
 </div>
