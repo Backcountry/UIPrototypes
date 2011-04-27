@@ -1,7 +1,5 @@
 @import "compass";
 @import "compass/css3/images";
-@import "compass/css3/shared";
-@import "compass/utilities/general/hacks";
 
 $the-wall-width:auto;
 /* 562px */
@@ -61,7 +59,7 @@ section.solicitation {
 			}			
 		}
 		h5 {
-			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; background: @include linear-gradient(color-stops(red 10%,blue 100%)); 
+			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; @include background(linear-gradient(top left, red, blue)); 
   }
 		}
 		
