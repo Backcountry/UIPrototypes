@@ -41,6 +41,8 @@ $(document).ready(function() {
 	/* content */
 	$("#wall-content nav a").click(function(event){
 		$("#wall-content > article").hide();
+		$("#wall-content nav a").removeClass("selected");
+		$(this).addClass("selected");
 		$("#wall-content " + map2[$(this).attr("href")]).show();
 	});
 

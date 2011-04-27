@@ -1,5 +1,6 @@
 @import "compass";
 @import "compass/css3/images";
+@import "compass/css3/shared";
 
 $the-wall-width:auto;
 /* 562px */
@@ -13,27 +14,43 @@ $the-wall-primary-background:#e7e7e9;
 .clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden;}
 .temp {border:1px solid red; background:#eee}
 
+@mixin input-border-style {
+	border: 1px solid #c7c7c9; border-color:#959595 #c7c7c9 #b2b2b3 #c8c8c7; 
+}
+
+@mixin btn {
+	display:inline-block; padding:7px 11px; color:#193d55; cursor:pointer; @include border-radius(8px); @include background(linear-gradient(top, #cacaca, #dfdfdf)); font-size:15px; @include box-shadow(2px 2px 3px rgba(190,190,190,0.85)); text-decoration:none; 
+}
 
 #the-wall {
 	width:$the-wall-width; margin:10px; font-family:Arial, Verdana, sans-serif; text-align:left; min-width:600px;
 	
 	#content-types {
-		h1 { float:left; margin:0 5px 0 0; color:#3d3d3d;}
-		a {display:inline-block; font-weight:bold; min-width:107px;}
+		h1 { float:left; margin:0 5px 0 0; color:#3d3d3d; }
+		a {
+			display:inline-block; font-weight:bold; min-width:107px;
+		}		
 	}
 	
 	#wall-content {
 		nav {
-			background:$the-wall-primary-background; display:block; margin:10px 0; overflow:auto; padding:10px 5px;
-			h1 {float:left;}
-			span {float:right;}
+			@include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto; padding:10px 5px; border:1px solid #cccccc; border-width:1px 0;
+			h1 {float:left; color:#193d55; font-size:20px; font-weight:bold; }
+			span {
+				float:right; margin:2px 0;
+				a {
+					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0); @include border-radius(8px); color:#214c6c; font-weight:bold; 
+					&.selected { background:#214c6c; border:1px solid #cdcdcd; color:#fff; }
+				}
+			}
+			
 		}
 	}
 }
 
 section.solicitation {
-	margin:10px 0;  display:block; background:$the-wall-primary-background; padding:10px; 
-	h1 { font-size:22px; font-weight:bold; margin:0 0 20px 0;}
+	margin:10px 0;  display:block; @include background(linear-gradient(top, #e9e9eb, #f3f3f5)); padding:10px; border:1px solid #ccc;
+	h1 { font-size:22px; font-weight:bold; margin:0 0 20px 0; color:#666}
 	h2 {
 		font-size:16px; margin:13px 0 10px 0;
 		a {color:#039; text-decoration:none; font-weight:bold;}		
@@ -46,20 +63,20 @@ section.solicitation {
 	}
 	.step {
 		display:block; margin:0 0 10px 0;	
-		h3 {background:#dadada; font-size:18px; font-weight:bold; padding:15px; margin:0 -10px 20px -10px}
+		h3 {background:#dadada; font-size:18px; font-weight:bold; padding:15px; margin:0 -10px 20px -10px; color:#666666}
 		.survey-options {
 			li {
 				@extend .clearfix; margin:10px 0 20px 0;
-				dt, dd {float:left; font-size:12px; }
-				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0}
+				dt, dd {float:left; font-size:12px; color:#666666}
+				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0; }
 				dd {
-					margin:0 20px 0 0; -moz-border-radius:8px; background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block; padding:0 4px 4px; min-width:64px; text-align:center; cursor:pointer; line-height:24px;
-					&.selected {background:#702627; color:#fff; text-shadow:0 0 0 ;}
+					margin:0 20px 0 0; @include border-radius(8px);  background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block; padding:6px 10px; min-width:64px; text-align:center; cursor:pointer; color:#000;
+					&.selected { @include background(linear-gradient(top, #854748, #6a1e1f)); color:#fff; text-shadow:0 0 0 ;}
 				}
 			}			
 		}
 		h5 {
-			.btn-submit-survey {display:inline-block; padding:4px 8px; margin:0 0 0 320px; cursor:pointer; -moz-border-radius:8px; @include background(linear-gradient(top left, red, blue)); 
+			.btn-submit-survey { @include btn; margin:0 0 0 330px; 
   }
 		}
 		
@@ -68,7 +85,7 @@ section.solicitation {
 
 form.wall-interaction {
 		.faux-label {
-			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0;
+			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0; color:#666;
 			> span {
 				float:left; width:100px; height:30px; display:block; font-size:14px; font-weight:bold; text-align:right;
 				em, a { font-weight:normal;}
@@ -76,6 +93,7 @@ form.wall-interaction {
 				a { font-size:10px; display:block; margin:3px 0;}
 			} 
 			.faux-col {
+				input, .textarea-wrapper .inner { @include input-border-style; min-width:250px; }
 				margin:0 0 0 122px; display:block; overflow:hidden;
 				textarea { height:90px; }
 				span { display:block; font-weight:normal; font-size:12px; }
@@ -85,12 +103,14 @@ form.wall-interaction {
 			}
 		}
 		.button-row {
-			li {
-				display:inline-block;
+		overflow:auto; height:34px;
+			li {				
+				float:left; height:31px;
 				&.btn {
-					padding:0 40px 0 0; border-right:1px solid #333; margin:0 10px 0 0;
-					a {display:block; -moz-border-radius:8px; background:orange; padding:10px 5px; text-decoration:none; color:#fff; font-weight:bold;}
+					padding:0 40px 0 0; border-right:1px solid #898989; 
+					a { @include btn; @include background(linear-gradient(top, #f3961d, #ffc34a)); color:#fff; font-weight:bold;}
 				}
+				&.fb-share { border-left:1px solid #fbfbfb; padding:0 0 0 16px; }
 			}
 		}
 	}
@@ -145,6 +165,8 @@ form.wall-interaction {
 			&.collapsed textarea { height:13px;}
 			.submit-upc-reply {font-size:10px; color:#fff; text-decoration:none; background:orange; padding:5px 10px; display:inline-block; float:right; margin:5px 0;}
 			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{display:none;}
+			.add-a-photo { margin:10px 0;}
+			h3 { margin:10px 0;}
 		}
 		.description  { margin:5px 0;}
 	}
@@ -168,7 +190,7 @@ form.wall-interaction {
 .textarea-wrapper {
 	background:#fff; padding:0; display:block; clear:both;
 	.inner {
-		background:#fff; border: 1px solid #B0B0B0; clear: both; display: block; padding: 5px;
+		background:#fff; clear: both; display: block; padding: 5px;
 		textarea { margin:0; padding:0; width:100%; border:0; min-height:17px; resize:vertical;}
 	}
 }
