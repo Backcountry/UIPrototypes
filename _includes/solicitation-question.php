@@ -1,8 +1,9 @@
 <section class="solicitation question hidden">
-        <header>
-          <h1>Hey Bryan, ask a question.</h1>
-        </header>
+        <span class="indicator"></span>
         <form action="#something" method="post" class="wall-interaction">
+          <header>
+            <h1>Hey Bryan, ask a question.</h1>
+          </header>        
           <div class="faux-label"><span>Your Question</span>
             <div class="faux-col">
               <div class="textarea-wrapper">

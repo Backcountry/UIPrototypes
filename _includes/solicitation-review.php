@@ -1,4 +1,5 @@
 <section class="solicitation review collapsed">
+        <span class="indicator"></span>
         <form action="#something" method="post" class="wall-interaction">
           <header>
             <h1>Hey Bryan Lence, review this product.</h1>

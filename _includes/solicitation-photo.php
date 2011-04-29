@@ -1,6 +1,9 @@
       <section class="solicitation photo hidden">
-        <h1>Got a picture of this gear in action?</h1>
+        <span class="indicator"></span>
         <form action="#something" method="post" class="wall-interaction">
+          <header>
+		  <h1>Got a picture of this gear in action?</h1>
+          </header>        
           <div class="faux-label add-a-photo"><span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
             <div class="faux-col"><span>From your computer</span>
               <input type="file" id="upload-photo" name="upload-photo">
