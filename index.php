@@ -4,8 +4,8 @@
 ?>
   <div id="the-wall">
 	    <?php 
-			include_once("_includes/wall-solicitations.php"); 
-    		//include_once("_includes/wall-content.php");
+		include_once("_includes/wall-solicitations.php"); 
+    	include_once("_includes/wall-content.php");
 		?>
 	</div>
 <?php include_once("_includes/footer.php") ?>

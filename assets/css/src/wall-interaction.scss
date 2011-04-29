@@ -1,0 +1,31 @@
+form.wall-interaction {
+		.faux-label {
+			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0; color:$the-wall-primary-heading-color;
+			> span {
+				float:left; width:100px; height:30px; display:block; font-size:14px; font-weight:bold; text-align:right;
+				em, a { font-weight:normal;}
+				em { font-style:italic}
+				a { font-size:10px; display:block; margin:3px 0;}
+			} 
+			.faux-col {
+				input, .textarea-wrapper .inner { @include input-border-style; min-width:250px; }
+				margin:0 0 0 122px; display:block; overflow:hidden;
+				textarea { height:90px; }
+				span { display:block; font-weight:normal; font-size:12px; }
+			}
+			&.add-a-photo .faux-col {
+				input {margin:0 0 15px 0;}
+			}
+		}
+		.button-row {
+		overflow:auto; height:34px;
+			li {				
+				float:left; height:31px;
+				&.submit {
+					padding:0 40px 0 0; border-right:1px solid #898989; 
+					.primary { @include btn-primary; }
+				}
+				&.fb-share { border-left:1px solid #fbfbfb; padding:0 0 0 16px; }
+			}
+		}
+}
