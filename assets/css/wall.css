@@ -87,6 +87,7 @@
   background: #214c6c;
   border: 1px solid #cdcdcd;
   color: #fff;
+  -webkit-background-clip: padding;
 }
 
 /* line 55, src/wall.scss */
@@ -455,10 +456,6 @@ form.wall-interaction .button-row li.fb-share {
   height: 13px;
 }
 /* line 170, src/wall.scss */
-.upc .upc-replies form .add-a-photo {
-  margin: 10px 0 0;
-}
-/* line 171, src/wall.scss */
 .upc .upc-replies form .submit-upc-reply {
   display: inline-block;
   padding: 7px 11px;
@@ -491,6 +488,10 @@ form.wall-interaction .button-row li.fb-share {
   font-size: 10px;
   float: right;
   margin: 10px 0;
+}
+/* line 171, src/wall.scss */
+.upc .upc-replies form .add-a-photo {
+  margin: 10px 0 0;
 }
 /* line 172, src/wall.scss */
 .upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {

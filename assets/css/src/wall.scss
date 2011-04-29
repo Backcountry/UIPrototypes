@@ -43,8 +43,8 @@ $the-wall-primary-background:#e7e7e9;
 			span {
 				float:right; margin:2px 0;
 				a {
-					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0); @include border-radius(8px); color:#214c6c; font-weight:bold; 
-					&.selected { background:#214c6c; border:1px solid #cdcdcd; color:#fff; }
+					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0); @include border-radius(8px); color:#214c6c; font-weight:bold;
+					&.selected { background:#214c6c; border:1px solid #cdcdcd; color:#fff; -webkit-background-clip: padding;}
 				}
 			}
 			
