@@ -1,8 +1,8 @@
 .upc {	
-	padding-bottom:10px; border-bottom:5px solid #eee; display:block; margin:0 0 20px 0;
+	padding-bottom:10px; border-bottom:5px solid $the-wall-terciary-color; display:block; margin:0 0 20px 0;
 	
 	.vcard {
-		float:left; width:75px; color:#8b8b8b; font-size:12px;
+		float:left; width:75px; color:$the-wall-secondary-color; font-size:12px;
 		h1 {margin:0 0 8px 0;}
 		h2 {
 			font-size:11px; font-style:italic; color:$the-wall-primary-color; margin:0 0 8px 0;
@@ -29,7 +29,7 @@
 	}
 	
 	.upc-status em { display:inline-block; background:#333; color:#fff; font-size:12px; padding:5px; }
-	.dtreviewed { font-size:12px; font-weight:normal; color:#8b8b8b; }
+	.dtreviewed { font-size:12px; font-weight:normal; color:$the-wall-secondary-color; }
 	.upc-single { border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;}	
 	.description {
 		@extend .clearfix; margin:25px 0 10px 0;
@@ -49,7 +49,7 @@
 			.submit-upc-reply { @include btn-primary; float:right; margin:10px 0;}
 			.add-a-photo { margin:10px 0 0;}						
 			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{display:none;}
-			h3 { margin:10px 0; font-size:14px; font-weight:bold; color:#333;}
+			h3 { margin:10px 0; font-size:14px; font-weight:bold; color:$the-wall-terciary-heading-color;}
 		}
 		.description  { margin:5px 0;}
 	}

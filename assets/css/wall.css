@@ -1,10 +1,10 @@
 /* misc */
-/* line 11, src/wall-variables-mixins.scss */
+/* line 15, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 12, src/wall-variables-mixins.scss */
+/* line 16, src/wall-variables-mixins.scss */
 .clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
@@ -13,27 +13,27 @@
   visibility: hidden;
 }
 
-/* line 13, src/wall-variables-mixins.scss */
+/* line 17, src/wall-variables-mixins.scss */
 .temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 27, src/wall-variables-mixins.scss */
+/* line 31, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 29, src/wall-variables-mixins.scss */
+/* line 33, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 31, src/wall-variables-mixins.scss */
+/* line 35, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -324,7 +324,7 @@ form.wall-interaction .button-row li.fb-share {
 /* line 1, src/upc.scss */
 .upc {
   padding-bottom: 10px;
-  border-bottom: 5px solid #eee;
+  border-bottom: 5px solid #eeeeee;
   display: block;
   margin: 0 0 20px 0;
 }
@@ -497,7 +497,7 @@ form.wall-interaction .button-row li.fb-share {
   margin: 10px 0;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #333333;
 }
 /* line 54, src/upc.scss */
 .upc .upc-replies .description {

@@ -1,10 +1,10 @@
 /* misc */
-/* line 11, src/wall-variables-mixins.scss */
+/* line 15, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 12, src/wall-variables-mixins.scss */
+/* line 16, src/wall-variables-mixins.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -13,27 +13,27 @@
   visibility: hidden;
 }
 
-/* line 13, src/wall-variables-mixins.scss */
+/* line 17, src/wall-variables-mixins.scss */
 .temp {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 27, src/wall-variables-mixins.scss */
+/* line 31, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 29, src/wall-variables-mixins.scss */
+/* line 33, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 31, src/wall-variables-mixins.scss */
+/* line 35, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
