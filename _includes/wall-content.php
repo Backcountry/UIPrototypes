@@ -15,8 +15,7 @@
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
         <!-- end of meta data for spiders -->
         <blockquote class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
-            dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Ut et massa at enim aliquam vestibulum ac vel felis. Mauris eget eros in metus imperdiet varius ac eget mi. Vestibulum ut turpis ut justo feugiat aliquam. Integer volutpat, mi non posuere ultrices, metus est rutrum libero, id posuere tortor turpis non justo. Sed sollicitudin portarutrum. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo, dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Ut et massa at enim aliquam vestibulum ac vel felis. Mauris eget eros in metus imperdiet varius ac eget mi. Vestibulum ut turpis ut justo feugiat aliquam. Integer volutpat, mi non posuere ultrices, metus est rutrum libero, id posuere tortor turpis non justo. Sed sollicitudin portarutrum. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
         <?php include("upc-tools.php"); ?>
       </section>
@@ -89,10 +88,7 @@
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
         <!-- end of meta data for spiders -->
         <blockquote class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
-            dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam
-            lacus sed mi. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu.
-            Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo, dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
         <?php $reply = false; include("upc-tools.php"); ?>
       </section>
@@ -111,15 +107,8 @@
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <article>
-        <section class="vcard"> <img src="#user72x72" alt="Tom Pierce" />
-          <h1 class="fn">Tom Pierce</h1>
-          <ul>
-            <li><img src="#badge1" /></li>
-            <li><img src="#badge2" /></li>
-          </ul>
-          <h2>Member since <em>12/31/2000</em></h2>
-        </section>
-        <div>
+       <?php include("vcard.php") ?>
+         <div>
           <h5 class="upc-status best-answer"><em>best answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">1 day ago</abbr></h5>
           <blockquote class="description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,

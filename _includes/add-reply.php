@@ -12,8 +12,6 @@
           <div class="faux-col"><span>From your computer</span>
             <input type="file" id="upload-photo" name="upload-photo">
             <div class="clearb"></div>
-            <span>From another website</span>
-            <input type="text" placeholder="http://" id="hotlink-photo" name="hotlink-photo">
           </div>
 		</div>
         <?php } ?>

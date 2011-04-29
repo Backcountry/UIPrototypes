@@ -386,6 +386,7 @@ form.wall-interaction .button-row li.fb-share {
 /* line 148, src/wall.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
+  color: #000;
 }
 /* line 152, src/wall.scss */
 .upc .upc-status em {
@@ -399,7 +400,7 @@ form.wall-interaction .button-row li.fb-share {
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
-  color: #ddd;
+  color: #8b8b8b;
 }
 /* line 154, src/wall.scss */
 .upc .upc-single {
@@ -485,7 +486,6 @@ form.wall-interaction .button-row li.fb-share {
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
-  font-size: 10px;
   float: right;
   margin: 10px 0;
 }
@@ -500,6 +500,9 @@ form.wall-interaction .button-row li.fb-share {
 /* line 173, src/wall.scss */
 .upc .upc-replies form h3 {
   margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
 }
 /* line 175, src/wall.scss */
 .upc .upc-replies .description {

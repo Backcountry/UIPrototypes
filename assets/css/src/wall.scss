@@ -32,7 +32,7 @@ $the-wall-primary-background:#e7e7e9;
 	#content-types {
 		h1 { float:left; margin:0 5px 0 0; color:#3d3d3d; }
 		a {
-			display:inline-block; font-weight:bold; min-width:107px;
+			display:inline-block; font-weight:bold; min-width:107px; 
 		}		
 	}
 	
@@ -145,12 +145,12 @@ form.wall-interaction {
 		margin:0 0 0 $the-wall-indent; display:block;
 		h1 {
 			font-weight:bold; font-size:18px;
-			a { text-decoration:none; }
+			a { text-decoration:none; color:#000;}
 		}
 	}
 	
 	.upc-status em { display:inline-block; background:#333; color:#fff; font-size:12px; padding:5px; }
-	.dtreviewed { font-size:12px; font-weight:normal; color:#ddd; }
+	.dtreviewed { font-size:12px; font-weight:normal; color:#8b8b8b; }
 	.upc-single { border-bottom:1px solid $the-wall-primary-color; display:block; margin-bottom:10px; clear:both;}	
 	.description {
 		@extend .clearfix; margin:25px 0 10px 0;
@@ -167,10 +167,10 @@ form.wall-interaction {
 			margin:-20px 53px 36px $the-wall-indent - 6; display:block; clear:both; background:$the-wall-primary-color; padding:5px; overflow:auto;
 			textarea{ width:100%; height:81px; border:0; margin:0; padding:0;}
 			&.collapsed textarea { height:13px;} 
-			.submit-upc-reply { @include btn-primary; font-size:10px; float:right; margin:10px 0;}
+			.submit-upc-reply { @include btn-primary; float:right; margin:10px 0;}
 			.add-a-photo { margin:10px 0 0;}						
 			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{display:none;}
-			h3 { margin:10px 0;}
+			h3 { margin:10px 0; font-size:14px; font-weight:bold; color:#333;}
 		}
 		.description  { margin:5px 0;}
 	}
