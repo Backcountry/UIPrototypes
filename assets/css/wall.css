@@ -1,10 +1,10 @@
 /* misc */
-/* line 15, src/wall-variables-mixins.scss */
+/* line 18, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 16, src/wall-variables-mixins.scss */
+/* line 19, src/wall-variables-mixins.scss */
 .clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
@@ -13,27 +13,27 @@
   visibility: hidden;
 }
 
-/* line 17, src/wall-variables-mixins.scss */
+/* line 20, src/wall-variables-mixins.scss */
 .temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 31, src/wall-variables-mixins.scss */
+/* line 34, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 33, src/wall-variables-mixins.scss */
+/* line 36, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 35, src/wall-variables-mixins.scss */
+/* line 38, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -41,6 +41,38 @@
   border: 0;
   min-height: 17px;
   resize: vertical;
+}
+
+/* line 42, src/wall-variables-mixins.scss */
+.primary {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
 }
 
 /* line 1, src/wall-solicitations.scss */
@@ -155,7 +187,7 @@ section.solicitation .step .survey-options li dd {
   min-width: 64px;
   text-align: center;
   cursor: pointer;
-  color: #000;
+  color: black;
 }
 /* line 29, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dd.selected {
@@ -265,38 +297,7 @@ form.wall-interaction .button-row li.submit {
   padding: 0 40px 0 0;
   border-right: 1px solid #898989;
 }
-/* line 26, src/wall-interaction.scss */
-form.wall-interaction .button-row li.submit .primary {
-  display: inline-block;
-  padding: 7px 11px;
-  color: #193d55;
-  cursor: pointer;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
-  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
-  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
-  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
-  background: linear-gradient(top, #cacaca, #dfdfdf);
-  font-size: 15px;
-  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  text-decoration: none;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
-  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
-  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
-  background: -o-linear-gradient(top, #f3961d, #ffc34a);
-  background: linear-gradient(top, #f3961d, #ffc34a);
-  color: #fff;
-  font-weight: bold;
-}
-/* line 28, src/wall-interaction.scss */
+/* line 27, src/wall-interaction.scss */
 form.wall-interaction .button-row li.fb-share {
   border-left: 1px solid #fbfbfb;
   padding: 0 0 0 16px;
@@ -327,26 +328,28 @@ form.wall-interaction .button-row li.fb-share {
   border-bottom: 5px solid #eeeeee;
   display: block;
   margin: 0 0 20px 0;
+  /* users profile photo */
 }
-/* line 4, src/upc.scss */
+/* line 5, src/upc.scss */
 .upc .vcard {
   float: left;
   width: 75px;
   color: #8b8b8b;
   font-size: 12px;
+  /* customer's profile photo */
 }
-/* line 6, src/upc.scss */
+/* line 7, src/upc.scss */
 .upc .vcard h1 {
   margin: 0 0 8px 0;
 }
-/* line 7, src/upc.scss */
+/* line 8, src/upc.scss */
 .upc .vcard h2 {
   font-size: 11px;
   font-style: italic;
   color: #cccccc;
   margin: 0 0 8px 0;
 }
-/* line 10, src/upc.scss */
+/* line 12, src/upc.scss */
 .upc .vcard > img {
   height: 72px;
   width: 72px;
@@ -354,83 +357,85 @@ form.wall-interaction .button-row li.fb-share {
   clear: both;
   margin: 0 0 8px 0;
 }
-/* line 13, src/upc.scss */
+/* line 15, src/upc.scss */
 .upc .vcard ul {
   margin: 0 0 8px 0;
 }
-/* line 15, src/upc.scss */
+/* line 17, src/upc.scss */
 .upc .vcard ul li {
   display: inline;
+  /* badges */
 }
-/* line 17, src/upc.scss */
+/* line 20, src/upc.scss */
 .upc .vcard ul li img {
   height: 19px;
   width: 19px;
   display: inline-block;
 }
-/* line 23, src/upc.scss */
+/* line 26, src/upc.scss */
 .upc .upc-content {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 25, src/upc.scss */
+/* line 28, src/upc.scss */
 .upc .upc-content h1 {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 27, src/upc.scss */
+/* line 30, src/upc.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
-/* line 31, src/upc.scss */
+/* line 34, src/upc.scss */
 .upc .upc-status em {
   display: inline-block;
-  background: #333;
+  background: #333333;
   color: #fff;
   font-size: 12px;
   padding: 5px;
 }
-/* line 32, src/upc.scss */
+/* line 35, src/upc.scss */
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
   color: #8b8b8b;
 }
-/* line 33, src/upc.scss */
+/* line 36, src/upc.scss */
 .upc .upc-single {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 34, src/upc.scss */
+/* line 37, src/upc.scss */
 .upc .description {
   margin: 25px 0 10px 0;
 }
-/* line 36, src/upc.scss */
+/* line 39, src/upc.scss */
 .upc .description p {
   font-size: 12px;
   line-height: 17px;
+  color: black;
 }
-/* line 39, src/upc.scss */
+/* line 42, src/upc.scss */
 .upc .upc-replies {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 41, src/upc.scss */
+/* line 44, src/upc.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin: 0 0 20px 0;
   clear: both;
 }
-/* line 43, src/upc.scss */
+/* line 46, src/upc.scss */
 .upc .upc-replies article > div {
   margin: 0 0 0 98px;
   display: block;
 }
-/* line 45, src/upc.scss */
+/* line 48, src/upc.scss */
 .upc .upc-replies form {
   margin: -20px 53px 36px 98px;
   display: block;
@@ -439,7 +444,7 @@ form.wall-interaction .button-row li.fb-share {
   padding: 5px;
   overflow: auto;
 }
-/* line 47, src/upc.scss */
+/* line 50, src/upc.scss */
 .upc .upc-replies form textarea {
   width: 100%;
   height: 81px;
@@ -447,11 +452,11 @@ form.wall-interaction .button-row li.fb-share {
   margin: 0;
   padding: 0;
 }
-/* line 48, src/upc.scss */
+/* line 51, src/upc.scss */
 .upc .upc-replies form.collapsed textarea {
   height: 13px;
 }
-/* line 49, src/upc.scss */
+/* line 52, src/upc.scss */
 .upc .upc-replies form .submit-upc-reply {
   display: inline-block;
   padding: 7px 11px;
@@ -484,26 +489,26 @@ form.wall-interaction .button-row li.fb-share {
   float: right;
   margin: 10px 0;
 }
-/* line 50, src/upc.scss */
+/* line 53, src/upc.scss */
 .upc .upc-replies form .add-a-photo {
   margin: 10px 0 0;
 }
-/* line 51, src/upc.scss */
+/* line 54, src/upc.scss */
 .upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
-/* line 52, src/upc.scss */
+/* line 55, src/upc.scss */
 .upc .upc-replies form h3 {
   margin: 10px 0;
   font-size: 14px;
   font-weight: bold;
   color: #333333;
 }
-/* line 54, src/upc.scss */
+/* line 57, src/upc.scss */
 .upc .upc-replies .description {
   margin: 5px 0;
 }
-/* line 56, src/upc.scss */
+/* line 59, src/upc.scss */
 .upc .cpi {
   display: block;
   margin: 10px 0;

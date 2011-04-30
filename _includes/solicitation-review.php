@@ -11,19 +11,19 @@
               <li>
                 <dt>How does this item fit?</dt>
                 <dd>Small</dd>
-                <dd class="selected">True to size</dd>
-                <dd class="last">Large</dd>
+                <dd>True to size</dd>
+                <dd>Large</dd>
               </li>
               <li>
                 <dt>How durable is this item</dt>
                 <dd>Not very</dd>
                 <dd>Average</dd>
-                <dd class="last">Very</dd>
+                <dd>Very</dd>
               </li>
               <li>
                 <dt>Would you recommend this to a friend?</dt>
                 <dd>Yes</dd>
-                <dd class="last">No</dd>
+                <dd>No</dd>
               </li>
             </ul>
             <h5><a class="btn btn-submit-survey">Just submit this survey &gt;</a></h5>
@@ -40,25 +40,11 @@
             </div>
             <div class="faux-label"><span>Your Review</span>
               <div class="faux-col">
-                <div class="textarea-wrapper">
-                  <div class="inner">
-                    <textarea name="upc-content" id="upc-content"></textarea>
-                  </div>
-                </div>
+				<?php include("solicitation-textarea.php"); ?>
               </div>
             </div>
-            <div class="faux-label add-a-photo"> <span>Add a photo <em>(optional)</em> <a href="#tac">Terms and conditions</a></span>
-              <div class="faux-col"><span>From your computer</span>
-                <input type="file" name="upload-photo" id="upload-photo" />
-                <div class="clearb"></div>
-                <span>From another website</span>
-                <input type="text" name="hotlink-photo" id="hotlink-photo" placeholder="http://" />
-              </div>
-            </div>
-            <ul class="button-row">
-              <li class="submit"><a href="#submit-review" class="btn primary">Add Your Review</a></li>
-              <li class="fb-share"><a href="#share">Sign in to share on Facebook</a></li>
-            </ul>
+			<?php include("solicitation-add-a-photo.php"); ?>            
+			<?php include("solicitation-submit-upc.php"); ?>            			
           </div>
         </form>
       </section>
