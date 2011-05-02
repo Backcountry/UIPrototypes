@@ -19,21 +19,21 @@
   background: #eee;
 }
 
-/* line 34, src/wall-variables-mixins.scss */
+/* line 40, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 36, src/wall-variables-mixins.scss */
+/* line 42, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 38, src/wall-variables-mixins.scss */
+/* line 44, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@
   resize: vertical;
 }
 
-/* line 42, src/wall-variables-mixins.scss */
+/* line 48, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -66,6 +66,8 @@
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
   background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
   background: -moz-linear-gradient(top, #f3961d, #ffc34a);
@@ -73,6 +75,8 @@
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#f3961d', endColorstr='#ffc34a');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3961d', endColorstr='#ffc34a')";
 }
 
 /* line 1, src/wall-solicitations.scss */
@@ -88,15 +92,15 @@ section.solicitation .indicator {
   z-index: 2;
   top: 1px;
 }
-/* line 4, src/wall-solicitations.scss */
+/* line 5, src/wall-solicitations.scss */
 section.solicitation.question .indicator {
   background-position: 200px top;
 }
-/* line 5, src/wall-solicitations.scss */
+/* line 6, src/wall-solicitations.scss */
 section.solicitation.photo .indicator {
   background-position: 296px top;
 }
-/* line 7, src/wall-solicitations.scss */
+/* line 8, src/wall-solicitations.scss */
 section.solicitation form {
   margin: 0 0 10px 0;
   display: block;
@@ -109,43 +113,45 @@ section.solicitation form {
   border: 1px solid #cccccc;
   position: relative;
   z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#e9e9eb', endColorstr='#f3f3f5');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9eb', endColorstr='#f3f3f5')";
 }
-/* line 8, src/wall-solicitations.scss */
+/* line 10, src/wall-solicitations.scss */
 section.solicitation h1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 20px 0;
   color: #666666;
 }
-/* line 9, src/wall-solicitations.scss */
+/* line 11, src/wall-solicitations.scss */
 section.solicitation h2 {
   font-size: 16px;
   margin: 13px 0 10px 0;
 }
-/* line 11, src/wall-solicitations.scss */
+/* line 13, src/wall-solicitations.scss */
 section.solicitation h2 a {
   color: #039;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 14, src/wall-solicitations.scss */
+/* line 16, src/wall-solicitations.scss */
 section.solicitation .display-form {
   display: none;
 }
-/* line 15, src/wall-solicitations.scss */
+/* line 17, src/wall-solicitations.scss */
 section.solicitation.collapsed .display-form {
   display: block;
 }
-/* line 16, src/wall-solicitations.scss */
+/* line 18, src/wall-solicitations.scss */
 section.solicitation.collapsed .step {
   display: none;
 }
-/* line 18, src/wall-solicitations.scss */
+/* line 20, src/wall-solicitations.scss */
 section.solicitation .step {
   display: block;
   margin: 0 0 10px 0;
 }
-/* line 20, src/wall-solicitations.scss */
+/* line 22, src/wall-solicitations.scss */
 section.solicitation .step h3 {
   background: #dadada;
   font-size: 18px;
@@ -154,24 +160,24 @@ section.solicitation .step h3 {
   margin: 0 -10px 20px -10px;
   color: #666666;
 }
-/* line 23, src/wall-solicitations.scss */
+/* line 26, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li {
   margin: 10px 0 20px 0;
 }
-/* line 25, src/wall-solicitations.scss */
+/* line 28, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dt, section.solicitation .step .survey-options li dd {
   float: left;
   font-size: 12px;
   color: #666666;
 }
-/* line 26, src/wall-solicitations.scss */
+/* line 29, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dt {
   width: 100px;
   font-size: 14px;
   text-align: right;
   margin: 0 20px 0 0;
 }
-/* line 27, src/wall-solicitations.scss */
+/* line 30, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dd {
   margin: 0 20px 0 0;
   -moz-border-radius: 8px;
@@ -189,7 +195,7 @@ section.solicitation .step .survey-options li dd {
   cursor: pointer;
   color: black;
 }
-/* line 29, src/wall-solicitations.scss */
+/* line 33, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dd.selected {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
   background: -webkit-linear-gradient(top, #854748, #6a1e1f);
@@ -198,8 +204,10 @@ section.solicitation .step .survey-options li dd.selected {
   background: linear-gradient(top, #854748, #6a1e1f);
   color: #fff;
   text-shadow: 0 0 0;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#854748', endColorstr='#6a1e1f');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#854748', endColorstr='#6a1e1f')";
 }
-/* line 33, src/wall-solicitations.scss */
+/* line 37, src/wall-solicitations.scss */
 section.solicitation .step h5 .btn-submit-survey {
   display: inline-block;
   padding: 7px 11px;
@@ -222,6 +230,8 @@ section.solicitation .step h5 .btn-submit-survey {
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   margin: 0 0 0 330px;
 }
 
@@ -479,6 +489,8 @@ form.wall-interaction .button-row li.fb-share {
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
   background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
   background: -moz-linear-gradient(top, #f3961d, #ffc34a);
@@ -486,6 +498,8 @@ form.wall-interaction .button-row li.fb-share {
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#f3961d', endColorstr='#ffc34a');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3961d', endColorstr='#ffc34a')";
   float: right;
   margin: 10px 0;
 }
@@ -548,20 +562,22 @@ form.wall-interaction .button-row li.fb-share {
   padding: 10px 5px;
   border: 1px solid #cccccc;
   border-width: 1px 0;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#e6e6e6', endColorstr='#f1f1f3');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#f1f1f3')";
 }
-/* line 25, src/wall.scss */
+/* line 26, src/wall.scss */
 #the-wall #wall-content nav h1 {
   float: left;
   color: #193d55;
   font-size: 20px;
   font-weight: bold;
 }
-/* line 26, src/wall.scss */
+/* line 27, src/wall.scss */
 #the-wall #wall-content nav span {
   float: right;
   margin: 2px 0;
 }
-/* line 28, src/wall.scss */
+/* line 29, src/wall.scss */
 #the-wall #wall-content nav span a {
   text-decoration: none;
   font-size: 15px;
@@ -577,7 +593,7 @@ form.wall-interaction .button-row li.fb-share {
   color: #214c6c;
   font-weight: bold;
 }
-/* line 30, src/wall.scss */
+/* line 31, src/wall.scss */
 #the-wall #wall-content nav span a.selected {
   background: #214c6c;
   border: 1px solid #cdcdcd;
@@ -586,7 +602,7 @@ form.wall-interaction .button-row li.fb-share {
 }
 
 /* ie7 hack */
-/* line 39, src/wall.scss */
+/* line 40, src/wall.scss */
 *:first-child + html section.solicitation .indicator {
   height: 15px;
   width: 100%;
@@ -595,7 +611,7 @@ form.wall-interaction .button-row li.fb-share {
   top: 3px;
 }
 
-/* line 41, src/wall.scss */
+/* line 42, src/wall.scss */
 .upc-replies .upc-tools {
   margin-left: 98px;
 }

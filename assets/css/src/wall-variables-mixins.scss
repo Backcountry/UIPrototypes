@@ -24,12 +24,18 @@ $the-wall-content-color:#000;
 }
 
 @mixin btn {
-	display:inline-block; padding:7px 11px; color:#193d55; cursor:pointer; @include border-radius(8px); @include background(linear-gradient(top, #cacaca, #dfdfdf)); font-size:15px; @include box-shadow(2px 2px 3px rgba(190,190,190,0.85)); text-decoration:none; 
+	display:inline-block; padding:7px 11px; color:#193d55; cursor:pointer; @include border-radius(8px);
+	@include background(linear-gradient(top, #cacaca, #dfdfdf)); font-size:15px; @include box-shadow(2px 2px 3px rgba(190,190,190,0.85));
+	text-decoration:none;  @include ie-linear-gradient(#cacaca, #dfdfdf);
 }
 
 @mixin btn-primary {
-	@include btn; @include background(linear-gradient(top, #f3961d, #ffc34a)); color:#fff; font-weight:bold;
+	@include btn; @include background(linear-gradient(top, #f3961d, #ffc34a)); color:#fff; font-weight:bold; @include ie-linear-gradient(#f3961d, #ffc34a);
 }
+
+@mixin ie-linear-gradient($start-color, $end-color) {
+   filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#{$start-color}', endColorstr='#{$end-color}');
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}')"; }  
 
 .textarea-wrapper {
 	background:#fff; padding:0; display:block; clear:both;

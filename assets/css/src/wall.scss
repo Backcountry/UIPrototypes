@@ -21,7 +21,8 @@ $the-wall-width:auto; /* 562px */
 	
 	#wall-content {
 		nav {
-			@include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto; padding:10px 5px; border:1px solid #cccccc; border-width:1px 0;
+			@include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto;
+			padding:10px 5px; border:1px solid #cccccc; border-width:1px 0; @include ie-linear-gradient(#e6e6e6, #f1f1f3);
 			h1 {float:left; color:#193d55; font-size:20px; font-weight:bold; }
 			span {
 				float:right; margin:2px 0;
