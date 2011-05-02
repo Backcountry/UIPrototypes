@@ -30,7 +30,8 @@ $the-wall-content-color:#000;
 }
 
 @mixin btn-primary {
-	@include btn; @include background(linear-gradient(top, #f3961d, #ffc34a)); color:#fff; font-weight:bold; @include ie-linear-gradient(#f3961d, #ffc34a);
+	@include btn; @include background(linear-gradient(top, #f3961d, #ffc34a)); color:#fff; font-weight:bold;
+	@include ie-linear-gradient(#f3961d, #ffc34a);
 }
 
 @mixin ie-linear-gradient($start-color, $end-color) {

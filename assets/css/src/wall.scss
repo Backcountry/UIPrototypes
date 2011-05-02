@@ -4,10 +4,10 @@
 @import "wall-variables-mixins.scss";
 @import "wall-solicitations.scss";
 @import "wall-interaction.scss";
-@import "upc-tools.scss";
+@import "upc-tools.scss"; 	
 @import "upc.scss";
 
-$the-wall-width:auto; /* 562px */
+$the-wall-width:562px; /* 562px */
 
 #the-wall {
 	width:$the-wall-width; margin:10px; font-family:Arial, Verdana, sans-serif; text-align:left; min-width:600px;
