@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined variable: "$the-wall-terciary-color".
-        on line 2 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss
+        on line 3 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss
 
 1: C:/wamp/www/UIPrototypes/assets/css/src/upc.scss
 
 Backtrace:
-C:/wamp/www/UIPrototypes/assets/css/src/upc.scss:2
+C:/wamp/www/UIPrototypes/assets/css/src/upc.scss:3
 C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/variable.rb:45:in `_perform'
 C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/list.rb:62:in `block in _perform'
@@ -82,4 +82,4 @@ C:/Ruby192/bin/compass:19:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$the-wall-terciary-color\".\A         on line 2 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss\A \A 1: C:/wamp/www/UIPrototypes/assets/css/src/upc.scss"; }
+  content: "Syntax error: Undefined variable: \"$the-wall-terciary-color\".\A         on line 3 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss\A \A 1: C:/wamp/www/UIPrototypes/assets/css/src/upc.scss"; }
