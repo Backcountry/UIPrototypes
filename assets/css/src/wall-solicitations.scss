@@ -1,12 +1,15 @@
+@import "pie.scss";
+@import "wall-variables-mixins.scss";
+
 section.solicitation {
-	position:relative;
+	position:relative; @include pie; 
 	.indicator { background:url(../img/carrot.jpg) 80px top no-repeat; padding:15px 0 0 0; display:block; position:relative;
 				 z-index:2; top:1px; }	
 	&.question { .indicator {background-position:200px top; } }
 	&.photo  { .indicator {background-position:296px top; } }	
 	
-	form { margin:0 0 10px 0;  display:block; @include background(linear-gradient(top, #e9e9eb, #f3f3f5)); padding:10px;
-		  border:1px solid $the-wall-primary-color; position:relative; z-index:1; @include ie-linear-gradient(#e9e9eb, #f3f3f5); }
+	form { margin:0 0 10px 0; @include pie; @include background(linear-gradient(#e9e9eb, #f3f3f5)); display:block;  padding:10px;
+		  border:1px solid $the-wall-primary-color; position:relative; z-index:1; }
 	h1 { font-size:22px; font-weight:bold; margin:0 0 20px 0; color:$the-wall-primary-heading-color}
 	h2 {
 		font-size:16px; margin:13px 0 10px 0;
@@ -30,7 +33,7 @@ section.solicitation {
 				dd {
 					margin:0 20px 0 0; @include border-radius(8px);  background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block;
 					padding:6px 10px; min-width:64px; text-align:center; cursor:pointer; color:$the-wall-content-color;
-					&.selected { @include background(linear-gradient(top, #854748, #6a1e1f)); color:#fff; text-shadow:0 0 0; @include ie-linear-gradient(#854748, #6a1e1f);}
+					&.selected { @include background(linear-gradient(top, #854748, #6a1e1f)); color:#fff; text-shadow:0 0 0;}
 				}
 			}
 		}

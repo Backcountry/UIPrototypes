@@ -1,6 +1,10 @@
 @import "compass";
+@import "compass/css3";
 @import "compass/css3/images";
 @import "compass/css3/shared";
+@import "compass/css3/pie";
+
+@import "pie.scss";
 @import "wall-variables-mixins.scss";
 @import "wall-solicitations.scss";
 @import "wall-interaction.scss";
@@ -21,13 +25,14 @@ $the-wall-width:562px; /* 562px */
 	
 	#wall-content {
 		nav {
-			@include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto;
-			padding:10px 5px; border:1px solid #cccccc; border-width:1px 0; @include ie-linear-gradient(#e6e6e6, #f1f1f3);
+			@include pie; @include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto;
+			padding:10px 5px; border:1px solid #cccccc; border-width:1px 0; 
 			h1 {float:left; color:#193d55; font-size:20px; font-weight:bold; }
 			span {
 				float:right; margin:2px 0;
 				a {
-					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0); @include border-radius(8px); color:#214c6c; font-weight:bold;
+					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0);
+					@include pie; @include border-radius(8px); color:#214c6c; font-weight:bold;
 					&.selected { background:#214c6c; border:1px solid #cdcdcd; color:#fff; -webkit-background-clip: padding;}
 				}
 			}
@@ -37,6 +42,6 @@ $the-wall-width:562px; /* 562px */
 }
 
 /* ie7 hack */
-*:first-child+html section.solicitation  .indicator{ height:15px; width:100%; height:1px; overflow:auto; top:3px}
+*:first-child+html section.solicitation  .indicator{ height:15px; width:100%; height:1px; overflow:hidden; top:2px}
 
 .upc-replies .upc-tools {margin-left:$the-wall-indent - 6}

@@ -1,10 +1,110 @@
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
 /* misc */
-/* line 18, src/wall-variables-mixins.scss */
+/* line 26, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 19, src/wall-variables-mixins.scss */
+/* line 27, src/wall-variables-mixins.scss */
 .clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
@@ -13,27 +113,27 @@
   visibility: hidden;
 }
 
-/* line 20, src/wall-variables-mixins.scss */
+/* line 28, src/wall-variables-mixins.scss */
 .temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 41, src/wall-variables-mixins.scss */
+/* line 42, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 43, src/wall-variables-mixins.scss */
+/* line 44, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 45, src/wall-variables-mixins.scss */
+/* line 46, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -43,7 +143,7 @@
   resize: vertical;
 }
 
-/* line 49, src/wall-variables-mixins.scss */
+/* line 50, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -59,6 +159,7 @@
   background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
   background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
   background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
   -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
@@ -66,24 +167,200 @@
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
   background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
   background: -moz-linear-gradient(top, #f3961d, #ffc34a);
   background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#f3961d', endColorstr='#ffc34a');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3961d', endColorstr='#ffc34a')";
 }
 
-/* line 1, src/wall-solicitations.scss */
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* misc */
+/* line 26, src/wall-variables-mixins.scss */
+.hidden {
+  display: none!important;
+}
+
+/* line 27, src/wall-variables-mixins.scss */
+.clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 28, src/wall-variables-mixins.scss */
+.temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
+  border: 1px solid red;
+  background: #eee;
+}
+
+/* line 42, src/wall-variables-mixins.scss */
+.textarea-wrapper {
+  background: #fff;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+/* line 44, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner {
+  background: #fff;
+  clear: both;
+  display: block;
+  padding: 5px;
+}
+/* line 46, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  min-height: 17px;
+  resize: vertical;
+}
+
+/* line 50, src/wall-variables-mixins.scss */
+.primary {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 4, src/wall-solicitations.scss */
 section.solicitation {
   position: relative;
 }
-/* line 3, src/wall-solicitations.scss */
+/* line 6, src/wall-solicitations.scss */
 section.solicitation .indicator {
   background: url(../img/carrot.jpg) 80px top no-repeat;
   padding: 15px 0 0 0;
@@ -92,66 +369,65 @@ section.solicitation .indicator {
   z-index: 2;
   top: 1px;
 }
-/* line 5, src/wall-solicitations.scss */
+/* line 8, src/wall-solicitations.scss */
 section.solicitation.question .indicator {
   background-position: 200px top;
 }
-/* line 6, src/wall-solicitations.scss */
+/* line 9, src/wall-solicitations.scss */
 section.solicitation.photo .indicator {
   background-position: 296px top;
 }
-/* line 8, src/wall-solicitations.scss */
+/* line 11, src/wall-solicitations.scss */
 section.solicitation form {
   margin: 0 0 10px 0;
-  display: block;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
-  background: -webkit-linear-gradient(top, #e9e9eb, #f3f3f5);
-  background: -moz-linear-gradient(top, #e9e9eb, #f3f3f5);
-  background: -o-linear-gradient(top, #e9e9eb, #f3f3f5);
-  background: linear-gradient(top, #e9e9eb, #f3f3f5);
+  background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
+  background: -moz-linear-gradient(#e9e9eb, #f3f3f5);
+  background: -o-linear-gradient(#e9e9eb, #f3f3f5);
+  -pie-background: linear-gradient(#e9e9eb, #f3f3f5);
+  background: linear-gradient(#e9e9eb, #f3f3f5);
+  display: block;
   padding: 10px;
   border: 1px solid #cccccc;
   position: relative;
   z-index: 1;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#e9e9eb', endColorstr='#f3f3f5');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9eb', endColorstr='#f3f3f5')";
 }
-/* line 10, src/wall-solicitations.scss */
+/* line 13, src/wall-solicitations.scss */
 section.solicitation h1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 20px 0;
   color: #666666;
 }
-/* line 11, src/wall-solicitations.scss */
+/* line 14, src/wall-solicitations.scss */
 section.solicitation h2 {
   font-size: 16px;
   margin: 13px 0 10px 0;
 }
-/* line 13, src/wall-solicitations.scss */
+/* line 16, src/wall-solicitations.scss */
 section.solicitation h2 a {
   color: #039;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 16, src/wall-solicitations.scss */
+/* line 19, src/wall-solicitations.scss */
 section.solicitation .display-form {
   display: none;
 }
-/* line 17, src/wall-solicitations.scss */
+/* line 20, src/wall-solicitations.scss */
 section.solicitation.collapsed .display-form {
   display: block;
 }
-/* line 18, src/wall-solicitations.scss */
+/* line 21, src/wall-solicitations.scss */
 section.solicitation.collapsed .step {
   display: none;
 }
-/* line 20, src/wall-solicitations.scss */
+/* line 23, src/wall-solicitations.scss */
 section.solicitation .step {
   display: block;
   margin: 0 0 10px 0;
 }
-/* line 22, src/wall-solicitations.scss */
+/* line 25, src/wall-solicitations.scss */
 section.solicitation .step h3 {
   background: #dadada;
   font-size: 18px;
@@ -160,24 +436,24 @@ section.solicitation .step h3 {
   margin: 0 -10px 20px -10px;
   color: #666666;
 }
-/* line 26, src/wall-solicitations.scss */
+/* line 29, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li {
   margin: 10px 0 20px 0;
 }
-/* line 28, src/wall-solicitations.scss */
+/* line 31, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dt, section.solicitation .step .survey-options li dd {
   float: left;
   font-size: 12px;
   color: #666666;
 }
-/* line 29, src/wall-solicitations.scss */
+/* line 32, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dt {
   width: 100px;
   font-size: 14px;
   text-align: right;
   margin: 0 20px 0 0;
 }
-/* line 30, src/wall-solicitations.scss */
+/* line 33, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dd {
   margin: 0 20px 0 0;
   -moz-border-radius: 8px;
@@ -195,19 +471,18 @@ section.solicitation .step .survey-options li dd {
   cursor: pointer;
   color: black;
 }
-/* line 33, src/wall-solicitations.scss */
+/* line 36, src/wall-solicitations.scss */
 section.solicitation .step .survey-options li dd.selected {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
   background: -webkit-linear-gradient(top, #854748, #6a1e1f);
   background: -moz-linear-gradient(top, #854748, #6a1e1f);
   background: -o-linear-gradient(top, #854748, #6a1e1f);
+  -pie-background: linear-gradient(top, #854748, #6a1e1f);
   background: linear-gradient(top, #854748, #6a1e1f);
   color: #fff;
   text-shadow: 0 0 0;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#854748', endColorstr='#6a1e1f');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#854748', endColorstr='#6a1e1f')";
 }
-/* line 37, src/wall-solicitations.scss */
+/* line 40, src/wall-solicitations.scss */
 section.solicitation .step h5 .btn-submit-survey {
   display: inline-block;
   padding: 7px 11px;
@@ -223,6 +498,7 @@ section.solicitation .step h5 .btn-submit-survey {
   background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
   background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
   background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
   -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
@@ -230,8 +506,6 @@ section.solicitation .step h5 .btn-submit-survey {
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   margin: 0 0 0 330px;
 }
 
@@ -340,6 +614,8 @@ form.wall-interaction .button-row li.fb-share {
   display: block;
   margin: 0 0 20px 0;
   /* users profile photo */
+  /* the content itself */
+  /* comments / answers */
 }
 /* line 6, src/upc.scss */
 .upc .vcard {
@@ -383,22 +659,22 @@ form.wall-interaction .button-row li.fb-share {
   width: 19px;
   display: inline-block;
 }
-/* line 27, src/upc.scss */
+/* line 28, src/upc.scss */
 .upc .upc-content {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 29, src/upc.scss */
+/* line 30, src/upc.scss */
 .upc .upc-content h1 {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 31, src/upc.scss */
+/* line 32, src/upc.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 35, src/upc.scss */
+/* line 36, src/upc.scss */
 .upc .upc-status em {
   display: inline-block;
   background: #333333;
@@ -406,47 +682,47 @@ form.wall-interaction .button-row li.fb-share {
   font-size: 12px;
   padding: 5px;
 }
-/* line 36, src/upc.scss */
+/* line 37, src/upc.scss */
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
   color: #8b8b8b;
 }
-/* line 37, src/upc.scss */
+/* line 38, src/upc.scss */
 .upc .upc-single {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 38, src/upc.scss */
+/* line 39, src/upc.scss */
 .upc .description {
   margin: 25px 0 10px 0;
 }
-/* line 40, src/upc.scss */
+/* line 41, src/upc.scss */
 .upc .description p {
   font-size: 12px;
   line-height: 17px;
   color: black;
 }
-/* line 43, src/upc.scss */
+/* line 45, src/upc.scss */
 .upc .upc-replies {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 45, src/upc.scss */
+/* line 47, src/upc.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin: 0 0 20px 0;
   clear: both;
 }
-/* line 47, src/upc.scss */
+/* line 49, src/upc.scss */
 .upc .upc-replies article > div {
   margin: 0 0 0 98px;
   display: block;
 }
-/* line 49, src/upc.scss */
+/* line 51, src/upc.scss */
 .upc .upc-replies form {
   margin: -20px 53px 36px 98px;
   display: block;
@@ -455,7 +731,7 @@ form.wall-interaction .button-row li.fb-share {
   padding: 5px;
   overflow: auto;
 }
-/* line 51, src/upc.scss */
+/* line 53, src/upc.scss */
 .upc .upc-replies form textarea {
   width: 100%;
   height: 81px;
@@ -463,11 +739,11 @@ form.wall-interaction .button-row li.fb-share {
   margin: 0;
   padding: 0;
 }
-/* line 52, src/upc.scss */
+/* line 54, src/upc.scss */
 .upc .upc-replies form.collapsed textarea {
   height: 13px;
 }
-/* line 53, src/upc.scss */
+/* line 55, src/upc.scss */
 .upc .upc-replies form .submit-upc-reply {
   display: inline-block;
   padding: 7px 11px;
@@ -483,6 +759,7 @@ form.wall-interaction .button-row li.fb-share {
   background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
   background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
   background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
   -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
@@ -490,47 +767,48 @@ form.wall-interaction .button-row li.fb-share {
   -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
   text-decoration: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cacaca', endColorstr='#dfdfdf');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#dfdfdf')";
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
   background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
   background: -moz-linear-gradient(top, #f3961d, #ffc34a);
   background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#f3961d', endColorstr='#ffc34a');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3961d', endColorstr='#ffc34a')";
   float: right;
   margin: 10px 0;
 }
-/* line 54, src/upc.scss */
+/* line 56, src/upc.scss */
 .upc .upc-replies form .add-a-photo {
   margin: 10px 0 0;
 }
-/* line 55, src/upc.scss */
+/* line 57, src/upc.scss */
 .upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
-/* line 56, src/upc.scss */
+/* line 58, src/upc.scss */
+.upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
+  display: none;
+}
+/* line 59, src/upc.scss */
 .upc .upc-replies form h3 {
   margin: 10px 0;
   font-size: 14px;
   font-weight: bold;
   color: #333333;
 }
-/* line 58, src/upc.scss */
+/* line 61, src/upc.scss */
 .upc .upc-replies .description {
   margin: 5px 0;
 }
-/* line 60, src/upc.scss */
+/* line 63, src/upc.scss */
 .upc .cpi {
   display: block;
   margin: 10px 0;
 }
 
 /* 562px */
-/* line 12, src/wall.scss */
+/* line 16, src/wall.scss */
 #the-wall {
   width: 562px;
   margin: 10px;
@@ -538,24 +816,25 @@ form.wall-interaction .button-row li.fb-share {
   text-align: left;
   min-width: 600px;
 }
-/* line 16, src/wall.scss */
+/* line 20, src/wall.scss */
 #the-wall #content-types h1 {
   float: left;
   margin: 0 5px 0 0;
   color: #3d3d3d;
 }
-/* line 17, src/wall.scss */
+/* line 21, src/wall.scss */
 #the-wall #content-types a {
   display: inline-block;
   font-weight: bold;
   min-width: 107px;
 }
-/* line 23, src/wall.scss */
+/* line 27, src/wall.scss */
 #the-wall #wall-content nav {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #f1f1f3));
   background: -webkit-linear-gradient(top, #e6e6e6, #f1f1f3);
   background: -moz-linear-gradient(top, #e6e6e6, #f1f1f3);
   background: -o-linear-gradient(top, #e6e6e6, #f1f1f3);
+  -pie-background: linear-gradient(top, #e6e6e6, #f1f1f3);
   background: linear-gradient(top, #e6e6e6, #f1f1f3);
   display: block;
   margin: 10px 0;
@@ -563,22 +842,20 @@ form.wall-interaction .button-row li.fb-share {
   padding: 10px 5px;
   border: 1px solid #cccccc;
   border-width: 1px 0;
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#e6e6e6', endColorstr='#f1f1f3');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#f1f1f3')";
 }
-/* line 26, src/wall.scss */
+/* line 30, src/wall.scss */
 #the-wall #wall-content nav h1 {
   float: left;
   color: #193d55;
   font-size: 20px;
   font-weight: bold;
 }
-/* line 27, src/wall.scss */
+/* line 31, src/wall.scss */
 #the-wall #wall-content nav span {
   float: right;
   margin: 2px 0;
 }
-/* line 29, src/wall.scss */
+/* line 33, src/wall.scss */
 #the-wall #wall-content nav span a {
   text-decoration: none;
   font-size: 15px;
@@ -594,7 +871,7 @@ form.wall-interaction .button-row li.fb-share {
   color: #214c6c;
   font-weight: bold;
 }
-/* line 31, src/wall.scss */
+/* line 36, src/wall.scss */
 #the-wall #wall-content nav span a.selected {
   background: #214c6c;
   border: 1px solid #cdcdcd;
@@ -603,16 +880,16 @@ form.wall-interaction .button-row li.fb-share {
 }
 
 /* ie7 hack */
-/* line 40, src/wall.scss */
+/* line 45, src/wall.scss */
 *:first-child + html section.solicitation .indicator {
   height: 15px;
   width: 100%;
   height: 1px;
-  overflow: auto;
-  top: 3px;
+  overflow: hidden;
+  top: 2px;
 }
 
-/* line 42, src/wall.scss */
+/* line 47, src/wall.scss */
 .upc-replies .upc-tools {
   margin-left: 98px;
 }

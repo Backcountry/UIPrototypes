@@ -24,8 +24,9 @@
 		
 	}
 	
+	/* the content itself */
 	.upc-content {
-		margin:0 0 0 $the-wall-indent; display:block;
+		margin:0 0 0 $the-wall-indent; display:block;		
 		h1 {
 			font-weight:bold; font-size:18px;
 			a { text-decoration:none; color:$the-wall-content-color;}
@@ -40,6 +41,7 @@
 		p {font-size:12px; line-height:17px; color:$the-wall-content-color}
 	}
 	
+	/* comments / answers */
 	.upc-replies {
 		margin:0 0 0 $the-wall-indent; display:block;
 		article {
@@ -51,8 +53,9 @@
 			textarea{ width:100%; height:81px; border:0; margin:0; padding:0;}
 			&.collapsed textarea { height:13px;} 
 			.submit-upc-reply { @include btn-primary; float:right; margin:10px 0;}
-			.add-a-photo { margin:10px 0 0;}						
-			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{display:none;}
+			.add-a-photo { margin:10px 0 0;}										
+			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{ display:none;}
+			&.collapsed .submit-upc-reply, &.collapsed .add-a-photo{ display:none;}
 			h3 { margin:10px 0; font-size:14px; font-weight:bold; color:$the-wall-terciary-heading-color;}
 		}
 		.description  { margin:5px 0;}

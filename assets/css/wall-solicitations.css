@@ -1,89 +1,331 @@
-/*
-Syntax error: Undefined mixin 'background'.
-        on line 8 of C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss, in `background'
-        from line 8 of C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
 
-Backtrace:
-C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss:8:in `background'
-C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss:8
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:130:in `block (2 levels) in compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:129:in `block in compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/logger.rb:45:in `red'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:128:in `compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:108:in `compile_if_required'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:95:in `block (2 levels) in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `block in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:92:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:142:in `recompile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:86:in `perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:25:in `block in <top (required)>'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:39:in `call'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:39:in `<top (required)>'
-C:/Ruby192/bin/compass:19:in `load'
-C:/Ruby192/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'background'.\A         on line 8 of C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss, in `background'\A         from line 8 of C:/wamp/www/UIPrototypes/assets/css/src/wall-solicitations.scss"; }
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* misc */
+/* line 26, src/wall-variables-mixins.scss */
+.hidden {
+  display: none!important;
+}
+
+/* line 27, src/wall-variables-mixins.scss */
+.clearfix:after, section.solicitation .step .survey-options li:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 28, src/wall-variables-mixins.scss */
+.temp {
+  border: 1px solid red;
+  background: #eee;
+}
+
+/* line 42, src/wall-variables-mixins.scss */
+.textarea-wrapper {
+  background: #fff;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+/* line 44, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner {
+  background: #fff;
+  clear: both;
+  display: block;
+  padding: 5px;
+}
+/* line 46, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  min-height: 17px;
+  resize: vertical;
+}
+
+/* line 50, src/wall-variables-mixins.scss */
+.primary {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 4, src/wall-solicitations.scss */
+section.solicitation {
+  position: relative;
+}
+/* line 6, src/wall-solicitations.scss */
+section.solicitation .indicator {
+  background: url(../img/carrot.jpg) 80px top no-repeat;
+  padding: 15px 0 0 0;
+  display: block;
+  position: relative;
+  z-index: 2;
+  top: 1px;
+}
+/* line 8, src/wall-solicitations.scss */
+section.solicitation.question .indicator {
+  background-position: 200px top;
+}
+/* line 9, src/wall-solicitations.scss */
+section.solicitation.photo .indicator {
+  background-position: 296px top;
+}
+/* line 11, src/wall-solicitations.scss */
+section.solicitation form {
+  margin: 0 0 10px 0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
+  background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
+  background: -moz-linear-gradient(#e9e9eb, #f3f3f5);
+  background: -o-linear-gradient(#e9e9eb, #f3f3f5);
+  -pie-background: linear-gradient(#e9e9eb, #f3f3f5);
+  background: linear-gradient(#e9e9eb, #f3f3f5);
+  display: block;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  position: relative;
+  z-index: 1;
+}
+/* line 13, src/wall-solicitations.scss */
+section.solicitation h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color: #666666;
+}
+/* line 14, src/wall-solicitations.scss */
+section.solicitation h2 {
+  font-size: 16px;
+  margin: 13px 0 10px 0;
+}
+/* line 16, src/wall-solicitations.scss */
+section.solicitation h2 a {
+  color: #039;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 19, src/wall-solicitations.scss */
+section.solicitation .display-form {
+  display: none;
+}
+/* line 20, src/wall-solicitations.scss */
+section.solicitation.collapsed .display-form {
+  display: block;
+}
+/* line 21, src/wall-solicitations.scss */
+section.solicitation.collapsed .step {
+  display: none;
+}
+/* line 23, src/wall-solicitations.scss */
+section.solicitation .step {
+  display: block;
+  margin: 0 0 10px 0;
+}
+/* line 25, src/wall-solicitations.scss */
+section.solicitation .step h3 {
+  background: #dadada;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0 -10px 20px -10px;
+  color: #666666;
+}
+/* line 29, src/wall-solicitations.scss */
+section.solicitation .step .survey-options li {
+  margin: 10px 0 20px 0;
+}
+/* line 31, src/wall-solicitations.scss */
+section.solicitation .step .survey-options li dt, section.solicitation .step .survey-options li dd {
+  float: left;
+  font-size: 12px;
+  color: #666666;
+}
+/* line 32, src/wall-solicitations.scss */
+section.solicitation .step .survey-options li dt {
+  width: 100px;
+  font-size: 14px;
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+/* line 33, src/wall-solicitations.scss */
+section.solicitation .step .survey-options li dd {
+  margin: 0 20px 0 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: #D6D7E0;
+  text-shadow: 1px 1px 1px #fff;
+  display: block;
+  padding: 6px 10px;
+  min-width: 64px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+/* line 36, src/wall-solicitations.scss */
+section.solicitation .step .survey-options li dd.selected {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
+  background: -webkit-linear-gradient(top, #854748, #6a1e1f);
+  background: -moz-linear-gradient(top, #854748, #6a1e1f);
+  background: -o-linear-gradient(top, #854748, #6a1e1f);
+  -pie-background: linear-gradient(top, #854748, #6a1e1f);
+  background: linear-gradient(top, #854748, #6a1e1f);
+  color: #fff;
+  text-shadow: 0 0 0;
+}
+/* line 40, src/wall-solicitations.scss */
+section.solicitation .step h5 .btn-submit-survey {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  margin: 0 0 0 330px;
+}

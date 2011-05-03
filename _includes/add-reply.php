@@ -15,5 +15,5 @@
           </div>
 		</div>
         <?php } ?>
-        <a href="#submit-content" class="button primary submit-upc-reply">Post Your Comment</a>
+				<a href="#submit-content" class="button primary submit-upc-reply">Post Your Comment</a>
       </form>

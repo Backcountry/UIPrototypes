@@ -23,7 +23,7 @@
     <section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
-        <div class="clearfix">
+        <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
           <blockquote class="description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
@@ -66,7 +66,7 @@
     <section class="upc-replies">
        <article>
        <?php include("vcard.php") ?>
-        <div class="clearfix">
+        <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 Days ago</abbr></h1>
           <blockquote class="description">
             <p>Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
