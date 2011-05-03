@@ -783,11 +783,11 @@ form.wall-interaction .button-row li.fb-share {
   margin: 10px 0 0;
 }
 /* line 57, src/upc.scss */
-.upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
-  display: none;
+.upc .upc-replies form .button-row {
+  height: auto;
 }
 /* line 58, src/upc.scss */
-.upc .upc-replies form.collapsed .submit-upc-reply, .upc .upc-replies form.collapsed .add-a-photo {
+.upc .upc-replies form.collapsed .button-row, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
 /* line 59, src/upc.scss */
