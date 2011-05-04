@@ -6,6 +6,19 @@
 
 <section id="wall-content">
 <?php include("wall-navigation.php"); ?>
+	<article class="hreview-aggregate" class="hidden">
+		 <span class="item">
+				<span class="fn">Edelweiss Sharp ARC Climbing Rope</span>
+				<img src="http://backcountry.com/product-photo-url" class="photo" />
+		 </span>
+		 <span class="rating">
+				<span class="average">4</span> out of
+				<span class="best">5</span>
+		 </span>
+		 based on
+		 <span class="votes">2</span> ratings.
+		 <span class="count">2</span> user reviews.
+	</article>   
   <article id="hreview-Great-Rope" class="upc hreview">
     <section class="upc-single">
        <?php include("vcard.php") ?>
@@ -26,7 +39,7 @@
         <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
           <blockquote>
-            <p>First reply.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
+            <p>First reply. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
