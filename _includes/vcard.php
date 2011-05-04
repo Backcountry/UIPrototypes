@@ -1,7 +1,7 @@
       <section class="vcard">
-      	<img src="#user72x72" alt="Tom Pierce" />
-        <h1 class="fn">Tom Pierce</h1>
-				<span class="role hidden">Contribuitor</span>
+      	<img src="#user72x72" alt="Tom Pierce" class="photo" />
+        <h1 class="fn"><a href="#userProfilePage" class="url">Tom Pierce</a></h1>
+		<span class="title hidden">Contribuitor</span>
         <ul>
           <li><img src="#badge1" /></li>
           <li><img src="#badge2" /></li>
