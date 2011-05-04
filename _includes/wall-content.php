@@ -6,12 +6,6 @@
 
 <section id="wall-content">
 <?php include("wall-navigation.php"); ?>
-	<!-- spiders only content -->
-	<article id="hreview-aggregate" class="hidden">
-		<span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a>
-		<span class="rating">4.5</span> out of 5 based on <span class="count">17</span> reviews</span>		
-	</article>
-	<!-- end of spiders only content -->
   <article id="hreview-Great-Rope" class="upc hreview">
     <section class="upc-single">
        <?php include("vcard.php") ?>
@@ -21,7 +15,7 @@
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
         <!-- end of meta data for spiders -->
         <blockquote class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo, dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Ut et massa at enim aliquam vestibulum ac vel felis. Mauris eget eros in metus imperdiet varius ac eget mi. Vestibulum ut turpis ut justo feugiat aliquam. Integer volutpat, mi non posuere ultrices, metus est rutrum libero, id posuere tortor turpis non justo. Sed sollicitudin portarutrum. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
+            <p>Review number one.</p>
         </blockquote>
         <?php include("upc-tools.php"); ?>
       </section>
@@ -31,8 +25,8 @@
        <?php include("vcard.php") ?>
         <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
-          <blockquote class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
+          <blockquote>
+            <p>First reply.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
@@ -43,8 +37,8 @@
        <?php include("vcard.php") ?>
         <div class="clearfix">
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
-          <blockquote class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
+          <blockquote>
+            <p>Second reply.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
@@ -63,8 +57,7 @@
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
         <!-- end of meta data for spiders -->
         <blockquote class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
-            dapibus vel leo. Ut eget mauris ligula, id varius tortor.</p>
+          <p>Review number two.</p>
           <img src="#fpo" class="cpi" height="440" width="440" alt="customer provided image" /> </blockquote>
         <?php $reply = false; include("upc-tools.php"); ?>
       </section>
@@ -74,7 +67,7 @@
        <?php include("vcard.php") ?>
         <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 Days ago</abbr></h1>
-          <blockquote class="description">
+          <blockquote>
             <p>Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
@@ -105,7 +98,7 @@
         <div>
           <h5 class="upc-status"><em>answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr></h5>
           <blockquote class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
+            <p>Question. iorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
