@@ -13,7 +13,9 @@
             <input type="file" id="upload-photo" name="upload-photo">
             <div class="clearb"></div>
           </div>
-		</div>
+				</div>
         <?php } ?>
-				<a href="#submit-content" class="button primary submit-upc-reply">Post Your Comment</a>
+				<div class="button-row">
+					<a href="#submit-content" class="button primary submit-upc-reply">Post Your Comment</a>
+				</div>
       </form>
