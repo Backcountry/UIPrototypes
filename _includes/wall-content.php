@@ -38,7 +38,7 @@
        <?php include("vcard.php") ?>
         <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
-          <blockquote>
+          <blockquote class="description">
             <p>First reply. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
@@ -50,7 +50,7 @@
        <?php include("vcard.php") ?>
         <div class="clearfix">
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
-          <blockquote>
+          <blockquote class="description">
             <p>Second reply.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
@@ -80,7 +80,7 @@
        <?php include("vcard.php") ?>
         <div>
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 Days ago</abbr></h1>
-          <blockquote>
+          <blockquote class="description">
             <p>Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
@@ -142,7 +142,7 @@
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
         <!-- end of meta data for spiders -->
         <img src="#fpo" class="cpi" height="440" width="440" alt="customer provided image" />
-        <blockquote class="description clearfix">
+        <blockquote class="description">
           <p>Pellentesque tincidunt libero velit, ac viverra arcu.
             Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
