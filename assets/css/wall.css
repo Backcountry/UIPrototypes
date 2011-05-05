@@ -1,5 +1,5 @@
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -49,7 +49,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -105,7 +105,7 @@
 }
 
 /* line 27, src/wall-variables-mixins.scss */
-.clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
+.clearfix:after, .solicitation.review .step .survey-options li:after, .solicitation.question .step .survey-options li:after, .solicitation.photo .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
   height: 0;
@@ -178,7 +178,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -228,7 +228,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, section.solicitation, section.solicitation form, section.solicitation .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -284,7 +284,7 @@
 }
 
 /* line 27, src/wall-variables-mixins.scss */
-.clearfix:after, section.solicitation .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
+.clearfix:after, .solicitation.review .step .survey-options li:after, .solicitation.question .step .survey-options li:after, .solicitation.photo .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
   content: ".";
   display: block;
   height: 0;
@@ -356,13 +356,13 @@
   font-weight: bold;
 }
 
-/* line 4, src/wall-solicitations.scss */
-section.solicitation {
+/* line 44, src/wall-solicitations.scss */
+.solicitation.review, .solicitation.question, .solicitation.photo {
   position: relative;
 }
 /* line 6, src/wall-solicitations.scss */
-section.solicitation .indicator {
-  background: url(../img/carrot.jpg) 80px top no-repeat;
+.solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator {
+  background: url(../img/carrot.jpg) 96px top no-repeat;
   padding: 15px 0 0 0;
   display: block;
   position: relative;
@@ -370,15 +370,15 @@ section.solicitation .indicator {
   top: 1px;
 }
 /* line 8, src/wall-solicitations.scss */
-section.solicitation.question .indicator {
-  background-position: 200px top;
+.solicitation.review.question .indicator, .solicitation.question.question .indicator, .solicitation.photo.question .indicator {
+  background-position: 255px top;
 }
 /* line 9, src/wall-solicitations.scss */
-section.solicitation.photo .indicator {
-  background-position: 296px top;
+.solicitation.review.photo .indicator, .solicitation.question.photo .indicator, .solicitation.photo.photo .indicator {
+  background-position: 410px top;
 }
 /* line 11, src/wall-solicitations.scss */
-section.solicitation form {
+.solicitation.review form, .solicitation.question form, .solicitation.photo form {
   margin: 0 0 10px 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
   background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
@@ -393,42 +393,42 @@ section.solicitation form {
   z-index: 1;
 }
 /* line 13, src/wall-solicitations.scss */
-section.solicitation h1 {
+.solicitation.review h1, .solicitation.question h1, .solicitation.photo h1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 20px 0;
   color: #666666;
 }
 /* line 14, src/wall-solicitations.scss */
-section.solicitation h2 {
+.solicitation.review h2, .solicitation.question h2, .solicitation.photo h2 {
   font-size: 16px;
   margin: 13px 0 10px 0;
 }
 /* line 16, src/wall-solicitations.scss */
-section.solicitation h2 a {
+.solicitation.review h2 a, .solicitation.question h2 a, .solicitation.photo h2 a {
   color: #039;
   text-decoration: none;
   font-weight: bold;
 }
 /* line 19, src/wall-solicitations.scss */
-section.solicitation .display-form {
+.solicitation.review .display-form, .solicitation.question .display-form, .solicitation.photo .display-form {
   display: none;
 }
 /* line 20, src/wall-solicitations.scss */
-section.solicitation.collapsed .display-form {
+.solicitation.review.collapsed .display-form, .solicitation.question.collapsed .display-form, .solicitation.photo.collapsed .display-form {
   display: block;
 }
 /* line 21, src/wall-solicitations.scss */
-section.solicitation.collapsed .step {
+.solicitation.review.collapsed .step, .solicitation.question.collapsed .step, .solicitation.photo.collapsed .step {
   display: none;
 }
 /* line 23, src/wall-solicitations.scss */
-section.solicitation .step {
+.solicitation.review .step, .solicitation.question .step, .solicitation.photo .step {
   display: block;
   margin: 0 0 10px 0;
 }
 /* line 25, src/wall-solicitations.scss */
-section.solicitation .step h3 {
+.solicitation.review .step h3, .solicitation.question .step h3, .solicitation.photo .step h3 {
   background: #dadada;
   font-size: 18px;
   font-weight: bold;
@@ -437,24 +437,24 @@ section.solicitation .step h3 {
   color: #666666;
 }
 /* line 29, src/wall-solicitations.scss */
-section.solicitation .step .survey-options li {
+.solicitation.review .step .survey-options li, .solicitation.question .step .survey-options li, .solicitation.photo .step .survey-options li {
   margin: 10px 0 20px 0;
 }
 /* line 31, src/wall-solicitations.scss */
-section.solicitation .step .survey-options li dt, section.solicitation .step .survey-options li dd {
+.solicitation.review .step .survey-options li dt, .solicitation.review .step .survey-options li dd, .solicitation.question .step .survey-options li dt, .solicitation.question .step .survey-options li dd, .solicitation.photo .step .survey-options li dt, .solicitation.photo .step .survey-options li dd {
   float: left;
   font-size: 12px;
   color: #666666;
 }
 /* line 32, src/wall-solicitations.scss */
-section.solicitation .step .survey-options li dt {
+.solicitation.review .step .survey-options li dt, .solicitation.question .step .survey-options li dt, .solicitation.photo .step .survey-options li dt {
   width: 100px;
   font-size: 14px;
   text-align: right;
   margin: 0 20px 0 0;
 }
 /* line 33, src/wall-solicitations.scss */
-section.solicitation .step .survey-options li dd {
+.solicitation.review .step .survey-options li dd, .solicitation.question .step .survey-options li dd, .solicitation.photo .step .survey-options li dd {
   margin: 0 20px 0 0;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -472,7 +472,7 @@ section.solicitation .step .survey-options li dd {
   color: black;
 }
 /* line 36, src/wall-solicitations.scss */
-section.solicitation .step .survey-options li dd.selected {
+.solicitation.review .step .survey-options li dd.selected, .solicitation.question .step .survey-options li dd.selected, .solicitation.photo .step .survey-options li dd.selected {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
   background: -webkit-linear-gradient(top, #854748, #6a1e1f);
   background: -moz-linear-gradient(top, #854748, #6a1e1f);
@@ -483,7 +483,7 @@ section.solicitation .step .survey-options li dd.selected {
   text-shadow: 0 0 0;
 }
 /* line 40, src/wall-solicitations.scss */
-section.solicitation .step h5 .btn-submit-survey {
+.solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey {
   display: inline-block;
   padding: 7px 11px;
   color: #193d55;
@@ -509,14 +509,144 @@ section.solicitation .step h5 .btn-submit-survey {
   margin: 0 0 0 330px;
 }
 
-/* line 2, src/wall-interaction.scss */
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
+
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* misc */
+/* line 26, src/wall-variables-mixins.scss */
+.hidden {
+  display: none!important;
+}
+
+/* line 27, src/wall-variables-mixins.scss */
+.clearfix:after, .solicitation.review .step .survey-options li:after, .solicitation.question .step .survey-options li:after, .solicitation.photo .step .survey-options li:after, form.wall-interaction .faux-label:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article > div:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 28, src/wall-variables-mixins.scss */
+.temp, .upc .vcard > img, .upc .vcard ul li img, .upc .cpi {
+  border: 1px solid red;
+  background: #eee;
+}
+
+/* line 42, src/wall-variables-mixins.scss */
+.textarea-wrapper {
+  background: #fff;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+/* line 44, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner {
+  background: #fff;
+  clear: both;
+  display: block;
+  padding: 5px;
+}
+/* line 46, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  min-height: 17px;
+  resize: vertical;
+}
+
+/* line 50, src/wall-variables-mixins.scss */
+.primary {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* wall forms */
+/* line 5, src/wall-interaction.scss */
 form.wall-interaction .faux-label {
   clear: both;
   display: block;
   margin: 0 0 15px 0;
   color: #666666;
 }
-/* line 4, src/wall-interaction.scss */
+/* line 7, src/wall-interaction.scss */
 form.wall-interaction .faux-label > span {
   float: left;
   width: 100px;
@@ -526,62 +656,62 @@ form.wall-interaction .faux-label > span {
   font-weight: bold;
   text-align: right;
 }
-/* line 6, src/wall-interaction.scss */
+/* line 9, src/wall-interaction.scss */
 form.wall-interaction .faux-label > span em, form.wall-interaction .faux-label > span a {
   font-weight: normal;
 }
-/* line 7, src/wall-interaction.scss */
+/* line 10, src/wall-interaction.scss */
 form.wall-interaction .faux-label > span em {
   font-style: italic;
 }
-/* line 8, src/wall-interaction.scss */
+/* line 11, src/wall-interaction.scss */
 form.wall-interaction .faux-label > span a {
   font-size: 10px;
   display: block;
   margin: 3px 0;
 }
-/* line 10, src/wall-interaction.scss */
+/* line 13, src/wall-interaction.scss */
 form.wall-interaction .faux-label .faux-col {
   margin: 0 0 0 122px;
   display: block;
   overflow: hidden;
 }
-/* line 11, src/wall-interaction.scss */
+/* line 14, src/wall-interaction.scss */
 form.wall-interaction .faux-label .faux-col input, form.wall-interaction .faux-label .faux-col .textarea-wrapper .inner {
   border: 1px solid #c7c7c9;
   border-color: #959595 #c7c7c9 #b2b2b3 #c8c8c7;
   min-width: 250px;
 }
-/* line 13, src/wall-interaction.scss */
+/* line 16, src/wall-interaction.scss */
 form.wall-interaction .faux-label .faux-col textarea {
   height: 90px;
 }
-/* line 14, src/wall-interaction.scss */
+/* line 17, src/wall-interaction.scss */
 form.wall-interaction .faux-label .faux-col span {
   display: block;
   font-weight: normal;
   font-size: 12px;
 }
-/* line 17, src/wall-interaction.scss */
+/* line 20, src/wall-interaction.scss */
 form.wall-interaction .faux-label.add-a-photo .faux-col input {
   margin: 0 0 15px 0;
 }
-/* line 20, src/wall-interaction.scss */
+/* line 23, src/wall-interaction.scss */
 form.wall-interaction .button-row {
   overflow: auto;
   height: 34px;
 }
-/* line 22, src/wall-interaction.scss */
+/* line 25, src/wall-interaction.scss */
 form.wall-interaction .button-row li {
   float: left;
   height: 31px;
 }
-/* line 24, src/wall-interaction.scss */
+/* line 27, src/wall-interaction.scss */
 form.wall-interaction .button-row li.submit {
   padding: 0 40px 0 0;
   border-right: 1px solid #898989;
 }
-/* line 27, src/wall-interaction.scss */
+/* line 30, src/wall-interaction.scss */
 form.wall-interaction .button-row li.fb-share {
   border-left: 1px solid #fbfbfb;
   padding: 0 0 0 16px;
@@ -605,6 +735,24 @@ form.wall-interaction .button-row li.fb-share {
   right: 10px;
   bottom: 5px;
 }
+/* line 9, src/upc-tools.scss */
+.upc-tools li a {
+  background: url(../img/upc-tools.jpg) top left no-repeat;
+  display: inline-block;
+  padding: 3px 0 5px 25px;
+}
+/* line 10, src/upc-tools.scss */
+.upc-tools li.edit a {
+  background-position: 0 -135px;
+}
+/* line 11, src/upc-tools.scss */
+.upc-tools li.delete a {
+  background-position: 0 -188px;
+}
+/* line 12, src/upc-tools.scss */
+.upc-tools li.flag a {
+  background-position: 0 -57px;
+}
 
 /* unique piece of content; customer review, photo, question, video, etc. */
 /* line 2, src/upc.scss */
@@ -613,8 +761,10 @@ form.wall-interaction .button-row li.fb-share {
   border-bottom: 5px solid #eeeeee;
   display: block;
   margin: 0 0 20px 0;
-  /* users profile photo */
+  /* users profile */
   /* the content itself */
+  /* for questions/answer */
+  /* first upc, ie a single review, photo or video */
   /* comments / answers */
 }
 /* line 6, src/upc.scss */
@@ -629,14 +779,23 @@ form.wall-interaction .button-row li.fb-share {
 .upc .vcard h1 {
   margin: 0 0 8px 0;
 }
-/* line 9, src/upc.scss */
+/* line 10, src/upc.scss */
+.upc .vcard h1 a {
+  text-decoration: none;
+  color: #8b8b8b;
+}
+/* line 12, src/upc.scss */
+.upc .vcard h1 a:hover {
+  text-decoration: underline;
+}
+/* line 15, src/upc.scss */
 .upc .vcard h2 {
   font-size: 11px;
   font-style: italic;
   color: #cccccc;
   margin: 0 0 8px 0;
 }
-/* line 13, src/upc.scss */
+/* line 19, src/upc.scss */
 .upc .vcard > img {
   height: 72px;
   width: 72px;
@@ -644,85 +803,86 @@ form.wall-interaction .button-row li.fb-share {
   clear: both;
   margin: 0 0 8px 0;
 }
-/* line 16, src/upc.scss */
+/* line 22, src/upc.scss */
 .upc .vcard ul {
   margin: 0 0 8px 0;
 }
-/* line 18, src/upc.scss */
+/* line 24, src/upc.scss */
 .upc .vcard ul li {
   display: inline;
   /* badges */
 }
-/* line 21, src/upc.scss */
+/* line 27, src/upc.scss */
 .upc .vcard ul li img {
   height: 19px;
   width: 19px;
   display: inline-block;
 }
-/* line 28, src/upc.scss */
+/* line 34, src/upc.scss */
 .upc .upc-content {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 30, src/upc.scss */
+/* line 36, src/upc.scss */
 .upc .upc-content h1 {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 32, src/upc.scss */
+/* line 38, src/upc.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 36, src/upc.scss */
+/* line 43, src/upc.scss */
 .upc .upc-status em {
   display: inline-block;
   background: #333333;
   color: #fff;
   font-size: 12px;
   padding: 5px;
+  margin: 0 0 5px 0;
 }
-/* line 37, src/upc.scss */
+/* line 44, src/upc.scss */
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
   color: #8b8b8b;
 }
-/* line 38, src/upc.scss */
+/* line 47, src/upc.scss */
 .upc .upc-single {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 39, src/upc.scss */
+/* line 48, src/upc.scss */
 .upc .description {
   margin: 25px 0 10px 0;
 }
-/* line 41, src/upc.scss */
+/* line 50, src/upc.scss */
 .upc .description p {
   font-size: 12px;
   line-height: 17px;
   color: black;
 }
-/* line 45, src/upc.scss */
+/* line 54, src/upc.scss */
 .upc .upc-replies {
   margin: 0 0 0 104px;
   display: block;
 }
-/* line 47, src/upc.scss */
+/* line 56, src/upc.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin: 0 0 20px 0;
   clear: both;
 }
-/* line 49, src/upc.scss */
+/* line 58, src/upc.scss */
 .upc .upc-replies article > div {
   margin: 0 0 0 98px;
   display: block;
 }
-/* line 51, src/upc.scss */
+/* line 60, src/upc.scss */
 .upc .upc-replies form {
   margin: -20px 53px 36px 98px;
   display: block;
@@ -731,7 +891,7 @@ form.wall-interaction .button-row li.fb-share {
   padding: 5px;
   overflow: auto;
 }
-/* line 53, src/upc.scss */
+/* line 62, src/upc.scss */
 .upc .upc-replies form textarea {
   width: 100%;
   height: 81px;
@@ -739,11 +899,11 @@ form.wall-interaction .button-row li.fb-share {
   margin: 0;
   padding: 0;
 }
-/* line 54, src/upc.scss */
+/* line 63, src/upc.scss */
 .upc .upc-replies form.collapsed textarea {
   height: 13px;
 }
-/* line 55, src/upc.scss */
+/* line 64, src/upc.scss */
 .upc .upc-replies form .submit-upc-reply {
   display: inline-block;
   padding: 7px 11px;
@@ -778,30 +938,30 @@ form.wall-interaction .button-row li.fb-share {
   float: right;
   margin: 10px 0;
 }
-/* line 56, src/upc.scss */
+/* line 65, src/upc.scss */
 .upc .upc-replies form .add-a-photo {
   margin: 10px 0 0;
 }
-/* line 57, src/upc.scss */
+/* line 66, src/upc.scss */
 .upc .upc-replies form .button-row {
   height: auto;
 }
-/* line 58, src/upc.scss */
+/* line 67, src/upc.scss */
 .upc .upc-replies form.collapsed .button-row, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
-/* line 59, src/upc.scss */
+/* line 68, src/upc.scss */
 .upc .upc-replies form h3 {
   margin: 10px 0;
   font-size: 14px;
   font-weight: bold;
   color: #333333;
 }
-/* line 61, src/upc.scss */
+/* line 70, src/upc.scss */
 .upc .upc-replies .description {
   margin: 5px 0;
 }
-/* line 63, src/upc.scss */
+/* line 72, src/upc.scss */
 .upc .cpi {
   display: block;
   margin: 10px 0;
@@ -810,25 +970,43 @@ form.wall-interaction .button-row li.fb-share {
 /* 562px */
 /* line 16, src/wall.scss */
 #the-wall {
-  width: 562px;
+  width: auto;
   margin: 10px;
   font-family: Arial, Verdana, sans-serif;
   text-align: left;
   min-width: 600px;
+  /* solicitation tabs */
+  /* content tabs */
 }
-/* line 20, src/wall.scss */
+/* line 22, src/wall.scss */
 #the-wall #content-types h1 {
   float: left;
   margin: 0 5px 0 0;
   color: #3d3d3d;
 }
-/* line 21, src/wall.scss */
+/* line 23, src/wall.scss */
 #the-wall #content-types a {
   display: inline-block;
   font-weight: bold;
   min-width: 107px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 0 16px 46px;
+  background: url(../img/content-types.jpg) top left no-repeat;
+}
+/* line 26, src/wall.scss */
+#the-wall #content-types a.question {
+  background-position: 0 -48px;
 }
 /* line 27, src/wall.scss */
+#the-wall #content-types a.photo {
+  background-position: 0 -96px;
+}
+/* line 28, src/wall.scss */
+#the-wall #content-types a.video {
+  background-position: 0 -134px;
+}
+/* line 33, src/wall.scss */
 #the-wall #wall-content nav {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #f1f1f3));
   background: -webkit-linear-gradient(top, #e6e6e6, #f1f1f3);
@@ -843,19 +1021,19 @@ form.wall-interaction .button-row li.fb-share {
   border: 1px solid #cccccc;
   border-width: 1px 0;
 }
-/* line 30, src/wall.scss */
+/* line 36, src/wall.scss */
 #the-wall #wall-content nav h1 {
   float: left;
   color: #193d55;
   font-size: 20px;
   font-weight: bold;
 }
-/* line 31, src/wall.scss */
+/* line 37, src/wall.scss */
 #the-wall #wall-content nav span {
   float: right;
   margin: 2px 0;
 }
-/* line 33, src/wall.scss */
+/* line 39, src/wall.scss */
 #the-wall #wall-content nav span a {
   text-decoration: none;
   font-size: 15px;
@@ -871,7 +1049,7 @@ form.wall-interaction .button-row li.fb-share {
   color: #214c6c;
   font-weight: bold;
 }
-/* line 36, src/wall.scss */
+/* line 42, src/wall.scss */
 #the-wall #wall-content nav span a.selected {
   background: #214c6c;
   border: 1px solid #cdcdcd;
@@ -880,7 +1058,7 @@ form.wall-interaction .button-row li.fb-share {
 }
 
 /* ie7 hack */
-/* line 45, src/wall.scss */
+/* line 50, src/wall.scss */
 *:first-child + html section.solicitation .indicator {
   height: 15px;
   width: 100%;
@@ -889,7 +1067,17 @@ form.wall-interaction .button-row li.fb-share {
   top: 2px;
 }
 
-/* line 47, src/wall.scss */
+/* line 51, src/wall.scss */
+*:first-child + html #wall-content nav {
+  float: left;
+  background: pink!important;
+}
+/* line 53, src/wall.scss */
+*:first-child + html #wall-content nav h1 {
+  margin: 8px 0 0 0;
+}
+
+/* line 56, src/wall.scss */
 .upc-replies .upc-tools {
   margin-left: 98px;
 }

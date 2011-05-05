@@ -1,12 +1,12 @@
 @import "pie.scss";
 @import "wall-variables-mixins.scss";
 
-section.solicitation {
+@mixin solicitation {
 	position:relative; @include pie; 
-	.indicator { background:url(../img/carrot.jpg) 80px top no-repeat; padding:15px 0 0 0; display:block; position:relative;
-				 z-index:2; top:1px; }	
-	&.question { .indicator {background-position:200px top; } }
-	&.photo  { .indicator {background-position:296px top; } }	
+	.indicator { background:url(../img/carrot.jpg) 96px top no-repeat; padding:15px 0 0 0; display:block;
+							 position:relative; z-index:2; top:1px; }	
+	&.question { .indicator {background-position:255px top; } }
+	&.photo  { .indicator {background-position:410px top;} }	
 	
 	form { margin:0 0 10px 0; @include pie; @include background(linear-gradient(#e9e9eb, #f3f3f5)); display:block;  padding:10px;
 		  border:1px solid $the-wall-primary-color; position:relative; z-index:1; }
@@ -40,3 +40,5 @@ section.solicitation {
 		h5 { .btn-submit-survey { @include btn; margin:0 0 0 330px; } }		
 	}
 }
+
+.solicitation.review, .solicitation.question, .solicitation.photo { @include solicitation;}

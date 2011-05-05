@@ -6,7 +6,7 @@
 
 <section id="wall-content">
 <?php include("wall-navigation.php"); ?>
-	<article class="hreview-aggregate" class="hidden">
+	<div id="hreview-aggregate" class="hidden">
 		 <span class="item">
 				<span class="fn">Edelweiss Sharp ARC Climbing Rope</span>
 				<img src="http://backcountry.com/product-photo-url" class="photo" />
@@ -14,11 +14,8 @@
 		 <span class="rating">
 				<span class="average">4</span> out of
 				<span class="best">5</span>
-		 </span>
-		 based on
-		 <span class="votes">2</span> ratings.
-		 <span class="count">2</span> user reviews.
-	</article>   
+		 </span> based on <span class="votes">2</span> ratings. <span class="count">2</span> user reviews.
+	</div>   
   <article id="hreview-Great-Rope" class="upc hreview">
     <section class="upc-single">
        <?php include("vcard.php") ?>

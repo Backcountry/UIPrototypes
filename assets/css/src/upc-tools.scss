@@ -5,6 +5,10 @@ $upc-tools-bottom-padding:5px;
 	border-left:1px solid $the-wall-primary-color; clear:both; position:relative; font-size:12px; padding:0 0 $upc-tools-bottom-padding $upc-tools-side-padding;
 	li {
 		display:inline; 
-		&.flag, &.delete {position:absolute; right:$upc-tools-side-padding; bottom:$upc-tools-bottom-padding; }
+		&.flag, &.delete {position:absolute; right:$upc-tools-side-padding; bottom:$upc-tools-bottom-padding; }		
+		a { background:url(../img/upc-tools.jpg) top left no-repeat;  display:inline-block; padding:3px 0 5px 25px;}
+		&.edit a { background-position:0 -135px;}
+		&.delete a { background-position:0 -188px;}
+		&.flag a { background-position:0 -57px;}
 	}	
 }

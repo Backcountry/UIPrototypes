@@ -3,26 +3,32 @@
 @import "compass/css3/images";
 @import "compass/css3/shared";
 @import "compass/css3/pie";
-
 @import "pie.scss";
+
 @import "wall-variables-mixins.scss";
 @import "wall-solicitations.scss";
 @import "wall-interaction.scss";
 @import "upc-tools.scss"; 	
 @import "upc.scss";
 
-$the-wall-width:562px; /* 562px */
+$the-wall-width:auto; /* 562px */
 
 #the-wall {
+	
 	width:$the-wall-width; margin:10px; font-family:Arial, Verdana, sans-serif; text-align:left; min-width:600px;
 	
+	/* solicitation tabs */
 	#content-types {
 		h1 { float:left; margin:0 5px 0 0; color:$the-wall-secondary-heading-color; }
 		a {
-			display:inline-block; font-weight:bold; min-width:107px; 
+			display:inline-block; font-weight:bold; min-width:107px; text-decoration:none; color:$the-wall-content-color; padding:8px 0 16px 46px;
+			background: url(../img/content-types.jpg) top left no-repeat;
+			&.question {background-position:0 -48px}
+			&.photo {background-position:0 -96px}
+			&.video {background-position:0 -134px}
 		}		
 	}
-	
+	/* content tabs */
 	#wall-content {
 		nav {
 			@include pie; @include background(linear-gradient(top, #e6e6e6, #f1f1f3)); display:block; margin:10px 0; overflow:auto;
@@ -31,17 +37,20 @@ $the-wall-width:562px; /* 562px */
 			span {
 				float:right; margin:2px 0;
 				a {
-					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0);
+					text-decoration:none; font-size:15px; font-weight:bold; padding:7px 10px; border:1px solid rgba(255,255,255,0); 
 					@include pie; @include border-radius(8px); color:#214c6c; font-weight:bold;
 					&.selected { background:#214c6c; border:1px solid #cdcdcd; color:#fff; -webkit-background-clip: padding;}
 				}
-			}
-			
+			}			
 		}
 	}
 }
 
 /* ie7 hack */
 *:first-child+html section.solicitation  .indicator{ height:15px; width:100%; height:1px; overflow:hidden; top:2px}
+*:first-child+html #wall-content nav {
+	float:left;
+	h1 { margin:8px 0 0 0;}
+}
 
 .upc-replies .upc-tools {margin-left:$the-wall-indent - 6}

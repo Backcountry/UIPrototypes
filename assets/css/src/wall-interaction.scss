@@ -1,3 +1,6 @@
+@import "wall-variables-mixins.scss";
+
+/* wall forms */
 form.wall-interaction {
 		.faux-label {
 			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0; color:$the-wall-primary-heading-color;
