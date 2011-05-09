@@ -72,8 +72,8 @@
         <blockquote class="description">
           <p>Review number two.</p>
           <img src="#fpo" class="cpi" height="440" width="440" alt="customer provided image" /> </blockquote>
-        <?php $reply = false; include("upc-tools.php"); ?>
       </section>
+      <?php $reply = false; include("upc-tools.php"); ?>			
     </section>
     <section class="upc-replies">
        <article>
@@ -102,8 +102,8 @@
         <blockquote class="description">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo, dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
-        <?php $reply = false; include("upc-tools.php"); ?>
       </section>
+			<?php $reply = false; include("upc-tools.php"); ?>						
     </section>
     <section class="upc-replies">
       <article>
@@ -146,8 +146,8 @@
           <p>Pellentesque tincidunt libero velit, ac viverra arcu.
             Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
-        <?php $reply = false; include("upc-tools.php"); ?>
       </section>
+      <?php $reply = false; include("upc-tools.php"); ?>			
     </section>
     <section class="upc-replies">
       <article>

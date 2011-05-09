@@ -12,7 +12,7 @@
 @import "upc.scss";
 @import "wall-vcard.scss";
 
-$the-wall-width:auto; /* 562px */
+$the-wall-width:auto; /* 562px */ 
 
 #the-wall {
 	
@@ -20,13 +20,13 @@ $the-wall-width:auto; /* 562px */
 	
 	/* solicitation tabs */
 	#content-types {
-		h1 { float:left; margin:0 5px 0 0; color:$the-wall-secondary-heading-color; }
+		h1 { float:left; margin:10px 10px 0 0; color:$the-wall-secondary-heading-color; }
 		a {
 			display:inline-block; font-weight:bold; min-width:107px; text-decoration:none; color:$the-wall-content-color; padding:8px 0 16px 46px;
-			background: url(../img/content-types.jpg) top left no-repeat;
-			&.question {background-position:0 -48px}
-			&.photo {background-position:0 -96px}
-			&.video {background-position:0 -134px}
+			background: url(../img/pdp.png) 0 -457px no-repeat;
+			&.question {background-position: 0 -506px;}
+			&.photo {background-position:0 -555px;}
+			&.video {background-position:0 -594px;}
 		}		
 	}
 	/* content tabs */

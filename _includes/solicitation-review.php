@@ -1,11 +1,11 @@
 <section class="<?php if(!$edit) { echo "solicitation collapsed"; } else { echo "edit"; }?> review">
 	<?php if(!$edit) { ?>
-	<span class="indicator"></span>
-	<?php } ?>	
+	<span class="indicator"></span> 
+	<?php } ?>	 
     <form action="#something" method="post" class="wall-interaction">
 		<header>
-			<h1>Hey Bryan Lence, review this product.</h1>
-			<?php if(!$edit) { ?>			
+			<?php if(!$edit) { ?>
+			<h1>Hey Bryan Lence, review this product.</h1>			
 			<h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
 			<?php } ?>				
 		</header>

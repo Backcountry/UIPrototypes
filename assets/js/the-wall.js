@@ -8,7 +8,9 @@ var takeMeTo = function(){
 	if(pos > 0){
 		url = url.slice(pos);
 		$("#wall-content > article").hide();
-		$("#wall-content " + map2[url]).show();
+		$("#wall-content nav a").removeClass("selected");
+		$("#wall-content nav a[href="+url+"]").addClass("selected");
+		$("#wall-content " + map2[url]).not(".edit").show();
 	}
 };
 
@@ -47,7 +49,8 @@ function contentTabs(){
 		$("#wall-content > article").hide();
 		$(this).siblings().removeClass("selected");
 		$(this).addClass("selected");
-		$("#wall-content " + map2[$(this).attr("href")]).show();
+		//debugger;
+		$("#wall-content " + map2[$(this).attr("href")]).not(".edit").show();
 	});
 }
 

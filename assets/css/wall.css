@@ -48,13 +48,13 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 27, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 27, src/pie.scss */
 .pie-element, .bordered, .gradient, .btn, .primary, .btn.cancel, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
 
-/* line 33, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 33, src/pie.scss */
 .bordered {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -64,7 +64,7 @@
   border-radius: 5px;
 }
 
-/* line 38, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 38, src/pie.scss */
 .gradient {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
@@ -74,19 +74,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 52, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 52, src/pie.scss */
 .pie-container, .widget {
   z-index: 0;
   position: relative;
 }
 
-/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 56, src/pie.scss */
 .z-pie-element, .widget h3 {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   z-index: 0;
 }
 
-/* line 71, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 71, src/pie.scss */
 .has-gradient {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
@@ -290,13 +290,13 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 27, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 27, src/pie.scss */
 .pie-element, .bordered, .gradient, .btn, .primary, .btn.cancel, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
 
-/* line 33, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 33, src/pie.scss */
 .bordered {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -306,7 +306,7 @@
   border-radius: 5px;
 }
 
-/* line 38, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 38, src/pie.scss */
 .gradient {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
@@ -316,19 +316,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 52, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 52, src/pie.scss */
 .pie-container, .widget {
   z-index: 0;
   position: relative;
 }
 
-/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 56, src/pie.scss */
 .z-pie-element, .widget h3 {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   z-index: 0;
 }
 
-/* line 71, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 71, src/pie.scss */
 .has-gradient {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
@@ -493,7 +493,7 @@
 }
 /* line 7, src/wall-solicitations.scss */
 .solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator, .solicitation.video .indicator, .edit.review .indicator {
-  background: url(../img/carrot.jpg) 96px top no-repeat;
+  background: url(../img/pdp.png) no-repeat 96px 0px;
   padding: 15px 0 0 0;
   display: block;
   position: relative;
@@ -578,13 +578,13 @@
   display: none;
 }
 
-/* line 27, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 27, src/pie.scss */
 .pie-element, .bordered, .gradient, .btn, .primary, .btn.cancel, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
 
-/* line 33, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 33, src/pie.scss */
 .bordered {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -594,7 +594,7 @@
   border-radius: 5px;
 }
 
-/* line 38, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 38, src/pie.scss */
 .gradient {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
@@ -604,19 +604,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 52, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 52, src/pie.scss */
 .pie-container, .widget {
   z-index: 0;
   position: relative;
 }
 
-/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 56, src/pie.scss */
 .z-pie-element, .widget h3 {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   z-index: 0;
 }
 
-/* line 71, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 71, src/pie.scss */
 .has-gradient {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
@@ -945,7 +945,7 @@
   margin-left: 80px;
 }
 
-/* line 4, src/upc-tools.scss */
+/* line 4, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools {
   border-left: 1px solid #cccccc;
   clear: both;
@@ -953,43 +953,43 @@
   font-size: 12px;
   padding: 0 0 5px 10px;
 }
-/* line 6, src/upc-tools.scss */
+/* line 6, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li {
   display: inline;
 }
-/* line 8, src/upc-tools.scss */
+/* line 8, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li.flag, .upc-tools li.delete {
   position: absolute;
   right: 10px;
   bottom: 5px;
 }
-/* line 9, src/upc-tools.scss */
+/* line 9, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li a {
   background: url(../img/upc-tools.jpg) top left no-repeat;
   display: inline-block;
   padding: 3px 0 5px 25px;
   cursor: pointer;
 }
-/* line 10, src/upc-tools.scss */
+/* line 10, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li.edit a {
   background-position: 0 -135px;
 }
-/* line 11, src/upc-tools.scss */
+/* line 11, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li.delete a {
   background-position: 0 -188px;
 }
-/* line 12, src/upc-tools.scss */
+/* line 12, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
 .upc-tools li.flag a {
   background-position: 0 -57px;
 }
 
-/* line 27, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 27, src/pie.scss */
 .pie-element, .bordered, .gradient, .btn, .primary, .btn.cancel, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
 
-/* line 33, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 33, src/pie.scss */
 .bordered {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -999,7 +999,7 @@
   border-radius: 5px;
 }
 
-/* line 38, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 38, src/pie.scss */
 .gradient {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
@@ -1009,19 +1009,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 52, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 52, src/pie.scss */
 .pie-container, .widget {
   z-index: 0;
   position: relative;
 }
 
-/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 56, src/pie.scss */
 .z-pie-element, .widget h3 {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   z-index: 0;
 }
 
-/* line 71, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
+/* line 71, src/pie.scss */
 .has-gradient {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
@@ -1339,35 +1339,35 @@
 }
 
 /* users profile */
-/* line 2, src/wall-vcard.scss */
+/* line 2, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard {
   float: left;
   width: 75px;
   color: #8b8b8b;
   /* customer's profile photo */
 }
-/* line 4, src/wall-vcard.scss */
+/* line 4, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard h1 {
   margin: 0 0 8px 0!important;
 }
-/* line 6, src/wall-vcard.scss */
+/* line 6, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard h1 a {
   text-decoration: none;
   color: #8b8b8b;
   font-size: 12px;
 }
-/* line 8, src/wall-vcard.scss */
+/* line 8, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard h1 a:hover {
   text-decoration: underline;
 }
-/* line 11, src/wall-vcard.scss */
+/* line 11, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard h2 {
   font-size: 11px!important;
   font-style: italic;
   color: #cccccc;
   margin: 0 0 8px 0!important;
 }
-/* line 13, src/wall-vcard.scss */
+/* line 13, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard > img {
   height: 72px;
   width: 72px;
@@ -1375,16 +1375,16 @@
   clear: both;
   margin: 0 0 8px 0;
 }
-/* line 14, src/wall-vcard.scss */
+/* line 14, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard ul {
   margin: 0 0 8px 0;
 }
-/* line 16, src/wall-vcard.scss */
+/* line 16, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard ul li {
   display: inline;
   /* badges */
 }
-/* line 19, src/wall-vcard.scss */
+/* line 19, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
 .vcard ul li img {
   height: 19px;
   width: 19px;
@@ -1405,7 +1405,7 @@
 /* line 23, src/wall.scss */
 #the-wall #content-types h1 {
   float: left;
-  margin: 0 5px 0 0;
+  margin: 10px 10px 0 0;
   color: #3d3d3d;
 }
 /* line 24, src/wall.scss */
@@ -1416,19 +1416,19 @@
   text-decoration: none;
   color: black;
   padding: 8px 0 16px 46px;
-  background: url(../img/content-types.jpg) top left no-repeat;
+  background: url(../img/pdp.png) 0 -457px no-repeat;
 }
 /* line 27, src/wall.scss */
 #the-wall #content-types a.question {
-  background-position: 0 -48px;
+  background-position: 0 -506px;
 }
 /* line 28, src/wall.scss */
 #the-wall #content-types a.photo {
-  background-position: 0 -96px;
+  background-position: 0 -555px;
 }
 /* line 29, src/wall.scss */
 #the-wall #content-types a.video {
-  background-position: 0 -134px;
+  background-position: 0 -594px;
 }
 /* line 34, src/wall.scss */
 #the-wall #wall-content nav {

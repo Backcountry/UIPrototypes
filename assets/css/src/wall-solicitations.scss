@@ -1,10 +1,10 @@
 @import "pie.scss";
-@import "wall-variables-mixins.scss";
+@import "wall-variables-mixins.scss"; 
 
 /* top of the page solicitations */
 @mixin solicitation {
 	@include pie; overflow:auto;
-	.indicator { background:url(../img/carrot.jpg) 96px top no-repeat; padding:15px 0 0 0; display:block;
+	.indicator { background:url(../img/pdp.png) no-repeat 96px 0px; padding:15px 0 0 0; display:block;
 				 position:relative; z-index:2; top:1px; }	
 	&.question { .indicator {background-position:255px top; } }
 	&.photo  { .indicator {background-position:410px top;} }	
