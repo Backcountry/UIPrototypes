@@ -7,7 +7,7 @@
 
 <section id="wall-content">
   <?php include("wall-navigation.php"); ?>
-  <div id="hreview-aggregate" class="hidden">
+  <div class="hidden hreview-aggregate">
 		 <span class="item">
 				<span class="fn">Edelweiss Sharp ARC Climbing Rope</span>
 				<img src="http://backcountry.com/product-photo-url" class="photo" />
@@ -75,7 +75,8 @@
       </section>
       <?php $reply = false; include("upc-tools.php"); ?>			
     </section>
-    <section class="upc-replies">
+    <?php $edit = true; include("solicitation-review.php"); ?>
+		<section class="upc-replies">
        <article>
        <?php include("vcard.php") ?>
         <section class="upc-content">
@@ -105,7 +106,8 @@
       </section>
 			<?php $reply = false; include("upc-tools.php"); ?>						
     </section>
-    <section class="upc-replies">
+    <?php $edit = true; include("solicitation-review.php"); ?>
+		<section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
         <section class="upc-content">
@@ -149,7 +151,8 @@
       </section>
       <?php $reply = false; include("upc-tools.php"); ?>			
     </section>
-    <section class="upc-replies">
+		<?php $edit = true; include("solicitation-review.php"); ?>		    
+		<section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
         <section class="upc-content">
