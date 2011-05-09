@@ -3,7 +3,7 @@
 
 /* top of the page solicitations */
 @mixin solicitation {
-	@include pie; 	
+	@include pie; overflow:auto;
 	.indicator { background:url(../img/carrot.jpg) 96px top no-repeat; padding:15px 0 0 0; display:block;
 				 position:relative; z-index:2; top:1px; }	
 	&.question { .indicator {background-position:255px top; } }
@@ -28,8 +28,16 @@
 /* actively using the mixin */
 .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review { @include solicitation;}
 
+/* tweak content hidden at load */
 .edit.review { display:none; }
 
+/* button row */
 .upc .edit .button-row {
-	background:$the-wall-secondary-background; margin: -20px -10px; padding: 10px 20px;
+	background:$the-wall-secondary-background; margin:10px -10px -20px -10px; padding: 10px 20px;
+}
+
+/* user contact card */
+.upc .edit .vcard {
+	> img {margin:0;}
+	ul, h2 { display:none; }
 }

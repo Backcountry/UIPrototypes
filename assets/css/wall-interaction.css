@@ -1,5 +1,5 @@
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .btn, .primary, .wall-interaction .step h5 .btn-submit-survey {
+.pie-element, .bordered, .gradient, .btn, .primary, .btn.cancel, .wall-interaction .step h5 .btn-submit-survey {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -49,12 +49,12 @@
 }
 
 /* misc */
-/* line 27, src/wall-variables-mixins.scss */
+/* line 28, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 28, src/wall-variables-mixins.scss */
+/* line 29, src/wall-variables-mixins.scss */
 .clearfix:after, .wall-interaction .faux-label:after, .wall-interaction .step .survey-options li:after {
   content: ".";
   display: block;
@@ -63,27 +63,27 @@
   visibility: hidden;
 }
 
-/* line 29, src/wall-variables-mixins.scss */
+/* line 30, src/wall-variables-mixins.scss */
 .temp {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 43, src/wall-variables-mixins.scss */
+/* line 48, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 45, src/wall-variables-mixins.scss */
+/* line 50, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 47, src/wall-variables-mixins.scss */
+/* line 52, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -93,7 +93,7 @@
   resize: vertical;
 }
 
-/* line 51, src/wall-variables-mixins.scss */
+/* line 56, src/wall-variables-mixins.scss */
 .btn {
   display: inline-block;
   padding: 7px 11px;
@@ -112,14 +112,15 @@
   -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
-  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -moz-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  text-align: center;
 }
 
-/* line 52, src/wall-variables-mixins.scss */
+/* line 57, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -138,11 +139,12 @@
   -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
-  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -moz-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  text-align: center;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
   background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
   background: -moz-linear-gradient(top, #f3961d, #ffc34a);
@@ -151,6 +153,41 @@
   background: linear-gradient(top, #f3961d, #ffc34a);
   color: #fff;
   font-weight: bold;
+}
+
+/* line 58, src/wall-variables-mixins.scss */
+.btn.cancel {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  text-align: center;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9a9a9b), color-stop(100%, #c6c4c7));
+  background: -webkit-linear-gradient(top, #9a9a9b, #c6c4c7);
+  background: -moz-linear-gradient(top, #9a9a9b, #c6c4c7);
+  background: -o-linear-gradient(top, #9a9a9b, #c6c4c7);
+  -pie-background: linear-gradient(top, #9a9a9b, #c6c4c7);
+  background: linear-gradient(top, #9a9a9b, #c6c4c7);
+  color: #fff;
+  font-weight: normal;
 }
 
 /* all forms in the wall, this includes: top of the page solicitations, inline-solicitaions and others. */
@@ -214,29 +251,32 @@
 /* line 23, src/wall-interaction.scss */
 .wall-interaction .button-row {
   overflow: auto;
-  height: 34px;
 }
 /* line 25, src/wall-interaction.scss */
 .wall-interaction .button-row li {
   float: left;
-  height: 31px;
 }
 /* line 27, src/wall-interaction.scss */
 .wall-interaction .button-row li.submit, .wall-interaction .button-row li.edit {
   padding: 0 40px 0 0;
-  border-right: 1px solid #898989;
+  background: url(../img/bg_button-row.gif) top right no-repeat;
 }
-/* line 30, src/wall-interaction.scss */
+/* line 29, src/wall-interaction.scss */
+.wall-interaction .button-row li.submit a, .wall-interaction .button-row li.edit a {
+  width: 148px;
+  display: block;
+  margin: 0 0 10px 0;
+}
+/* line 31, src/wall-interaction.scss */
 .wall-interaction .button-row li.fb-share {
-  border-left: 1px solid #fbfbfb;
   padding: 0 0 0 16px;
 }
-/* line 35, src/wall-interaction.scss */
+/* line 36, src/wall-interaction.scss */
 .wall-interaction .step {
   display: block;
   margin: 0 0 10px 0;
 }
-/* line 37, src/wall-interaction.scss */
+/* line 38, src/wall-interaction.scss */
 .wall-interaction .step h3 {
   background: #dadada;
   font-size: 18px;
@@ -245,24 +285,24 @@
   margin: 0 -10px 20px -10px;
   color: #666666;
 }
-/* line 41, src/wall-interaction.scss */
+/* line 42, src/wall-interaction.scss */
 .wall-interaction .step .survey-options li {
   margin: 10px 0 20px 0;
 }
-/* line 43, src/wall-interaction.scss */
+/* line 44, src/wall-interaction.scss */
 .wall-interaction .step .survey-options li dt, .wall-interaction .step .survey-options li dd {
   float: left;
   font-size: 12px;
   color: #666666;
 }
-/* line 44, src/wall-interaction.scss */
+/* line 45, src/wall-interaction.scss */
 .wall-interaction .step .survey-options li dt {
   width: 100px;
   font-size: 14px;
   text-align: right;
   margin: 0 20px 0 0;
 }
-/* line 45, src/wall-interaction.scss */
+/* line 46, src/wall-interaction.scss */
 .wall-interaction .step .survey-options li dd {
   margin: 0 20px 0 0;
   -moz-border-radius: 8px;
@@ -280,7 +320,7 @@
   cursor: pointer;
   color: black;
 }
-/* line 48, src/wall-interaction.scss */
+/* line 49, src/wall-interaction.scss */
 .wall-interaction .step .survey-options li dd.selected {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
   background: -webkit-linear-gradient(top, #854748, #6a1e1f);
@@ -291,7 +331,7 @@
   color: #fff;
   text-shadow: 0 0 0;
 }
-/* line 52, src/wall-interaction.scss */
+/* line 53, src/wall-interaction.scss */
 .wall-interaction .step h5 .btn-submit-survey {
   display: inline-block;
   padding: 7px 11px;
@@ -310,10 +350,17 @@
   -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
   background: linear-gradient(top, #cacaca, #dfdfdf);
   font-size: 15px;
-  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -moz-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
+  box-shadow: 1px 1px 2px rgba(190, 190, 190, 0.85);
   text-decoration: none;
+  text-align: center;
   margin: 0 0 0 330px;
+}
+
+/* line 60, src/wall-interaction.scss */
+.edit .wall-interaction .step h3 {
+  background: none;
+  margin-left: 80px;
 }

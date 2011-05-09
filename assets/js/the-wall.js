@@ -68,6 +68,15 @@ function editUPC(){
 	});
 }
 
+// cancel tweak
+function cancelEditUPC(){
+	$(".button-row .btn.cancel").click(function(event){
+		event.preventDefault();
+		$(this).parent().parent().parent().parent().parent().hide();
+		$(this).parent().parent().parent().parent().parent().siblings(".upc-single").show();
+	});
+}
+
 // do it
 $(document).ready(function() {	
 	shareTabs();
@@ -77,4 +86,5 @@ $(document).ready(function() {
 	takeMeTo();
 	expandCommentsForm();	
 	editUPC();
+	cancelEditUPC();
 });

@@ -21,13 +21,14 @@
 			}
 		}
 		.button-row {
-		overflow:auto; height:34px;
+			overflow:auto;
 			li {				
-				float:left; height:31px;
+				float:left;
 				&.submit, &.edit {
-					padding:0 40px 0 0; border-right:1px solid $the-wall-quaternary-color;
+					padding:0 40px 0 0; background:url(../img/bg_button-row.gif) top right no-repeat;
+					a { width:148px; display:block; margin:0 0 10px 0;}
 				}
-				&.fb-share { border-left:1px solid #fbfbfb; padding:0 0 0 16px; }
+				&.fb-share { padding:0 0 0 16px; }
 			}
 		}
 		&.edit .button-row { }
@@ -54,3 +55,7 @@
 }
 
 .wall-interaction { @include wall-interaction; }
+
+.edit .wall-interaction .step {
+	h3 { background:none; margin-left:80px;}
+}
