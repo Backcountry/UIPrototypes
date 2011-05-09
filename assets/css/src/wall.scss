@@ -10,6 +10,7 @@
 @import "wall-interaction.scss";
 @import "upc-tools.scss"; 	
 @import "upc.scss";
+@import "wall-vcard.scss";
 
 $the-wall-width:auto; /* 562px */
 
@@ -53,4 +54,5 @@ $the-wall-width:auto; /* 562px */
 	h1 { margin:8px 0 0 0;}
 }
 
-.upc-replies .upc-tools {margin-left:$the-wall-indent - 6}
+.upc-tools {margin-left:$the-wall-indent}
+.upc-replies .upc-tools {margin-left: $the-wall-indent-replies}

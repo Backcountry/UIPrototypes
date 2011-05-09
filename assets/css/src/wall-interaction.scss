@@ -1,7 +1,7 @@
 @import "wall-variables-mixins.scss";
 
-/* wall forms */
-form.wall-interaction {
+/* all forms in the wall, this includes: top of the page solicitations, inline-solicitaions and others. */
+@mixin wall-interaction {
 		.faux-label {
 			@extend .clearfix; clear:both; display:block; margin:0 0 15px 0; color:$the-wall-primary-heading-color;
 			> span {
@@ -31,4 +31,26 @@ form.wall-interaction {
 			}
 		}
 		&.edit .button-row { }
+		
+	.step {
+		display:block; margin:0 0 10px 0;			
+		h3 {background:$the-wall-secondary-background; font-size:18px; font-weight:bold; padding:15px; margin:0 -10px 20px -10px;
+			color:$the-wall-primary-heading-color; }
+		
+		.survey-options {
+			li {
+				@extend .clearfix; margin:10px 0 20px 0;
+				dt, dd { float:left; font-size:12px; color:$the-wall-primary-heading-color; }
+				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0; }
+				dd {
+					margin:0 20px 0 0; @include border-radius(8px);  background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block;
+					padding:6px 10px; min-width:64px; text-align:center; cursor:pointer; color:$the-wall-content-color;
+					&.selected { @include background(linear-gradient(top, #854748, #6a1e1f)); color:#fff; text-shadow:0 0 0;}
+				}
+			}
+		}
+		h5 { .btn-submit-survey { @include btn; margin:0 0 0 330px; } }		
+	}		
 }
+
+.wall-interaction { @include wall-interaction; }

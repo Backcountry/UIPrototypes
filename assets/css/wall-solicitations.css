@@ -1,5 +1,5 @@
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -49,7 +49,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -99,13 +99,13 @@
 }
 
 /* misc */
-/* line 26, src/wall-variables-mixins.scss */
+/* line 27, src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 27, src/wall-variables-mixins.scss */
-.clearfix:after, .solicitation.review .step .survey-options li:after, .solicitation.question .step .survey-options li:after, .solicitation.photo .step .survey-options li:after {
+/* line 28, src/wall-variables-mixins.scss */
+.clearfix:after {
   content: ".";
   display: block;
   height: 0;
@@ -113,27 +113,27 @@
   visibility: hidden;
 }
 
-/* line 28, src/wall-variables-mixins.scss */
+/* line 29, src/wall-variables-mixins.scss */
 .temp {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 42, src/wall-variables-mixins.scss */
+/* line 43, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 44, src/wall-variables-mixins.scss */
+/* line 45, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 46, src/wall-variables-mixins.scss */
+/* line 47, src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -143,7 +143,7 @@
   resize: vertical;
 }
 
-/* line 50, src/wall-variables-mixins.scss */
+/* line 51, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -177,12 +177,16 @@
   font-weight: bold;
 }
 
-/* line 44, src/wall-solicitations.scss */
-.solicitation.review, .solicitation.question, .solicitation.photo {
-  position: relative;
+/* top of the page solicitations */
+/* actively using the mixin */
+/* line 29, src/wall-solicitations.scss */
+.solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video {
+  /* hiding the call to action to expand a form when the form is !collapsed */
+  /* showing the call to action to expand the form when form is collapsed */
+  /* hiding the content in the top of the page when collapsed */
 }
-/* line 6, src/wall-solicitations.scss */
-.solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator {
+/* line 7, src/wall-solicitations.scss */
+.solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator, .solicitation.video .indicator {
   background: url(../img/carrot.jpg) 96px top no-repeat;
   padding: 15px 0 0 0;
   display: block;
@@ -190,16 +194,16 @@
   z-index: 2;
   top: 1px;
 }
-/* line 8, src/wall-solicitations.scss */
-.solicitation.review.question .indicator, .solicitation.question.question .indicator, .solicitation.photo.question .indicator {
+/* line 9, src/wall-solicitations.scss */
+.solicitation.review.question .indicator, .solicitation.question.question .indicator, .solicitation.photo.question .indicator, .solicitation.video.question .indicator {
   background-position: 255px top;
 }
-/* line 9, src/wall-solicitations.scss */
-.solicitation.review.photo .indicator, .solicitation.question.photo .indicator, .solicitation.photo.photo .indicator {
+/* line 10, src/wall-solicitations.scss */
+.solicitation.review.photo .indicator, .solicitation.question.photo .indicator, .solicitation.photo.photo .indicator, .solicitation.video.photo .indicator {
   background-position: 410px top;
 }
-/* line 11, src/wall-solicitations.scss */
-.solicitation.review form, .solicitation.question form, .solicitation.photo form {
+/* line 12, src/wall-solicitations.scss */
+.solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
   margin: 0 0 10px 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
   background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
@@ -213,119 +217,33 @@
   position: relative;
   z-index: 1;
 }
-/* line 13, src/wall-solicitations.scss */
-.solicitation.review h1, .solicitation.question h1, .solicitation.photo h1 {
+/* line 14, src/wall-solicitations.scss */
+.solicitation.review h1, .solicitation.question h1, .solicitation.photo h1, .solicitation.video h1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 20px 0;
   color: #666666;
 }
-/* line 14, src/wall-solicitations.scss */
-.solicitation.review h2, .solicitation.question h2, .solicitation.photo h2 {
+/* line 15, src/wall-solicitations.scss */
+.solicitation.review h2, .solicitation.question h2, .solicitation.photo h2, .solicitation.video h2 {
   font-size: 16px;
   margin: 13px 0 10px 0;
 }
-/* line 16, src/wall-solicitations.scss */
-.solicitation.review h2 a, .solicitation.question h2 a, .solicitation.photo h2 a {
+/* line 17, src/wall-solicitations.scss */
+.solicitation.review h2 a, .solicitation.question h2 a, .solicitation.photo h2 a, .solicitation.video h2 a {
   color: #039;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 19, src/wall-solicitations.scss */
-.solicitation.review .display-form, .solicitation.question .display-form, .solicitation.photo .display-form {
-  display: none;
-}
-/* line 20, src/wall-solicitations.scss */
-.solicitation.review.collapsed .display-form, .solicitation.question.collapsed .display-form, .solicitation.photo.collapsed .display-form {
-  display: block;
-}
 /* line 21, src/wall-solicitations.scss */
-.solicitation.review.collapsed .step, .solicitation.question.collapsed .step, .solicitation.photo.collapsed .step {
+.solicitation.review .display-form, .solicitation.question .display-form, .solicitation.photo .display-form, .solicitation.video .display-form {
   display: none;
 }
 /* line 23, src/wall-solicitations.scss */
-.solicitation.review .step, .solicitation.question .step, .solicitation.photo .step {
+.solicitation.review.collapsed .display-form, .solicitation.question.collapsed .display-form, .solicitation.photo.collapsed .display-form, .solicitation.video.collapsed .display-form {
   display: block;
-  margin: 0 0 10px 0;
 }
 /* line 25, src/wall-solicitations.scss */
-.solicitation.review .step h3, .solicitation.question .step h3, .solicitation.photo .step h3 {
-  background: #dadada;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px;
-  margin: 0 -10px 20px -10px;
-  color: #666666;
-}
-/* line 29, src/wall-solicitations.scss */
-.solicitation.review .step .survey-options li, .solicitation.question .step .survey-options li, .solicitation.photo .step .survey-options li {
-  margin: 10px 0 20px 0;
-}
-/* line 31, src/wall-solicitations.scss */
-.solicitation.review .step .survey-options li dt, .solicitation.review .step .survey-options li dd, .solicitation.question .step .survey-options li dt, .solicitation.question .step .survey-options li dd, .solicitation.photo .step .survey-options li dt, .solicitation.photo .step .survey-options li dd {
-  float: left;
-  font-size: 12px;
-  color: #666666;
-}
-/* line 32, src/wall-solicitations.scss */
-.solicitation.review .step .survey-options li dt, .solicitation.question .step .survey-options li dt, .solicitation.photo .step .survey-options li dt {
-  width: 100px;
-  font-size: 14px;
-  text-align: right;
-  margin: 0 20px 0 0;
-}
-/* line 33, src/wall-solicitations.scss */
-.solicitation.review .step .survey-options li dd, .solicitation.question .step .survey-options li dd, .solicitation.photo .step .survey-options li dd {
-  margin: 0 20px 0 0;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  background: #D6D7E0;
-  text-shadow: 1px 1px 1px #fff;
-  display: block;
-  padding: 6px 10px;
-  min-width: 64px;
-  text-align: center;
-  cursor: pointer;
-  color: black;
-}
-/* line 36, src/wall-solicitations.scss */
-.solicitation.review .step .survey-options li dd.selected, .solicitation.question .step .survey-options li dd.selected, .solicitation.photo .step .survey-options li dd.selected {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #854748), color-stop(100%, #6a1e1f));
-  background: -webkit-linear-gradient(top, #854748, #6a1e1f);
-  background: -moz-linear-gradient(top, #854748, #6a1e1f);
-  background: -o-linear-gradient(top, #854748, #6a1e1f);
-  -pie-background: linear-gradient(top, #854748, #6a1e1f);
-  background: linear-gradient(top, #854748, #6a1e1f);
-  color: #fff;
-  text-shadow: 0 0 0;
-}
-/* line 40, src/wall-solicitations.scss */
-.solicitation.review .step h5 .btn-submit-survey, .solicitation.question .step h5 .btn-submit-survey, .solicitation.photo .step h5 .btn-submit-survey {
-  display: inline-block;
-  padding: 7px 11px;
-  color: #193d55;
-  cursor: pointer;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
-  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
-  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
-  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
-  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
-  background: linear-gradient(top, #cacaca, #dfdfdf);
-  font-size: 15px;
-  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
-  text-decoration: none;
-  margin: 0 0 0 330px;
+.solicitation.review.collapsed .step, .solicitation.question.collapsed .step, .solicitation.photo.collapsed .step, .solicitation.video.collapsed .step {
+  display: none;
 }

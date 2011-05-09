@@ -1,10 +1,10 @@
-/* line 27, src/pie.scss */
+/* line 27, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .pie-element, .bordered, .gradient, .primary {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
 
-/* line 33, src/pie.scss */
+/* line 33, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .bordered {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -14,7 +14,7 @@
   border-radius: 5px;
 }
 
-/* line 38, src/pie.scss */
+/* line 38, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .gradient {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
   background: -webkit-linear-gradient(#ff0000, #0000ff);
@@ -24,19 +24,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
-/* line 52, src/pie.scss */
+/* line 52, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .pie-container, .widget {
   z-index: 0;
   position: relative;
 }
 
-/* line 56, src/pie.scss */
+/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .z-pie-element, .widget h3 {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   z-index: 0;
 }
 
-/* line 71, src/pie.scss */
+/* line 71, C:/wamp/www/UIPrototypes/assets/css/src/pie.scss */
 .has-gradient {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
@@ -48,13 +48,19 @@
   background: linear-gradient(#ff0000, #0000ff);
 }
 
+/* headings */
+/* content color, should be bw */
+/* buttons */
+/* headings */
+/* content color, should be bw */
+/* buttons */
 /* misc */
-/* line 27, src/wall-variables-mixins.scss */
+/* line 15, src/df-wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 28, src/wall-variables-mixins.scss */
+/* line 16, src/df-wall-variables-mixins.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -63,27 +69,27 @@
   visibility: hidden;
 }
 
-/* line 29, src/wall-variables-mixins.scss */
+/* line 17, src/df-wall-variables-mixins.scss */
 .temp {
   border: 1px solid red;
   background: #eee;
 }
 
-/* line 43, src/wall-variables-mixins.scss */
+/* line 32, src/df-wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 45, src/wall-variables-mixins.scss */
+/* line 34, src/df-wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 47, src/wall-variables-mixins.scss */
+/* line 36, src/df-wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -93,7 +99,7 @@
   resize: vertical;
 }
 
-/* line 51, src/wall-variables-mixins.scss */
+/* line 40, src/df-wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -123,6 +129,6 @@
   background: -o-linear-gradient(top, #f3961d, #ffc34a);
   -pie-background: linear-gradient(top, #f3961d, #ffc34a);
   background: linear-gradient(top, #f3961d, #ffc34a);
-  color: #fff;
+  color: white;
   font-weight: bold;
 }

@@ -2,11 +2,12 @@
 	$reply = false;
 	$loggedIn = true;
 	$answer = false;
+	$edit = false;
 ?>
 
 <section id="wall-content">
-<?php include("wall-navigation.php"); ?>
-	<div id="hreview-aggregate" class="hidden">
+  <?php include("wall-navigation.php"); ?>
+  <div id="hreview-aggregate" class="hidden">
 		 <span class="item">
 				<span class="fn">Edelweiss Sharp ARC Climbing Rope</span>
 				<img src="http://backcountry.com/product-photo-url" class="photo" />
@@ -16,10 +17,11 @@
 				<span class="best">5</span>
 		 </span> based on <span class="votes">2</span> ratings. <span class="count">2</span> user reviews.
 	</div>   
-  <article id="hreview-Great-Rope" class="upc hreview">
-    <section class="upc-single">
+  <article class="upc review">
+    <section class="upc-single hreview" id="hreview-Great-Rope">
        <?php include("vcard.php") ?>
-       <section class="upc-content"> <abbr class="rating" title="5"><img src="#image-with-five-stars" alt="5" /></abbr>
+       <section class="upc-content">
+		<abbr class="rating" title="5"><img src="#image-with-five-stars" alt="5" /></abbr>
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">Great Rope</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
         <!-- meta data for spiders -->
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
@@ -27,39 +29,42 @@
         <blockquote class="description">
             <p>Review number one.</p>
         </blockquote>
-        <?php include("upc-tools.php"); ?>
       </section>
+      <?php include("upc-tools.php"); ?>
     </section>
+	<section class="edit">
+		<?php $edit = true; include("solicitation-review.php"); ?>
+	</section>
     <section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
-        <div>
+        <section class="upc-content">
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
           <blockquote class="description">
             <p>First reply. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <article>
        <?php include("vcard.php") ?>
-        <div class="clearfix">
+        <section class="upc-content">
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
           <blockquote class="description">
             <p>Second reply.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <?php $answer = false; include("add-reply.php"); ?>      
     </section>
   </article>
-  <article id="hreview-An-okay-Rope" class="upc hreview">
-    <section class="upc-single">
+  <article class="upc review">
+    <section class="upc-single hreview" id="hreview-An-okay-Rope" >
        <?php include("vcard.php") ?>
         <section class="upc-content"> <abbr class="rating" title="3"><img src="#image-with-three-stars" alt="3" /></abbr>
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">An okay rope</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">7 Days ago</abbr></h1>
@@ -75,13 +80,13 @@
     <section class="upc-replies">
        <article>
        <?php include("vcard.php") ?>
-        <div>
+        <section class="upc-content">
           <h1><abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 Days ago</abbr></h1>
           <blockquote class="description">
             <p>Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <?php $answer = false; include("add-reply.php"); ?>      
@@ -105,26 +110,26 @@
     <section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
-        <div>
+        <section class="upc-content">
           <h5 class="upc-status"><em>answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr></h5>
           <blockquote class="description">
             <p>Question. iorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <article>
        <?php include("vcard.php") ?>
-         <div>
+         <section class="upc-content">
           <h5 class="upc-status best-answer"><em>best answer</em> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">1 day ago</abbr></h5>
           <blockquote class="description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo,
               dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam.
               Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
       <?php $answer = true; include("add-reply.php"); ?>      
@@ -149,13 +154,14 @@
     <section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>
-        <div> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr>
+        <section class="upc-content">
+		  <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr>
           <blockquote class="description clearfix">
             <p>This is a comment in a photo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis
               pharetra, eros dolor volutpat lorem, eu aliquam quam. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis
               accumsan.</p>
           </blockquote>
-        </div>
+        </section>
         <?php $reply = true; include("upc-tools.php"); ?>
       </article>
        <?php $answer = false; include("add-reply.php"); ?>      

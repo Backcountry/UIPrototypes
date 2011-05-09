@@ -1,5 +1,5 @@
 var map = {"content-type review":".solicitation.review", "content-type question":".solicitation.question", "content-type photo":".solicitation.photo", "content-type video":".solicitation.video"};
-var map2 = {"#all-content":"article", "#only-reviews":".hreview", "#only-questions":".question", "#only-photos":".photo", "#only-videos":".video"};	
+var map2 = {"#all-content":"article", "#only-reviews":".review", "#only-questions":".question", "#only-photos":".photo", "#only-videos":".video"};	
 
 // url mapping
 var takeMeTo = function(){

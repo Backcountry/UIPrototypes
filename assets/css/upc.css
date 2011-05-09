@@ -1,85 +1,290 @@
-/*
-Syntax error: Undefined variable: "$the-wall-terciary-color".
-        on line 3 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss
+/* line 27, src/pie.scss */
+.pie-element, .bordered, .gradient, .primary, .upc .upc-replies form .submit-upc-reply {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+}
 
-1: C:/wamp/www/UIPrototypes/assets/css/src/upc.scss
+/* line 33, src/pie.scss */
+.bordered {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
 
-Backtrace:
-C:/wamp/www/UIPrototypes/assets/css/src/upc.scss:3
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/variable.rb:45:in `_perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/list.rb:62:in `block in _perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/list.rb:62:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/list.rb:62:in `_perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:215:in `visit_prop'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:130:in `block (2 levels) in compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:129:in `block in compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/logger.rb:45:in `red'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:128:in `compile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:108:in `compile_if_required'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:95:in `block (2 levels) in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `block in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/compiler.rb:92:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:142:in `recompile'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:86:in `perform'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:25:in `block in <top (required)>'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:39:in `call'
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.11.1/bin/compass:39:in `<top (required)>'
-C:/Ruby192/bin/compass:19:in `load'
-C:/Ruby192/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$the-wall-terciary-color\".\A         on line 3 of C:/wamp/www/UIPrototypes/assets/css/src/upc.scss\A \A 1: C:/wamp/www/UIPrototypes/assets/css/src/upc.scss"; }
+/* line 38, src/pie.scss */
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* line 52, src/pie.scss */
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+/* line 56, src/pie.scss */
+.z-pie-element, .widget h3 {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  z-index: 0;
+}
+
+/* line 71, src/pie.scss */
+.has-gradient {
+  behavior: url("/UIPrototypes/assets/misc/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+/* misc */
+/* line 27, src/wall-variables-mixins.scss */
+.hidden {
+  display: none!important;
+}
+
+/* line 28, src/wall-variables-mixins.scss */
+.clearfix:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article .upc-content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 29, src/wall-variables-mixins.scss */
+.temp, .upc .cpi {
+  border: 1px solid red;
+  background: #eee;
+}
+
+/* line 43, src/wall-variables-mixins.scss */
+.textarea-wrapper {
+  background: #fff;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+/* line 45, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner {
+  background: #fff;
+  clear: both;
+  display: block;
+  padding: 5px;
+}
+/* line 47, src/wall-variables-mixins.scss */
+.textarea-wrapper .inner textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  min-height: 17px;
+  resize: vertical;
+}
+
+/* line 51, src/wall-variables-mixins.scss */
+.primary {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* unique piece of content; customer review, photo, question, video, etc. */
+/* line 4, src/upc.scss */
+.upc {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #eeeeee;
+  display: block;
+  margin: 0 0 20px 0;
+  /* the content itself */
+  /* for questions/answer */
+  /* first upc, ie a single review, photo or video */
+  /* comments / answers */
+}
+/* line 8, src/upc.scss */
+.upc .upc-content {
+  margin: 0 0 0 104px;
+  display: block;
+}
+/* line 10, src/upc.scss */
+.upc .upc-content h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 12, src/upc.scss */
+.upc .upc-content h1 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 17, src/upc.scss */
+.upc .upc-status em {
+  display: inline-block;
+  background: #333333;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+/* line 18, src/upc.scss */
+.upc .dtreviewed {
+  font-size: 12px;
+  font-weight: normal;
+  color: #8b8b8b;
+}
+/* line 21, src/upc.scss */
+.upc .upc-single {
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  margin-bottom: 10px;
+  clear: both;
+}
+/* line 22, src/upc.scss */
+.upc .description {
+  margin: 25px 0 10px 0;
+}
+/* line 24, src/upc.scss */
+.upc .description p {
+  font-size: 12px;
+  line-height: 17px;
+  color: black;
+}
+/* line 28, src/upc.scss */
+.upc .upc-replies {
+  margin: 0 0 0 104px;
+  display: block;
+  /* submit a comment, answer, reply of any kind.  */
+}
+/* line 30, src/upc.scss */
+.upc .upc-replies article {
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  margin: 0 0 20px 0;
+  clear: both;
+}
+/* line 32, src/upc.scss */
+.upc .upc-replies article .upc-content {
+  margin: 0 0 0 98px;
+}
+/* line 34, src/upc.scss */
+.upc .upc-replies article .upc-content .description {
+  margin: 5px 0;
+}
+/* line 38, src/upc.scss */
+.upc .upc-replies form {
+  margin: -20px 53px 36px 98px;
+  display: block;
+  clear: both;
+  background: #cccccc;
+  padding: 5px;
+  overflow: auto;
+}
+/* line 40, src/upc.scss */
+.upc .upc-replies form textarea {
+  width: 100%;
+  height: 81px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 41, src/upc.scss */
+.upc .upc-replies form.collapsed textarea {
+  height: 13px;
+}
+/* line 42, src/upc.scss */
+.upc .upc-replies form .submit-upc-reply {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3961d), color-stop(100%, #ffc34a));
+  background: -webkit-linear-gradient(top, #f3961d, #ffc34a);
+  background: -moz-linear-gradient(top, #f3961d, #ffc34a);
+  background: -o-linear-gradient(top, #f3961d, #ffc34a);
+  -pie-background: linear-gradient(top, #f3961d, #ffc34a);
+  background: linear-gradient(top, #f3961d, #ffc34a);
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin: 10px 0;
+}
+/* line 43, src/upc.scss */
+.upc .upc-replies form .add-a-photo {
+  margin: 10px 0 0;
+}
+/* line 44, src/upc.scss */
+.upc .upc-replies form .button-row {
+  height: auto;
+  overflow: visible;
+}
+/* line 45, src/upc.scss */
+.upc .upc-replies form.collapsed .button-row, .upc .upc-replies form.collapsed .add-a-photo {
+  display: none;
+}
+/* line 46, src/upc.scss */
+.upc .upc-replies form h3 {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+/* line 49, src/upc.scss */
+.upc .cpi {
+  display: block;
+  margin: 10px 0;
+}
