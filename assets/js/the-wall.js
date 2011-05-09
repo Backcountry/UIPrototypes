@@ -59,6 +59,15 @@ function expandReviewSolicitation(){
 	});
 }
 
+// tweak
+function editUPC(){
+	$(".upc-tools .edit a").click(function(event){
+		event.preventDefault();
+		$(this).parent().parent().parent().hide();
+		$(this).parent().parent().parent().siblings(".edit").show();
+	});
+}
+
 // do it
 $(document).ready(function() {	
 	shareTabs();
@@ -67,4 +76,5 @@ $(document).ready(function() {
 	expandReviewSolicitation();
 	takeMeTo();
 	expandCommentsForm();	
+	editUPC();
 });

@@ -48,4 +48,5 @@ $the-wall-content-color:#000;
 	}
 }
 
+.btn { @include btn; }
 .primary { @include btn-primary; }

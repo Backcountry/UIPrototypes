@@ -1,5 +1,5 @@
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -49,7 +49,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -144,6 +144,32 @@
 }
 
 /* line 51, src/wall-variables-mixins.scss */
+.btn {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+}
+
+/* line 52, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -178,7 +204,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -228,7 +254,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -323,6 +349,32 @@
 }
 
 /* line 51, src/wall-variables-mixins.scss */
+.btn {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+}
+
+/* line 52, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -427,8 +479,20 @@
   display: none;
 }
 
+/* line 31, src/wall-solicitations.scss */
+.edit.review {
+  display: none;
+}
+
+/* line 33, src/wall-solicitations.scss */
+.upc .edit .button-row {
+  background: #dadada;
+  margin: -20px -10px;
+  padding: 10px 20px;
+}
+
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -523,6 +587,32 @@
 }
 
 /* line 51, src/wall-variables-mixins.scss */
+.btn {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+}
+
+/* line 52, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -625,7 +715,7 @@
   height: 31px;
 }
 /* line 27, src/wall-interaction.scss */
-.wall-interaction .button-row li.submit {
+.wall-interaction .button-row li.submit, .wall-interaction .button-row li.edit {
   padding: 0 40px 0 0;
   border-right: 1px solid #898989;
 }
@@ -744,6 +834,7 @@
   background: url(../img/upc-tools.jpg) top left no-repeat;
   display: inline-block;
   padding: 3px 0 5px 25px;
+  cursor: pointer;
 }
 /* line 10, src/upc-tools.scss */
 .upc-tools li.edit a {
@@ -759,7 +850,7 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
+.pie-element, .bordered, .gradient, .btn, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form, .wall-interaction .step h5 .btn-submit-survey, .upc .upc-replies form .submit-upc-reply, #the-wall #wall-content nav, #the-wall #wall-content nav span a {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -854,6 +945,32 @@
 }
 
 /* line 51, src/wall-variables-mixins.scss */
+.btn {
+  display: inline-block;
+  padding: 7px 11px;
+  color: #193d55;
+  cursor: pointer;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cacaca), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -moz-linear-gradient(top, #cacaca, #dfdfdf);
+  background: -o-linear-gradient(top, #cacaca, #dfdfdf);
+  -pie-background: linear-gradient(top, #cacaca, #dfdfdf);
+  background: linear-gradient(top, #cacaca, #dfdfdf);
+  font-size: 15px;
+  -moz-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -webkit-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  -o-box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  box-shadow: 2px 2px 3px rgba(190, 190, 190, 0.85);
+  text-decoration: none;
+}
+
+/* line 52, src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;

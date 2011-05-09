@@ -54,8 +54,8 @@
 					<?php include("solicitation-textarea.php"); ?>
 				</div>
             </div>
-			<?php include("solicitation-add-a-photo.php"); ?>            
-			<?php include("solicitation-submit-upc.php"); ?>            			
+				<?php include("solicitation-add-a-photo.php"); ?>            
+				<?php include("solicitation-submit-upc.php"); ?>            			
           </div>
     </form>
 </section>

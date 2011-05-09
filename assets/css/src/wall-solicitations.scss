@@ -27,3 +27,9 @@
 
 /* actively using the mixin */
 .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review { @include solicitation;}
+
+.edit.review { display:none; }
+
+.upc .edit .button-row {
+	background:$the-wall-secondary-background; margin: -20px -10px; padding: 10px 20px;
+}
