@@ -23,13 +23,13 @@
   width: 18px;
   height: 17px;
   display: block;
-  background: url(../img/stars.png) top left no-repeat; 
+  background: url(../img/pdp.png) 0 -24px no-repeat; 
 }
 .ui-stars-star a {
-  background-position: 0 0;
+  background-position: 0 -24px;
 }
 .ui-stars-star-on a,.ui-stars-star-hover a  {
-  background-position: -20px 0;
+  background-position: -20px -24px;
 }
 
 .ui-stars-star-disabled,
