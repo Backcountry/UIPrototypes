@@ -1,5 +1,7 @@
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video,
+.edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form,
+.edit.review form {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -49,7 +51,9 @@
 }
 
 /* line 27, src/pie.scss */
-.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
+.pie-element, .bordered, .gradient, .primary, .solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video,
+.edit.review, .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form,
+.edit.review form {
   behavior: url("/UIPrototypes/assets/misc/PIE.htc");
   position: relative;
 }
@@ -179,14 +183,16 @@
 
 /* top of the page solicitations */
 /* actively using the mixin */
-/* line 29, src/wall-solicitations.scss */
-.solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video {
+/* line 30, src/wall-solicitations.scss */
+.solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video,
+.edit.review {
   /* hiding the call to action to expand a form when the form is !collapsed */
   /* showing the call to action to expand the form when form is collapsed */
   /* hiding the content in the top of the page when collapsed */
 }
 /* line 7, src/wall-solicitations.scss */
-.solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator, .solicitation.video .indicator {
+.solicitation.review .indicator, .solicitation.question .indicator, .solicitation.photo .indicator, .solicitation.video .indicator,
+.edit.review .indicator {
   background: url(../img/carrot.jpg) 96px top no-repeat;
   padding: 15px 0 0 0;
   display: block;
@@ -195,15 +201,18 @@
   top: 1px;
 }
 /* line 9, src/wall-solicitations.scss */
-.solicitation.review.question .indicator, .solicitation.question.question .indicator, .solicitation.photo.question .indicator, .solicitation.video.question .indicator {
+.solicitation.review.question .indicator, .solicitation.question.question .indicator, .solicitation.photo.question .indicator, .solicitation.video.question .indicator,
+.edit.review.question .indicator {
   background-position: 255px top;
 }
 /* line 10, src/wall-solicitations.scss */
-.solicitation.review.photo .indicator, .solicitation.question.photo .indicator, .solicitation.photo.photo .indicator, .solicitation.video.photo .indicator {
+.solicitation.review.photo .indicator, .solicitation.question.photo .indicator, .solicitation.photo.photo .indicator, .solicitation.video.photo .indicator,
+.edit.review.photo .indicator {
   background-position: 410px top;
 }
 /* line 12, src/wall-solicitations.scss */
-.solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form {
+.solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form,
+.edit.review form {
   margin: 0 0 10px 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
   background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
@@ -218,32 +227,38 @@
   z-index: 1;
 }
 /* line 14, src/wall-solicitations.scss */
-.solicitation.review h1, .solicitation.question h1, .solicitation.photo h1, .solicitation.video h1 {
+.solicitation.review h1, .solicitation.question h1, .solicitation.photo h1, .solicitation.video h1,
+.edit.review h1 {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 20px 0;
   color: #666666;
 }
 /* line 15, src/wall-solicitations.scss */
-.solicitation.review h2, .solicitation.question h2, .solicitation.photo h2, .solicitation.video h2 {
+.solicitation.review h2, .solicitation.question h2, .solicitation.photo h2, .solicitation.video h2,
+.edit.review h2 {
   font-size: 16px;
   margin: 13px 0 10px 0;
 }
 /* line 17, src/wall-solicitations.scss */
-.solicitation.review h2 a, .solicitation.question h2 a, .solicitation.photo h2 a, .solicitation.video h2 a {
+.solicitation.review h2 a, .solicitation.question h2 a, .solicitation.photo h2 a, .solicitation.video h2 a,
+.edit.review h2 a {
   color: #039;
   text-decoration: none;
   font-weight: bold;
 }
 /* line 21, src/wall-solicitations.scss */
-.solicitation.review .display-form, .solicitation.question .display-form, .solicitation.photo .display-form, .solicitation.video .display-form {
+.solicitation.review .display-form, .solicitation.question .display-form, .solicitation.photo .display-form, .solicitation.video .display-form,
+.edit.review .display-form {
   display: none;
 }
 /* line 23, src/wall-solicitations.scss */
-.solicitation.review.collapsed .display-form, .solicitation.question.collapsed .display-form, .solicitation.photo.collapsed .display-form, .solicitation.video.collapsed .display-form {
+.solicitation.review.collapsed .display-form, .solicitation.question.collapsed .display-form, .solicitation.photo.collapsed .display-form, .solicitation.video.collapsed .display-form,
+.edit.review.collapsed .display-form {
   display: block;
 }
 /* line 25, src/wall-solicitations.scss */
-.solicitation.review.collapsed .step, .solicitation.question.collapsed .step, .solicitation.photo.collapsed .step, .solicitation.video.collapsed .step {
+.solicitation.review.collapsed .step, .solicitation.question.collapsed .step, .solicitation.photo.collapsed .step, .solicitation.video.collapsed .step,
+.edit.review.collapsed .step {
   display: none;
 }

@@ -2,7 +2,7 @@
 	$reply = false;
 	$loggedIn = true;
 	$answer = false;
-	$edit = false;
+	$edit = true;
 ?>
 
 <section id="wall-content">
@@ -32,9 +32,7 @@
       </section>
       <?php include("upc-tools.php"); ?>
     </section>
-	<section class="edit">
 		<?php $edit = true; include("solicitation-review.php"); ?>
-	</section>
     <section class="upc-replies">
       <article>
        <?php include("vcard.php") ?>

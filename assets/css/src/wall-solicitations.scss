@@ -26,4 +26,4 @@
 }
 
 /* actively using the mixin */
-.solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video { @include solicitation;}
+.solicitation.review, .solicitation.question, .solicitation.photo, .solicitation.video, .edit.review { @include solicitation;}

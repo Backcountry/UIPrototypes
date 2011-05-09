@@ -1,14 +1,14 @@
 /* users profile */
 	.vcard {
-		float:left; width:75px; color:$the-wall-secondary-color; font-size:12px;
+		float:left; width:75px; color:$the-wall-secondary-color;
 		h1 {
-			margin:0 0 8px 0;
+			margin:0 0 8px 0!important;
 			a {
-				text-decoration:none; color:$the-wall-secondary-color;
+				text-decoration:none; color:$the-wall-secondary-color; font-size:12px;
 				&:hover { text-decoration:underline; }
 			}
 		}
-		h2 { font-size:11px; font-style:italic; color:$the-wall-primary-color; margin:0 0 8px 0; }
+		h2 { font-size:11px!important; font-style:italic; color:$the-wall-primary-color; margin:0 0 8px 0!important; }
 		/* customer's profile photo */
 		> img { height:72px; width:72px; display:block; clear:both; @extend .temp; margin:0 0 8px 0; }
 		ul {

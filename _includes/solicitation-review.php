@@ -1,4 +1,4 @@
-<section class="solicitation review collapsed">
+<section class="<?php if(!$edit) { echo "solicitation collapsed"; } else { echo "edit"; }?> review">
 	<?php if(!$edit) { ?>
 	<span class="indicator"></span>
 	<?php } ?>	
@@ -9,7 +9,7 @@
 			<h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
 			<?php } ?>				
 		</header>
-		<?php if(!$edit) { ?>			
+		<?php if(!$edit) { ?>
 		<div class="step">
 			<h3>Step 1: Survey</h3>
 			<ul class="survey-options">
