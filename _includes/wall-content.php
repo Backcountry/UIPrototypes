@@ -21,7 +21,7 @@
     <section class="upc-single hreview" id="hreview-Great-Rope">
        <?php include("vcard.php") ?>
        <section class="upc-content">
-		<abbr class="rating" title="5"><img src="#image-with-five-stars" alt="5" /></abbr>
+				<abbr class="rating five-stars" title="5">Five Stars</abbr>
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">Great Rope</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">Apr 10, 2004</abbr></h1>
         <!-- meta data for spiders -->
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
@@ -64,7 +64,8 @@
   <article class="upc review">
     <section class="upc-single hreview" id="hreview-An-okay-Rope" >
        <?php include("vcard.php") ?>
-        <section class="upc-content"> <abbr class="rating" title="3"><img src="#image-with-three-stars" alt="3" /></abbr>
+        <section class="upc-content">
+				<abbr class="rating three-stars" title="3">Three Stars</abbr>
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">An okay rope</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">7 Days ago</abbr></h1>
         <!-- meta data for spiders -->
         <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>

@@ -4,9 +4,19 @@
 .upc {	
 	padding-bottom:10px; border-bottom:5px solid $the-wall-terciary-color; display:block; margin:0 0 20px 0;
 
-	/* the content itself */
+	/* the content itself, where all the magic happens */
 	.upc-content { 
 		margin:0 0 0 $the-wall-indent; display:block;		
+		abbr.rating {
+			width:74px; height:16px; background:url(../img/pdp.png) top left no-repeat; display:block; text-indent:-9999px;
+			&.five-stars {background-position:0 -57px;}
+			&.four-stars {background-position:0 -82px;}
+			&.three-stars {background-position:0 -110px;}
+			&.two-stars {background-position:0 -137px;}
+			&.one-stars {background-position:0 -165px;}
+			&.zero-stars {background-position:0 -194px;}
+		}
+		
 		h1 {
 			font-weight:bold; font-size:18px;
 			a { text-decoration:none; color:$the-wall-content-color;}
@@ -34,6 +44,7 @@
 				.description  { margin:5px 0; }
 			}
 		}
+		
 		/* submit a comment, answer, reply of any kind.  */
 		form {
 			margin:-20px 53px 36px $the-wall-indent-replies; display:block; clear:both; background:$the-wall-primary-color; padding:5px; overflow:auto;

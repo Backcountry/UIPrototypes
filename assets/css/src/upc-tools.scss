@@ -6,9 +6,10 @@ $upc-tools-bottom-padding:5px;
 	li {
 		display:inline; 
 		&.flag, &.delete {position:absolute; right:$upc-tools-side-padding; bottom:$upc-tools-bottom-padding; }		
-		a { background:url(../img/upc-tools.jpg) top left no-repeat;  display:inline-block; padding:3px 0 5px 25px; cursor:pointer; }
-		&.edit a { background-position:0 -135px;}
-		&.delete a { background-position:0 -188px;}
-		&.flag a { background-position:0 -57px;}
+		a { background:url(../img/pdp.png) top left no-repeat;  display:inline-block; padding:3px 0 5px 25px; cursor:pointer; }
+		&.edit a { background-position:0 -356px;}
+		&.delete a { background-position:0 -409px;}
+		&.flag a { background-position:0 -277px;}
+		&.vote a { background-position:0 -219px;}
 	}	
 }

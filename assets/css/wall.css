@@ -945,7 +945,7 @@
   margin-left: 80px;
 }
 
-/* line 4, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 4, src/upc-tools.scss */
 .upc-tools {
   border-left: 1px solid #cccccc;
   clear: both;
@@ -953,34 +953,38 @@
   font-size: 12px;
   padding: 0 0 5px 10px;
 }
-/* line 6, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 6, src/upc-tools.scss */
 .upc-tools li {
   display: inline;
 }
-/* line 8, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 8, src/upc-tools.scss */
 .upc-tools li.flag, .upc-tools li.delete {
   position: absolute;
   right: 10px;
   bottom: 5px;
 }
-/* line 9, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 9, src/upc-tools.scss */
 .upc-tools li a {
-  background: url(../img/upc-tools.jpg) top left no-repeat;
+  background: url(../img/pdp.png) top left no-repeat;
   display: inline-block;
   padding: 3px 0 5px 25px;
   cursor: pointer;
 }
-/* line 10, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 10, src/upc-tools.scss */
 .upc-tools li.edit a {
-  background-position: 0 -135px;
+  background-position: 0 -356px;
 }
-/* line 11, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 11, src/upc-tools.scss */
 .upc-tools li.delete a {
-  background-position: 0 -188px;
+  background-position: 0 -409px;
 }
-/* line 12, C:/wamp/www/UIPrototypes/assets/css/src/upc-tools.scss */
+/* line 12, src/upc-tools.scss */
 .upc-tools li.flag a {
-  background-position: 0 -57px;
+  background-position: 0 -277px;
+}
+/* line 13, src/upc-tools.scss */
+.upc-tools li.vote a {
+  background-position: 0 -219px;
 }
 
 /* line 27, src/pie.scss */
@@ -1182,7 +1186,7 @@
   border-bottom: 5px solid #eeeeee;
   display: block;
   margin: 0 0 20px 0;
-  /* the content itself */
+  /* the content itself, where all the magic happens */
   /* for questions/answer */
   /* first upc, ie a single review, photo or video */
   /* comments / answers */
@@ -1193,16 +1197,48 @@
   display: block;
 }
 /* line 10, src/upc.scss */
+.upc .upc-content abbr.rating {
+  width: 74px;
+  height: 16px;
+  background: url(../img/pdp.png) top left no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+/* line 12, src/upc.scss */
+.upc .upc-content abbr.rating.five-stars {
+  background-position: 0 -57px;
+}
+/* line 13, src/upc.scss */
+.upc .upc-content abbr.rating.four-stars {
+  background-position: 0 -82px;
+}
+/* line 14, src/upc.scss */
+.upc .upc-content abbr.rating.three-stars {
+  background-position: 0 -110px;
+}
+/* line 15, src/upc.scss */
+.upc .upc-content abbr.rating.two-stars {
+  background-position: 0 -137px;
+}
+/* line 16, src/upc.scss */
+.upc .upc-content abbr.rating.one-stars {
+  background-position: 0 -165px;
+}
+/* line 17, src/upc.scss */
+.upc .upc-content abbr.rating.zero-stars {
+  background-position: 0 -194px;
+}
+/* line 20, src/upc.scss */
 .upc .upc-content h1 {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 12, src/upc.scss */
+/* line 22, src/upc.scss */
 .upc .upc-content h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 17, src/upc.scss */
+/* line 27, src/upc.scss */
 .upc .upc-status em {
   display: inline-block;
   background: #333333;
@@ -1211,51 +1247,51 @@
   padding: 5px;
   margin: 0 0 5px 0;
 }
-/* line 18, src/upc.scss */
+/* line 28, src/upc.scss */
 .upc .dtreviewed {
   font-size: 12px;
   font-weight: normal;
   color: #8b8b8b;
 }
-/* line 21, src/upc.scss */
+/* line 31, src/upc.scss */
 .upc .upc-single {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin-bottom: 10px;
   clear: both;
 }
-/* line 22, src/upc.scss */
+/* line 32, src/upc.scss */
 .upc .description {
   margin: 25px 0 10px 0;
 }
-/* line 24, src/upc.scss */
+/* line 34, src/upc.scss */
 .upc .description p {
   font-size: 12px;
   line-height: 17px;
   color: black;
 }
-/* line 28, src/upc.scss */
+/* line 38, src/upc.scss */
 .upc .upc-replies {
   margin: 0 0 0 104px;
   display: block;
   /* submit a comment, answer, reply of any kind.  */
 }
-/* line 30, src/upc.scss */
+/* line 40, src/upc.scss */
 .upc .upc-replies article {
   border-bottom: 1px solid #cccccc;
   display: block;
   margin: 0 0 20px 0;
   clear: both;
 }
-/* line 32, src/upc.scss */
+/* line 42, src/upc.scss */
 .upc .upc-replies article .upc-content {
   margin: 0 0 0 98px;
 }
-/* line 34, src/upc.scss */
+/* line 44, src/upc.scss */
 .upc .upc-replies article .upc-content .description {
   margin: 5px 0;
 }
-/* line 38, src/upc.scss */
+/* line 49, src/upc.scss */
 .upc .upc-replies form {
   margin: -20px 53px 36px 98px;
   display: block;
@@ -1264,7 +1300,7 @@
   padding: 5px;
   overflow: auto;
 }
-/* line 40, src/upc.scss */
+/* line 51, src/upc.scss */
 .upc .upc-replies form textarea {
   width: 100%;
   height: 81px;
@@ -1272,11 +1308,11 @@
   margin: 0;
   padding: 0;
 }
-/* line 41, src/upc.scss */
+/* line 52, src/upc.scss */
 .upc .upc-replies form.collapsed textarea {
   height: 13px;
 }
-/* line 42, src/upc.scss */
+/* line 53, src/upc.scss */
 .upc .upc-replies form .submit-upc-reply {
   display: inline-block;
   padding: 7px 11px;
@@ -1312,62 +1348,62 @@
   float: right;
   margin: 10px 0;
 }
-/* line 43, src/upc.scss */
+/* line 54, src/upc.scss */
 .upc .upc-replies form .add-a-photo {
   margin: 10px 0 0;
 }
-/* line 44, src/upc.scss */
+/* line 55, src/upc.scss */
 .upc .upc-replies form .button-row {
   height: auto;
   overflow: visible;
 }
-/* line 45, src/upc.scss */
+/* line 56, src/upc.scss */
 .upc .upc-replies form.collapsed .button-row, .upc .upc-replies form.collapsed .add-a-photo {
   display: none;
 }
-/* line 46, src/upc.scss */
+/* line 57, src/upc.scss */
 .upc .upc-replies form h3 {
   margin: 10px 0;
   font-size: 14px;
   font-weight: bold;
   color: #333333;
 }
-/* line 49, src/upc.scss */
+/* line 60, src/upc.scss */
 .upc .cpi {
   display: block;
   margin: 10px 0;
 }
 
 /* users profile */
-/* line 2, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 2, src/wall-vcard.scss */
 .vcard {
   float: left;
   width: 75px;
   color: #8b8b8b;
   /* customer's profile photo */
 }
-/* line 4, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 4, src/wall-vcard.scss */
 .vcard h1 {
   margin: 0 0 8px 0!important;
 }
-/* line 6, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 6, src/wall-vcard.scss */
 .vcard h1 a {
   text-decoration: none;
   color: #8b8b8b;
   font-size: 12px;
 }
-/* line 8, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 8, src/wall-vcard.scss */
 .vcard h1 a:hover {
   text-decoration: underline;
 }
-/* line 11, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 11, src/wall-vcard.scss */
 .vcard h2 {
   font-size: 11px!important;
   font-style: italic;
   color: #cccccc;
   margin: 0 0 8px 0!important;
 }
-/* line 13, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 13, src/wall-vcard.scss */
 .vcard > img {
   height: 72px;
   width: 72px;
@@ -1375,16 +1411,16 @@
   clear: both;
   margin: 0 0 8px 0;
 }
-/* line 14, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 14, src/wall-vcard.scss */
 .vcard ul {
   margin: 0 0 8px 0;
 }
-/* line 16, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 16, src/wall-vcard.scss */
 .vcard ul li {
   display: inline;
   /* badges */
 }
-/* line 19, C:/wamp/www/UIPrototypes/assets/css/src/wall-vcard.scss */
+/* line 19, src/wall-vcard.scss */
 .vcard ul li img {
   height: 19px;
   width: 19px;
