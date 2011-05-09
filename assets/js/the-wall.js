@@ -77,6 +77,10 @@ function cancelEditUPC(){
 	});
 }
 
+function ratings(){
+	$(".faux-col.ratings").stars();
+}
+
 // do it
 $(document).ready(function() {	
 	shareTabs();
@@ -87,4 +91,5 @@ $(document).ready(function() {
 	expandCommentsForm();	
 	editUPC();
 	cancelEditUPC();
+	ratings();
 });

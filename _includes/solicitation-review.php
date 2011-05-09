@@ -42,7 +42,13 @@
 			<h3>Edit your review</h3>
 			<?php } ?>				
             <div class="faux-label"> <span>Overall Rating</span>
-				<div class="faux-col ratings"><img src="#rating1"> <img src="#rating2"> <img src="#rating3"> <img src="#rating4"> <img src="#rating5"></div>
+				<div class="faux-col ratings">
+	        <input type="radio" name="newrate" value="1" title="Very Bad" />
+					<input type="radio" name="newrate" value="2" title="Bad" />
+					<input type="radio" name="newrate" value="3" title="Average" />
+					<input type="radio" name="newrate" value="4" title="Good" checked="checked" />
+					<input type="radio" name="newrate" value="5" title="Very Good" />
+				</div>
             </div>
             <div class="faux-label"><span>Review Title</span>
 				<div class="faux-col">
