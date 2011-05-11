@@ -14,7 +14,7 @@
 				input, .textarea-wrapper .inner { @include input-border-style; min-width:250px; }
 				margin:0 0 0 122px; display:block; overflow:hidden;
 				textarea { height:90px; }
-				span { display:block; font-weight:normal; font-size:12px; }
+				span { display:block; font-weight:normal; font-size:12px; margin:0 0 5px 0;}
 			}
 			&.add-a-photo .faux-col {
 				input {margin:0 0 15px 0;}

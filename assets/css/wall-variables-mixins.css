@@ -63,12 +63,6 @@
   visibility: hidden;
 }
 
-/* line 30, src/wall-variables-mixins.scss */
-.temp {
-  border: 1px solid red;
-  background: #eee;
-}
-
 /* line 48, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;

@@ -72,7 +72,8 @@
         <!-- end of meta data for spiders -->
         <blockquote class="description">
           <p>Review number two.</p>
-          <img src="#fpo" class="cpi" height="440" width="440" alt="customer provided image" /> </blockquote>
+          <img src="http://lorempixum.com/440/440/sports" class="cpi" height="440" width="440" alt="customer provided image" />
+				</blockquote>
       </section>
       <?php $reply = false; include("upc-tools.php"); ?>			
     </section>
@@ -98,9 +99,6 @@
       <section class="upc-content">
         <h5 class="upc-status unanswered"><em>unanswered question</em></h5>
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">Good Rope fo the price</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">4 days ago</abbr></h1>
-        <!-- meta data for spiders -->
-        <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
-        <!-- end of meta data for spiders -->
         <blockquote class="description">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis libero, posuere sit amet volutpat commodo, dapibus vel leo. Ut eget mauris ligula, id varius tortor. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem, eu aliquam quam lacus sed mi. Phasellus egestas sapien et elit semper pellentesque. Nulla consectetur erat turpis. Pellentesque tincidunt libero velit, ac viverra arcu. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
         </blockquote>
@@ -141,10 +139,7 @@
        <?php include("vcard.php") ?>
       <section class="upc-content">
         <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">This is a photo</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">4 days ago</abbr></h1>
-        <!-- meta data for spiders -->
-        <span class="hidden"> <span class="type">product</span> <img class="photo" src="http://backcountry.com/product-photo-url" alt="photo of $productName"> <a href="http://backcountry.com/product-url" class="item fn url">Edelweiss Sharp ARC Climbing Rope</a> </span>
-        <!-- end of meta data for spiders -->
-        <img src="#fpo" class="cpi" height="440" width="440" alt="customer provided image" />
+        <img src="http://lorempixum.com/440/440/sports" class="cpi" height="440" width="440" alt="customer provided image" />
         <blockquote class="description">
           <p>Pellentesque tincidunt libero velit, ac viverra arcu.
             Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
@@ -169,4 +164,33 @@
        <?php $answer = false; include("add-reply.php"); ?>      
     </section>
   </article>
+  <article class="upc video">
+    <section class="upc-single">
+       <?php include("vcard.php") ?>
+      <section class="upc-content">
+        <h1><a href="#url-to-ucp" class="summary" rel="self bookmark">This is a video</a> <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">4 days ago</abbr></h1>
+        <iframe width="425" height="349" src="http://www.youtube.com/embed/VqYX2PevFPc?rel=0" frameborder="0" allowfullscreen></iframe>
+        <blockquote class="description">
+          <p>Pellentesque tincidunt libero velit, ac viverra arcu.
+            Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
+        </blockquote>
+      </section>
+      <?php $reply = false; include("upc-tools.php"); ?>			
+    </section>
+		<?php $edit = true; include("solicitation-review.php"); ?>		    
+		<section class="upc-replies">
+      <article>
+       <?php include("vcard.php") ?>
+        <section class="upc-content">
+		  <abbr title="2004-04-10T09:58-06:00" class="dtreviewed">2 days ago</abbr>
+          <blockquote class="description clearfix">
+            <p>This is a reply in a video. Vestibulum facilisis, est eu venenatis pharetra, eros dolor volutpat lorem,
+						eu aliquam quam. Phasellus placerat aliquet eros nec blandit. Nam ultrices malesuada odio lobortis accumsan.</p>
+          </blockquote>
+        </section>
+        <?php $reply = true; include("upc-tools.php"); ?>
+      </article>
+       <?php $answer = false; include("add-reply.php"); ?>      
+    </section>
+  </article>	
 </section>

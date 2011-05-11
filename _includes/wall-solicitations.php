@@ -7,6 +7,7 @@
       <?php $edit = false; include_once("_includes/solicitation-review.php"); ?>
       <?php include_once("_includes/solicitation-question.php"); ?>      
       <?php include_once("_includes/solicitation-photo.php"); ?>      
+			<?php include_once("_includes/solicitation-video.php"); ?>      			
       <section class="solicitation video hidden">
         <h2>Video Solicitation</h2>
       </section>

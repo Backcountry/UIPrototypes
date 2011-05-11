@@ -27,7 +27,7 @@ $the-wall-content-secondary-color:#fff;
 /* misc */
 .hidden{display:none!important;}
 .clearfix:after { content: "."; display: block; height: 0;  clear: both; visibility: hidden; }
-.temp {border:1px solid red; background:#eee}
+.temp {}
 
 @mixin input-border-style { border: 1px solid #c7c7c9; border-color:#959595 #c7c7c9 #b2b2b3 #c8c8c7; }
 

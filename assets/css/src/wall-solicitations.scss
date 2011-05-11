@@ -8,6 +8,7 @@
 				 position:relative; z-index:2; top:1px; }	
 	&.question { .indicator {background-position:255px top; } }
 	&.photo  { .indicator {background-position:410px top;} }	
+	&.video  { .indicator {background-position:572px top;} }	
 	
 	form { margin:0 0 10px 0; @include pie; @include background(linear-gradient(#e9e9eb, #f3f3f5)); display:block;  padding:10px;
 		  border:1px solid $the-wall-primary-color; position:relative; z-index:1; }

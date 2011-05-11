@@ -63,12 +63,6 @@
   visibility: hidden;
 }
 
-/* line 30, src/wall-variables-mixins.scss */
-.temp {
-  border: 1px solid red;
-  background: #eee;
-}
-
 /* line 48, src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
@@ -243,6 +237,7 @@
   display: block;
   font-weight: normal;
   font-size: 12px;
+  margin: 0 0 5px 0;
 }
 /* line 20, src/wall-interaction.scss */
 .wall-interaction .faux-label.add-a-photo .faux-col input {
