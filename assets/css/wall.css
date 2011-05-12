@@ -503,12 +503,12 @@
 /* line 13, src/wall-solicitations.scss */
 .solicitation.review form, .solicitation.question form, .solicitation.photo form, .solicitation.video form, .edit.review form {
   margin: 0 0 10px 0;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5));
-  background: -webkit-linear-gradient(#e9e9eb, #f3f3f5);
-  background: -moz-linear-gradient(#e9e9eb, #f3f3f5);
-  background: -o-linear-gradient(#e9e9eb, #f3f3f5);
-  -pie-background: linear-gradient(#e9e9eb, #f3f3f5);
-  background: linear-gradient(#e9e9eb, #f3f3f5);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9eb), color-stop(100%, #f3f3f5)), teal;
+  background: -webkit-linear-gradient(#e9e9eb, #f3f3f5), teal;
+  background: -moz-linear-gradient(#e9e9eb, #f3f3f5), teal;
+  background: -o-linear-gradient(#e9e9eb, #f3f3f5), teal;
+  -pie-background: linear-gradient(#e9e9eb, #f3f3f5), teal;
+  background: linear-gradient(#e9e9eb, #f3f3f5), teal;
   display: block;
   padding: 10px;
   border: 1px solid #cccccc;
@@ -1191,23 +1191,23 @@
 }
 /* line 13, src/upc.scss */
 .upc .upc-content abbr.rating.four-stars {
-  background-position: 0 -82px;
+  background-position: 0 -81px;
 }
 /* line 14, src/upc.scss */
 .upc .upc-content abbr.rating.three-stars {
-  background-position: 0 -110px;
+  background-position: 0 -107px;
 }
 /* line 15, src/upc.scss */
 .upc .upc-content abbr.rating.two-stars {
-  background-position: 0 -137px;
+  background-position: 0 -135px;
 }
 /* line 16, src/upc.scss */
 .upc .upc-content abbr.rating.one-stars {
-  background-position: 0 -165px;
+  background-position: 0 -161px;
 }
 /* line 17, src/upc.scss */
 .upc .upc-content abbr.rating.zero-stars {
-  background-position: 0 -194px;
+  background-position: 0 -187px;
 }
 /* line 20, src/upc.scss */
 .upc .upc-content h1 {
