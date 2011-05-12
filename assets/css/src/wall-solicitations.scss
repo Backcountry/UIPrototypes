@@ -1,5 +1,6 @@
 @import "pie.scss";
 @import "wall-variables-mixins.scss"; 
+@import "compass/css3/images";
 
 /* top of the page solicitations */
 @mixin solicitation {
@@ -10,8 +11,8 @@
 	&.photo  { .indicator {background-position:410px top;} }	
 	&.video  { .indicator {background-position:572px top;} }	
 	
-	form { margin:0 0 10px 0; @include pie; @include background(linear-gradient(#e9e9eb, #f3f3f5)); display:block;  padding:10px;
-		  border:1px solid $the-wall-primary-color; position:relative; z-index:1; }
+	form { margin:0 0 10px 0; @include background-with-css2-fallback(linear-gradient(top, #E9E9EB, #F3F3F5), image-url("pdp.png"));
+				 display:block;  padding:10px; border:1px solid $the-wall-primary-color; $experimental-support-for-svg:true; }
 	h1 { font-size:22px; font-weight:bold; margin:0 0 20px 0; color:$the-wall-primary-heading-color}
 	h2 {
 		font-size:16px; margin:13px 0 10px 0;
