@@ -44,7 +44,7 @@
 				dt, dd { float:left; font-size:12px; color:$the-wall-primary-heading-color; }
 				dt { width:100px; font-size:14px; text-align:right; margin:0 20px 0 0; }
 				dd {
-					margin:0 20px 0 0; @include border-radius(8px);  background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block;
+					margin:0 20px 0 0; @include pie; @include border-radius(8px);  background:#D6D7E0; text-shadow:1px 1px 1px #fff; display:block;
 					padding:6px 10px; min-width:64px; text-align:center; cursor:pointer; color:$the-wall-content-color;
 					&.selected { @include background(linear-gradient(top, #854748, #6a1e1f)); color:#fff; text-shadow:0 0 0;}
 				}
