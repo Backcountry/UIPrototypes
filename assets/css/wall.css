@@ -1041,12 +1041,12 @@
 }
 
 /* misc */
-/* line 28, src/wall-variables-mixins.scss */
+/* line 28, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .hidden {
   display: none!important;
 }
 
-/* line 29, src/wall-variables-mixins.scss */
+/* line 29, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .clearfix:after, .wall-interaction .faux-label:after, .wall-interaction .step .survey-options li:after, .upc .description:after, .upc .upc-replies article:after, .upc .upc-replies article .upc-content:after {
   content: ".";
   display: block;
@@ -1055,21 +1055,21 @@
   visibility: hidden;
 }
 
-/* line 54, src/wall-variables-mixins.scss */
+/* line 54, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .textarea-wrapper {
   background: #fff;
   padding: 0;
   display: block;
   clear: both;
 }
-/* line 56, src/wall-variables-mixins.scss */
+/* line 56, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .textarea-wrapper .inner {
   background: #fff;
   clear: both;
   display: block;
   padding: 5px;
 }
-/* line 58, src/wall-variables-mixins.scss */
+/* line 58, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .textarea-wrapper .inner textarea {
   margin: 0;
   padding: 0;
@@ -1079,7 +1079,7 @@
   resize: vertical;
 }
 
-/* line 62, src/wall-variables-mixins.scss */
+/* line 62, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .btn {
   display: inline-block;
   padding: 7px 11px;
@@ -1107,7 +1107,7 @@
   text-align: center;
 }
 
-/* line 63, src/wall-variables-mixins.scss */
+/* line 63, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .primary {
   display: inline-block;
   padding: 7px 11px;
@@ -1146,7 +1146,7 @@
   font-weight: bold;
 }
 
-/* line 64, src/wall-variables-mixins.scss */
+/* line 64, C:/wamp/www/UIPrototypes/assets/css/src/wall-variables-mixins.scss */
 .btn.cancel {
   display: inline-block;
   padding: 7px 11px;
