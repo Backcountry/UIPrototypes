@@ -56,6 +56,11 @@
 
 .wall-interaction { @include wall-interaction; }
 
+.review .wall-interaction .button-row,
+.review .wall-interaction .faux-label {display:block;}
+.review.collapsed .wall-interaction .button-row,
+.review.collapsed .wall-interaction .faux-label {display:none;}
+
 .edit .wall-interaction .step {
 	h3 { background:none; margin-left:80px;}
 }

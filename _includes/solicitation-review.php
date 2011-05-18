@@ -9,34 +9,7 @@
 			<h2><a href="#expand" class="cta display-form">Complete a quick Survey or write a Review</a></h2>
 			<?php } ?>				
 		</header>
-		<?php if(!$edit) { ?>
-		<div class="step">
-			<h3>Step 1: Survey</h3>
-			<ul class="survey-options">
-				<li>
-					<dt>How does this item fit?</dt>
-					<dd>Small</dd>
-					<dd>True to size</dd>
-					<dd>Large</dd>
-				</li>
-				<li>
-					<dt>How durable is this item</dt>
-					<dd>Not very</dd>
-					<dd>Average</dd>
-					<dd>Very</dd>
-				</li>
-				<li>
-					<dt>Would you recommend this to a friend?</dt>
-					<dd>Yes</dd>
-					<dd>No</dd>
-				</li>
-            </ul>
-			<h5><a class="btn btn-submit-survey">Just submit this survey &gt;</a></h5>
-          </div>
-		  <?php } ?>						  
-          <div class="step">
 			<?php if(!$edit) { ?>			
-            <h3>Step 2: Text Review <span>(optional)</span></h3>
 			<?php } else {
 				include("vcard.php"); ?>
 			<h3>Edit your review</h3>
@@ -61,7 +34,6 @@
 				</div>
             </div>
 				<?php include("solicitation-add-a-photo.php"); ?>            
-				<?php include("solicitation-submit-upc.php"); ?>            			
-          </div>
+				<?php include("solicitation-submit-upc.php"); ?>
     </form>
 </section>

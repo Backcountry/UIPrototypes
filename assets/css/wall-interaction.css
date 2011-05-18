@@ -357,6 +357,18 @@
 }
 
 /* line 60, src/wall-interaction.scss */
+.review .wall-interaction .button-row,
+.review .wall-interaction .faux-label {
+  display: block;
+}
+
+/* line 62, src/wall-interaction.scss */
+.review.collapsed .wall-interaction .button-row,
+.review.collapsed .wall-interaction .faux-label {
+  display: none;
+}
+
+/* line 65, src/wall-interaction.scss */
 .edit .wall-interaction .step h3 {
   background: none;
   margin-left: 80px;

@@ -941,6 +941,18 @@
 }
 
 /* line 60, src/wall-interaction.scss */
+.review .wall-interaction .button-row,
+.review .wall-interaction .faux-label {
+  display: block;
+}
+
+/* line 62, src/wall-interaction.scss */
+.review.collapsed .wall-interaction .button-row,
+.review.collapsed .wall-interaction .faux-label {
+  display: none;
+}
+
+/* line 65, src/wall-interaction.scss */
 .edit .wall-interaction .step h3 {
   background: none;
   margin-left: 80px;
@@ -1214,23 +1226,23 @@
 }
 /* line 13, src/upc.scss */
 .upc .upc-content abbr.rating.four-stars {
-  background-position: 0 -81px;
+  background-position: 0 -82px;
 }
 /* line 14, src/upc.scss */
 .upc .upc-content abbr.rating.three-stars {
-  background-position: 0 -107px;
+  background-position: 0 -110px;
 }
 /* line 15, src/upc.scss */
 .upc .upc-content abbr.rating.two-stars {
-  background-position: 0 -135px;
+  background-position: 0 -137px;
 }
 /* line 16, src/upc.scss */
 .upc .upc-content abbr.rating.one-stars {
-  background-position: 0 -161px;
+  background-position: 0 -165px;
 }
 /* line 17, src/upc.scss */
 .upc .upc-content abbr.rating.zero-stars {
-  background-position: 0 -187px;
+  background-position: 0 -194px;
 }
 /* line 20, src/upc.scss */
 .upc .upc-content h1 {

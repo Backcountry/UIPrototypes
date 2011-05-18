@@ -49,7 +49,6 @@ function contentTabs(){
 		$("#wall-content > article").hide();
 		$(this).siblings().removeClass("selected");
 		$(this).addClass("selected");
-		//debugger;
 		$("#wall-content " + map2[$(this).attr("href")]).not(".edit").show();
 	});
 }
