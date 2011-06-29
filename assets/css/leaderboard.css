@@ -1,0 +1,894 @@
+/* line 1, ../src/leaderboard.scss */
+div#rankings_page p {
+  font-size: 12px;
+  margin-top: 1.5em;
+}
+
+/* line 2, ../src/leaderboard.scss */
+div#rankings_page h1 {
+  font-size: 21px;
+  line-height: 1em;
+}
+
+/* line 4, ../src/leaderboard.scss */
+div#rankings_right {
+  float: right;
+  margin: 0 0 0 -175px;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 6, ../src/leaderboard.scss */
+div#rankings_inner_right {
+  margin: 0 0 0 175px;
+}
+
+/* line 8, ../src/leaderboard.scss */
+div#rankings_search {
+  float: right;
+  height: 45px;
+  padding-left: 12px;
+  width: 300px;
+}
+
+/* line 9, ../src/leaderboard.scss */
+div#rankings_search form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../src/leaderboard.scss */
+div#search_terms_block {
+  float: left;
+  height: 35px;
+  margin: 8px 0 0 0;
+  width: 240px;
+}
+
+/* line 13, ../src/leaderboard.scss */
+div#rankings_search label#search_terms_lbl {
+  display: none;
+}
+
+/* line 14, ../src/leaderboard.scss */
+div#rankings_search input#search_terms {
+  margin: 10px 0 0 10px;
+  width: 220px;
+}
+
+/* line 15, ../src/leaderboard.scss */
+div#rankings_search input.search_submit {
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 35px;
+  margin: 10px 0 0 0;
+  text-indent: -9999px;
+  width: 50px;
+}
+
+/* line 17, ../src/leaderboard.scss */
+div#rankings_list {
+  display: inline;
+  float: left;
+  margin: -10px 0 10px -10px;
+  padding: 10px 0;
+  width: 180px;
+}
+
+/* line 18, ../src/leaderboard.scss */
+div#rankings_list h2 {
+  font-size: 14px;
+  height: 49px;
+  line-height: 1.0em;
+  margin: -10px 0 10px 0;
+  padding: 0;
+  text-indent: -9999px;
+  width: 180px;
+}
+
+/* line 19, ../src/leaderboard.scss */
+div#rankings_list ol {
+  font-size: 12px;
+  margin: 0 0 0 35px;
+}
+
+/* line 21, ../src/leaderboard.scss */
+p#see_more {
+  margin: 10px 0 0 10px;
+}
+
+/* line 23, ../src/leaderboard.scss */
+span.rank {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  left: 0;
+  margin-left: -45px;
+  position: absolute;
+  top: 0;
+}
+
+/* line 25, ../src/leaderboard.scss */
+div.wow {
+  left: 0;
+  margin-left: -50px;
+  position: absolute;
+  text-align: right;
+  top: 12px;
+  width: 34px;
+}
+
+/* line 26, ../src/leaderboard.scss */
+div.wow span, div.profile_pic img {
+  display: block;
+  font-size: 10px;
+}
+
+/* line 28, ../src/leaderboard.scss */
+div#rankings_detailed_list {
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* line 29, ../src/leaderboard.scss */
+div#rankings_detailed_list h3 {
+  font-size: 13px;
+  line-height: 1em;
+  padding: 10px 5px;
+}
+
+/* line 30, ../src/leaderboard.scss */
+div#rankings_detailed_list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 45px;
+}
+
+/* line 31, ../src/leaderboard.scss */
+div#rankings_detailed_list li {
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 32, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 {
+  font-size: 14px;
+  line-height: 1em;
+  margin: 0 175px 10px 0;
+}
+
+/* line 34, ../src/leaderboard.scss */
+span.rankings_nav_top {
+  float: right;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* line 36, ../src/leaderboard.scss */
+div.profile_pic {
+  float: right;
+  margin-bottom: 10px;
+  padding: 0 15px 0 0;
+}
+
+/* line 38, ../src/leaderboard.scss */
+div#rankings_page p.sports {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1em;
+  margin: -6px 175px 3px 0;
+}
+
+/* line 39, ../src/leaderboard.scss */
+div#rankings_page p.badge {
+  font-size: 14px;
+  line-height: 1em;
+  margin: 4px 175px 4px 0;
+}
+
+/* line 40, ../src/leaderboard.scss */
+p.badge img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 42, ../src/leaderboard.scss */
+div#rankings_page p.bio {
+  margin: 0 180px 10px 0;
+}
+
+/* line 44, ../src/leaderboard.scss */
+div.rankings_nav_bottom {
+  float: right;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* line 46, ../src/leaderboard.scss */
+div#rankings_stats {
+  font-size: 12px;
+  padding-left: 45px;
+}
+
+/* line 49, ../src/leaderboard.scss */
+div#rankings_page p, div#rankings_list ol {
+  color: #000;
+}
+
+/* line 51, ../src/leaderboard.scss */
+div#rankings_search {
+  background: transparent url(/images/bcs/rankings/search_bg.jpg) no-repeat 0 0;
+  bottom: 10px;
+  position: relative;
+  width: 296px;
+}
+
+/* line 52, ../src/leaderboard.scss */
+div#search_terms_block {
+  background: transparent url(/images/bcs/rankings/search_box.jpg) top left no-repeat;
+  color: #60829d;
+  height: 31px;
+  margin: 6px 0 0 0;
+  width: 237px;
+}
+
+/* line 53, ../src/leaderboard.scss */
+div#rankings_search input#search_terms {
+  border: 0;
+  color: #60829D;
+  margin: 7px 0 0 10px;
+  width: 220px;
+}
+
+/* line 54, ../src/leaderboard.scss */
+div#rankings_search input.search_submit {
+  background: transparent url(/images/bcs/rankings/btn_go.jpg) top left no-repeat;
+  border: none;
+  height: 31px;
+  margin: 6px 0 0 0;
+  width: 48px;
+}
+
+/* line 56, ../src/leaderboard.scss */
+div#rankings_list {
+  background: #f1f3f2;
+  border: 1px solid #c7c7c7;
+  width: 165px;
+}
+
+/* line 57, ../src/leaderboard.scss */
+div#rankings_list h2 {
+  background: #a0a2a1 url(/images/bcs/rankings/top_100.gif) top left no-repeat;
+  font-weight: bold;
+  height: 49px;
+  width: 165px;
+}
+
+/* line 58, ../src/leaderboard.scss */
+div#rankings_list li {
+  color: #555;
+}
+
+/* line 59, ../src/leaderboard.scss */
+div#rankings_list a:link, div#rankings_list a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+/* line 60, ../src/leaderboard.scss */
+div#rankings_list a:hover, div#rankings_detailed_list h4 a:hover, a.see_profile:hover {
+  text-decoration: underline;
+}
+
+/* line 62, ../src/leaderboard.scss */
+span.rank {
+  color: #a6a6a6;
+  font-weight: bold;
+  top: -4px;
+}
+
+/* line 64, ../src/leaderboard.scss */
+div.wow {
+  margin-left: -45px;
+  top: 12px;
+}
+
+/* line 66, ../src/leaderboard.scss */
+span.rank_decrease {
+  color: #f00;
+}
+
+/* line 67, ../src/leaderboard.scss */
+span.rank_increase {
+  color: #429a42;
+}
+
+/* line 69, ../src/leaderboard.scss */
+div#rankings_detailed_list h3 {
+  background: #f8f8f8;
+  border: 1px solid #e9e9e9;
+  color: #555;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* line 72, ../src/leaderboard.scss */
+span.rankings_nav_top,
+.rankings_nav_bottom {
+  font-weight: bold;
+  color: #de7b1e;
+}
+
+/* line 74, ../src/leaderboard.scss */
+span.rankings_nav_top a:link,
+span.rankings_nav_top a:visited {
+  color: #555;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* line 75, ../src/leaderboard.scss */
+span.rankings_nav_top a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 77, ../src/leaderboard.scss */
+div#rankings_detailed_list li {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+/* line 79, ../src/leaderboard.scss */
+div.profile_pic img {
+  border: 1px solid #cdcdcd;
+  display: block;
+}
+
+/* line 81, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 {
+  margin: 0 175px 10px 0;
+}
+
+/* line 82, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 a:link, div#rankings_detailed_list h4 a:visited {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 83, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 a span {
+  font-weight: normal;
+}
+
+/* line 85, ../src/leaderboard.scss */
+div#rankings_page p.sports {
+  color: #3c3c3c;
+}
+
+/* line 86, ../src/leaderboard.scss */
+div#rankings_page p.badge {
+  margin: 4px 175px 4px 0;
+}
+
+/* line 87, ../src/leaderboard.scss */
+div#rankings_page p.bio {
+  color: #606060;
+}
+
+/* line 89, ../src/leaderboard.scss */
+div#rankings_stats {
+  color: #039;
+  padding-left: 45px;
+}
+
+/* line 91, ../src/leaderboard.scss */
+a.see_profile:link, a.see_profile:visited {
+  text-decoration: none;
+}
+
+/* new leaderboard */
+/* overrides  */
+/* line 95, ../src/leaderboard.scss */
+#content {
+  background: white url(/images/bcs/rankings/bg.jpg) top left repeat-x;
+}
+
+/* line 97, ../src/leaderboard.scss */
+#ldr-content a,
+#ldr-header a {
+  color: #3e59ff;
+  text-decoration: none;
+}
+
+/* line 99, ../src/leaderboard.scss */
+#ldr-content a:hover,
+#ldr-header a:hover {
+  color: #3e59ff;
+  text-decoration: underline;
+}
+
+/* line 100, ../src/leaderboard.scss */
+#rankings.bcs #left_nav_tracking {
+  display: none;
+}
+
+/* line 101, ../src/leaderboard.scss */
+#ldr-header, #ldr-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 102, ../src/leaderboard.scss */
+#ldr-sidebar {
+  float: right;
+  width: 262px;
+  padding: 33px 0 0 0;
+}
+
+/* line 103, ../src/leaderboard.scss */
+div#rankings_inner_right {
+  margin: 0;
+  width: 728px;
+}
+
+/* line 105, ../src/leaderboard.scss */
+#ldr-header {
+  min-height: 100px;
+}
+
+/* line 106, ../src/leaderboard.scss */
+#ldr-header .intro {
+  display: inline-block;
+  width: 350px;
+  margin: 10px 0 0 0;
+}
+
+/* line 107, ../src/leaderboard.scss */
+#ldr-header .intro h1 {
+  color: #434343;
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 35px;
+}
+
+/* line 108, ../src/leaderboard.scss */
+#ldr-header .intro h1.long {
+  font-size: 24px;
+  line-height: 1em;
+}
+
+/* line 109, ../src/leaderboard.scss */
+#ldr-header .intro p {
+  font-size: 12px;
+}
+
+/* line 110, ../src/leaderboard.scss */
+#ldr-header .greeting {
+  display: inline-block;
+  width: 600px;
+  background: #ccc;
+  float: right;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* line 111, ../src/leaderboard.scss */
+#ldr-header .greeting h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  -webkit-text-shadow: 0 1px 2px #eee;
+  text-shadow: 0 1px 2px #eee;
+  margin: 0 0 0 10px;
+}
+
+/* line 112, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in h2 {
+  margin: 0 0 0 160px;
+}
+
+/* line 113, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in .profile_pic {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 0;
+}
+
+/* line 114, ../src/leaderboard.scss */
+#ldr-header .greeting ul {
+  float: left;
+  width: 450px;
+}
+
+/* line 115, ../src/leaderboard.scss */
+#ldr-header .greeting li {
+  float: left;
+  width: 49%;
+  font-size: 14px;
+}
+
+/* line 116, ../src/leaderboard.scss */
+#ldr-header .greeting p {
+  float: right;
+  font-size: 10px;
+  width: 105px;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+/* line 117, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in p {
+  float: none;
+  font-family: Georgia, Times New Roman, serif;
+  font-style: italic;
+  text-align: left;
+  margin: 5px 0 0 160px;
+  width: 260px;
+  font-size: 12px;
+}
+
+/* line 118, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in p strong {
+  color: #009900;
+  font-style: italic;
+}
+
+/* line 119, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in h4 {
+  float: right;
+  margin: -30px 10px 0 0;
+}
+
+/* line 120, ../src/leaderboard.scss */
+#ldr-header .greeting.logged-in h4 a {
+  width: 109px;
+  height: 31px;
+  display: block;
+  text-indent: -9999px;
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
+}
+
+/* line 121, ../src/leaderboard.scss */
+#ldr-header .greeting p #btn-register {
+  width: 107px;
+  height: 31px;
+  display: block;
+  clear: both;
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -12px -10px;
+  color: #fff;
+  line-height: 25px;
+  margin: -2px 0 3px 0;
+  text-indent: -9999px;
+}
+
+/* line 122, ../src/leaderboard.scss */
+span.rank {
+  background: #e7e7e7;
+  color: #666;
+  padding: 8px 10px;
+  font-size: 20px;
+  position: inherit;
+  top: 8px;
+  float: left;
+  margin-left: 0;
+}
+
+/* line 123, ../src/leaderboard.scss */
+span.went-up {
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) 0 -100px;
+  padding-left: 15px;
+}
+
+/* line 124, ../src/leaderboard.scss */
+span.went-down {
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) 0 -149px;
+  padding-left: 15px;
+}
+
+/* line 125, ../src/leaderboard.scss */
+div.profile_pic {
+  float: left;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 126, ../src/leaderboard.scss */
+div.profile_pic img {
+  border-color: #d1d1d1;
+  padding: 2px;
+  margin: 0 0 10px 0;
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* line 127, ../src/leaderboard.scss */
+div#rankings_detailed_list .breakdown {
+  margin: 0;
+  float: right;
+  color: #848484;
+  margin: -40px 10px 15px 0;
+}
+
+/* line 128, ../src/leaderboard.scss */
+div#rankings_detailed_list .breakdown li {
+  float: left;
+  padding: 2px 10px;
+  width: auto;
+  margin: 0;
+  position: inherit;
+  border: none;
+  border-right: 1px solid #d0d0d0;
+  text-align: center;
+  font-size: 10px;
+  background: none;
+}
+
+/* line 129, ../src/leaderboard.scss */
+div#rankings_detailed_list .breakdown li em {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 130, ../src/leaderboard.scss */
+div#rankings_detailed_list ol {
+  padding: 0;
+  border: 1px solid #c5c8d2;
+  overflow: auto;
+}
+
+/* line 131, ../src/leaderboard.scss */
+div#rankings_detailed_list ol > li {
+  padding: 15px 0 0 0;
+  float: left;
+  display: block;
+  border: 0;
+  margin: 0;
+  min-height: 75px;
+  background: white url(/images/bcs/rankings/spr_leaderboard.jpg) bottom left repeat-x;
+}
+
+/* line 132, ../src/leaderboard.scss */
+.total {
+  font-size: 22px;
+  margin: 0 0 0 165px;
+  color: #848484;
+}
+
+/* line 133, ../src/leaderboard.scss */
+.total span {
+  font-size: 12px;
+}
+
+/* line 134, ../src/leaderboard.scss */
+div#rankings_detailed_list .breakdown li.last {
+  border: 0;
+}
+
+/* line 135, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 {
+  margin: 8px 5px 0 165px;
+  font-size: 22px;
+}
+
+/* line 136, ../src/leaderboard.scss */
+div#rankings_detailed_list h4 a {
+  color: #666666;
+}
+
+/* line 137, ../src/leaderboard.scss */
+div#rankings_detailed_list h5 {
+  font-family: Georgia, Times New Roman, serif;
+  font-family: 12px;
+  font-style: italic;
+  color: #666;
+  font-size: 12px;
+  margin: 0 0 0 165px;
+}
+
+/* line 138, ../src/leaderboard.scss */
+.sports {
+  display: none;
+}
+
+/* line 139, ../src/leaderboard.scss */
+div#rankings_search {
+  position: inherit;
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -10px -51px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 262px;
+  height: 42px;
+}
+
+/* line 141, ../src/leaderboard.scss */
+#ldr-sidebar > div {
+  margin-bottom: 35px;
+}
+
+/* line 142, ../src/leaderboard.scss */
+#ldr-sidebar h3 {
+  font-size: 16px;
+  color: #666;
+  text-transform: none;
+}
+
+/* line 143, ../src/leaderboard.scss */
+#ldr-sidebar h4 {
+  font-size: 20px;
+  color: #597d9c;
+  font-weight: bold;
+}
+
+/* line 144, ../src/leaderboard.scss */
+#ldr-sidebar .inner {
+  background: white;
+  padding: 9px;
+  border: 1px solid #c4c7d2;
+}
+
+/* line 145, ../src/leaderboard.scss */
+#ldr-sidebar .inner p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* line 146, ../src/leaderboard.scss */
+#ldr-sidebar .inner ul {
+  margin: 0;
+}
+
+/* line 147, ../src/leaderboard.scss */
+#ldr-sidebar .inner ul li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #eee;
+  margin: 1px -9px;
+  padding: 5px 9px 0 9px;
+  height: 35px;
+}
+
+/* line 148, ../src/leaderboard.scss */
+#ldr-sidebar .inner ul li em {
+  list-style-type: none;
+  font-weight: normal;
+  float: right;
+  color: #009900;
+}
+
+/* line 149, ../src/leaderboard.scss */
+#quickanswer_promo .inner {
+  display: block;
+  padding-right: 110px;
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) -310px -210px;
+}
+
+/* line 150, ../src/leaderboard.scss */
+#quickanswer_promo .inner > a {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* line 151, ../src/leaderboard.scss */
+div#search_terms_block {
+  background: none;
+  margin: 6px 0 0 4px;
+}
+
+/* line 152, ../src/leaderboard.scss */
+div#rankings_search input#search_terms {
+  font-size: 22px;
+  margin: 0 0 0 7px;
+  font-family: Georgia, Times New Roman, serif;
+  font-style: italic;
+  color: #337999;
+  width: 240px;
+}
+
+/* line 154, ../src/leaderboard.scss */
+div#rankings_stats {
+  visibility: hidden;
+}
+
+/* line 155, ../src/leaderboard.scss */
+div#rankings_detailed_list > h3 {
+  margin: 0;
+  border: none;
+  overflow: auto;
+}
+
+/* line 156, ../src/leaderboard.scss */
+div#rankings_detailed_list > h3 a, #ldr-content .rankings_nav_bottom a {
+  color: #333;
+}
+
+/* line 157, ../src/leaderboard.scss */
+div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hover {
+  font-weight: normal;
+  cursor: pointer;
+  color: #3E59FF;
+}
+
+/* line 158, ../src/leaderboard.scss */
+div#rankings_detailed_list > h4 {
+  color: #fff;
+  background: #597D9C;
+  padding: 10px 5px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 159, ../src/leaderboard.scss */
+div#rankings_detailed_list > h4 span {
+  display: inline-block;
+}
+
+/* line 160, ../src/leaderboard.scss */
+div#rankings_detailed_list > h4 .position {
+  padding: 0 0 0 10px;
+  width: 169px;
+}
+
+/* line 161, ../src/leaderboard.scss */
+div#rankings_detailed_list > h4 .identity {
+  width: 320px;
+}
+
+/* line 162, ../src/leaderboard.scss */
+div#rankings_detailed_list > h4 .activity {
+  width: 200px;
+}
+
+/* line 164, ../src/leaderboard.scss */
+div.rankings_nav_bottom {
+  padding: 10px 0 0 0;
+}
+
+/* browser fixes  */
+/* line 167, ../src/leaderboard.scss */
+.IE7 span.rank {
+  width: auto!important;
+}
+
+/* line 168, ../src/leaderboard.scss */
+.IE7 div.profile_pic {
+  float: left;
+  margin: 0 0 0 55px;
+}
+
+/* line 169, ../src/leaderboard.scss */
+.IE7 div.intro {
+  float: left;
+}
+
+/* line 170, ../src/leaderboard.scss */
+.IE7 div#rankings_search {
+  margin-top: 20px;
+}
+
+/* line 171, ../src/leaderboard.scss */
+.IE7 #content-types .inner ul li {
+  position: relative;
+}
+
+/* line 172, ../src/leaderboard.scss */
+.IE7 #content-types .inner ul li em {
+  position: absolute;
+  right: 7px;
+}
+
+/* line 173, ../src/leaderboard.scss */
+.IE7 .greeting.logged-in {
+  position: relative;
+}
