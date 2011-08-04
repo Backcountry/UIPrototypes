@@ -1,3 +1,4 @@
+#rankings.bcs #left_nav_tracking { display:none;}
 @import "compass/css3/box-shadow";
 @import "profile-pic";
 
@@ -7,14 +8,20 @@
 
 // colors:
 $primary-link-color: #3e59ff;
+$primary-text-color: #333;
+$secondary-text-color: #555;
+$search-box-text-color:#337999;
+$current-page-indicator:#DE7B1E;
+
+#ldr-content, #ldr-header {
+    a {
+        color:$primary-link-color; text-decoration:none;
+        &:hover {color:$primary-link-color; text-decoration:underline;}
+    }
+}
 
 
-
-#ldr-content a,
-#ldr-header a {color:$primary-link-color; text-decoration:none;}
-#ldr-content a:hover,
-#ldr-header a:hover {color:$primary-link-color; text-decoration:underline;}
-#rankings.bcs #left_nav_tracking { display:none;}
+// layout
 #ldr-header, #ldr-content { width:1000px; margin:0 auto}
 #ldr-sidebar {float:right; width:262px; padding:33px 0 0 0 }
 div#rankings_inner_right {margin:0; width:728px}
@@ -23,20 +30,32 @@ div#rankings_search{
 	float:right; @include ldrbrd-sprite; background-position:-10px -51px; width:262px; height:42px;
     #search_terms_block{ margin:6px 0 0 4px}
     #search_terms_lbl { display:none; }
-    #search_terms { border:0; color:#337999; font-family:Georgia, Times New Roman, serif; font-style:italic; font-size:22px; margin:0 0 0 7px; width:240px; }
-
+    #search_terms { border:0; color:$search-box-text-color; font-family:Georgia, Times New Roman, serif; font-style:italic; font-size:22px; margin:0 0 0 7px; width:240px; }
 }
-
 
 div#rankings_detailed_list {
     margin:10px 0; width:100%;
     ol{
-        list-style:none; margin:0; border:1px solid #C5C8D2; overflow:auto;
-        > li { display:block; margin:0 0 10px 0; padding:10px 0; @include ldrbrd-sprite; background-position:bottom left; list-style-type:none; background-repeat:repeat-x; }
+        list-style:none; margin:0; border:1px solid #C5C8D2; overflow:hidden;
+        // individual entry
+        > li {
+            display:block; margin:0 0 10px 0; padding:10px 0; @include ldrbrd-sprite; background-position:bottom left; background-repeat:repeat-x; list-style-type:none; 
+            &:last-child {margin-bottom:0;}
+        }
+    }
+    h3 {
+        background:#f8f8f8; color:$secondary-text-color; font-weight:bold; text-transform:none; font-size:13px; line-height:1em; padding:10px 5px; margin:0; overflow:auto;
     }
     
-    h3{ background:#f8f8f8;border:1px solid #e9e9e9;color:#555;font-weight:bold; text-transform:none; font-size:13px;line-height:1em;padding:10px 5px; margin:0; border:none; overflow:auto; }
-    
+    .rankings_nav_top, .rankings_nav_bottom {
+        float:right; font-size:12px; white-space:nowrap; font-weight:bold; color:$current-page-indicator;
+        a {
+            color:$primary-text-color;
+            &:hover { font-weight:normal; cursor:pointer; }
+        }
+    }
+    .rankings_nav_bottom {padding:10px 0 0 0;}
+
     h4 a:link,div#rankings_detailed_list h4 a:visited{font-weight:bold;text-decoration:none}
     h4{
         font-size:14px;line-height:1em;margin:0 175px 10px 0; margin:8px 5px 0 165px; font-size:22px;
@@ -53,11 +72,8 @@ div#rankings_detailed_list {
 		.activity {width:200px;}
 	}
 
-    h5 {font-family:Georgia, Times New Roman, serif; font-family:12px; font-style:italic; color:#666; font-size:12px; margin:0 0 0 165px;}
+    h5 { font-family:Georgia, Times New Roman, serif; font-family:12px; font-style:italic; color:#666; font-size:12px; margin:0 0 0 165px; }
 }
-
-div#rankings_detailed_list > h3 a, #ldr-content .rankings_nav_bottom a {color:#333;}
-div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hover {font-weight:normal; cursor:pointer; color:#3E59FF}
 
 #ldr-header {
 	min-height:100px;
@@ -133,12 +149,11 @@ div#rankings_detailed_list .breakdown {
 }
 
 #quickanswer_promo .inner {
-    display:block; padding-right:110px; @include ldrbrd-sprite; background-position: -310px -210px;
-    > a {display:block; margin:5px 0; font-size:14px;}
+    display:block; padding-right:110px; @include ldrbrd-sprite; background-position: -25px -210px;
+    a {display:block; margin:5px 0; font-size:14px;}
 }
 
 div#rankings_stats {visibility:hidden}
-div.rankings_nav_bottom {padding:10px 0 0 0;}
 //.total
 //div#rankings_detailed_list .breakdown li.last {border:0;}
 .sports {display:none;}

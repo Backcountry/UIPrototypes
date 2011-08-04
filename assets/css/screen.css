@@ -3221,7 +3221,12 @@ body {
   background: url(../img/footer.jpg) top left;
 }
 
-/* line 6, ../src/_leaderboard.scss */
+/* line 1, ../src/_leaderboard.scss */
+#rankings.bcs #left_nav_tracking {
+  display: none;
+}
+
+/* line 7, ../src/_leaderboard.scss */
 .profile-pic {
   float: left;
   padding: 0 15px 0 0;
@@ -3240,45 +3245,37 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* line 14, ../src/_leaderboard.scss */
-#ldr-content a,
-#ldr-header a {
+/* line 17, ../src/_leaderboard.scss */
+#ldr-content a, #ldr-header a {
   color: #3e59ff;
   text-decoration: none;
 }
-
-/* line 16, ../src/_leaderboard.scss */
-#ldr-content a:hover,
-#ldr-header a:hover {
+/* line 19, ../src/_leaderboard.scss */
+#ldr-content a:hover, #ldr-header a:hover {
   color: #3e59ff;
   text-decoration: underline;
 }
 
-/* line 17, ../src/_leaderboard.scss */
-#rankings.bcs #left_nav_tracking {
-  display: none;
-}
-
-/* line 18, ../src/_leaderboard.scss */
+/* line 25, ../src/_leaderboard.scss */
 #ldr-header, #ldr-content {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 19, ../src/_leaderboard.scss */
+/* line 26, ../src/_leaderboard.scss */
 #ldr-sidebar {
   float: right;
   width: 262px;
   padding: 33px 0 0 0;
 }
 
-/* line 20, ../src/_leaderboard.scss */
+/* line 27, ../src/_leaderboard.scss */
 div#rankings_inner_right {
   margin: 0;
   width: 728px;
 }
 
-/* line 22, ../src/_leaderboard.scss */
+/* line 29, ../src/_leaderboard.scss */
 div#rankings_search {
   float: right;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
@@ -3286,15 +3283,15 @@ div#rankings_search {
   width: 262px;
   height: 42px;
 }
-/* line 24, ../src/_leaderboard.scss */
+/* line 31, ../src/_leaderboard.scss */
 div#rankings_search #search_terms_block {
   margin: 6px 0 0 4px;
 }
-/* line 25, ../src/_leaderboard.scss */
+/* line 32, ../src/_leaderboard.scss */
 div#rankings_search #search_terms_lbl {
   display: none;
 }
-/* line 26, ../src/_leaderboard.scss */
+/* line 33, ../src/_leaderboard.scss */
 div#rankings_search #search_terms {
   border: 0;
   color: #337999;
@@ -3305,48 +3302,71 @@ div#rankings_search #search_terms {
   width: 240px;
 }
 
-/* line 31, ../src/_leaderboard.scss */
+/* line 36, ../src/_leaderboard.scss */
 div#rankings_detailed_list {
   margin: 10px 0;
   width: 100%;
 }
-/* line 33, ../src/_leaderboard.scss */
+/* line 38, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol {
   list-style: none;
   margin: 0;
   border: 1px solid #C5C8D2;
-  overflow: auto;
+  overflow: hidden;
 }
-/* line 35, ../src/_leaderboard.scss */
+/* line 41, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol > li {
   display: block;
   margin: 0 0 10px 0;
   padding: 10px 0;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: bottom left;
-  list-style-type: none;
   background-repeat: repeat-x;
+  list-style-type: none;
 }
-/* line 38, ../src/_leaderboard.scss */
+/* line 43, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li:last-child {
+  margin-bottom: 0;
+}
+/* line 46, ../src/_leaderboard.scss */
 div#rankings_detailed_list h3 {
   background: #f8f8f8;
-  border: 1px solid #e9e9e9;
-  color: #555;
+  color: #555555;
   font-weight: bold;
   text-transform: none;
   font-size: 13px;
   line-height: 1em;
   padding: 10px 5px;
   margin: 0;
-  border: none;
   overflow: auto;
 }
-/* line 40, ../src/_leaderboard.scss */
+/* line 50, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top, div#rankings_detailed_list .rankings_nav_bottom {
+  float: right;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #de7b1e;
+}
+/* line 52, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top a, div#rankings_detailed_list .rankings_nav_bottom a {
+  color: #333333;
+}
+/* line 54, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top a:hover, div#rankings_detailed_list .rankings_nav_bottom a:hover {
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 57, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_bottom {
+  padding: 10px 0 0 0;
+}
+/* line 59, ../src/_leaderboard.scss */
 div#rankings_detailed_list h4 a:link, div#rankings_detailed_list div#rankings_detailed_list h4 a:visited {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 41, ../src/_leaderboard.scss */
+/* line 60, ../src/_leaderboard.scss */
 div#rankings_detailed_list h4 {
   font-size: 14px;
   line-height: 1em;
@@ -3354,15 +3374,15 @@ div#rankings_detailed_list h4 {
   margin: 8px 5px 0 165px;
   font-size: 22px;
 }
-/* line 43, ../src/_leaderboard.scss */
+/* line 62, ../src/_leaderboard.scss */
 div#rankings_detailed_list h4 a {
   color: #666666;
 }
-/* line 44, ../src/_leaderboard.scss */
+/* line 63, ../src/_leaderboard.scss */
 div#rankings_detailed_list h4 a span {
   font-weight: normal;
 }
-/* line 48, ../src/_leaderboard.scss */
+/* line 67, ../src/_leaderboard.scss */
 div#rankings_detailed_list > h4 {
   color: #fff;
   background: #597D9C;
@@ -3370,24 +3390,24 @@ div#rankings_detailed_list > h4 {
   margin: 0;
   font-size: 12px;
 }
-/* line 50, ../src/_leaderboard.scss */
+/* line 69, ../src/_leaderboard.scss */
 div#rankings_detailed_list > h4 span {
   display: inline-block;
 }
-/* line 51, ../src/_leaderboard.scss */
+/* line 70, ../src/_leaderboard.scss */
 div#rankings_detailed_list > h4 .position {
   padding: 0 0 0 10px;
   width: 169px;
 }
-/* line 52, ../src/_leaderboard.scss */
+/* line 71, ../src/_leaderboard.scss */
 div#rankings_detailed_list > h4 .identity {
   width: 320px;
 }
-/* line 53, ../src/_leaderboard.scss */
+/* line 72, ../src/_leaderboard.scss */
 div#rankings_detailed_list > h4 .activity {
   width: 200px;
 }
-/* line 56, ../src/_leaderboard.scss */
+/* line 75, ../src/_leaderboard.scss */
 div#rankings_detailed_list h5 {
   font-family: Georgia, Times New Roman, serif;
   font-family: 12px;
@@ -3397,29 +3417,17 @@ div#rankings_detailed_list h5 {
   margin: 0 0 0 165px;
 }
 
-/* line 59, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h3 a, #ldr-content .rankings_nav_bottom a {
-  color: #333;
-}
-
-/* line 60, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hover {
-  font-weight: normal;
-  cursor: pointer;
-  color: #3E59FF;
-}
-
-/* line 62, ../src/_leaderboard.scss */
+/* line 78, ../src/_leaderboard.scss */
 #ldr-header {
   min-height: 100px;
 }
-/* line 64, ../src/_leaderboard.scss */
+/* line 80, ../src/_leaderboard.scss */
 #ldr-header .intro {
   display: inline-block;
   width: 350px;
   margin: 10px 0 0 0;
 }
-/* line 66, ../src/_leaderboard.scss */
+/* line 82, ../src/_leaderboard.scss */
 #ldr-header .intro h1 {
   color: #434343;
   font-size: 46px;
@@ -3427,16 +3435,16 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   margin: 0;
   line-height: 35px;
 }
-/* line 68, ../src/_leaderboard.scss */
+/* line 84, ../src/_leaderboard.scss */
 #ldr-header .intro h1.long {
   font-size: 24px;
   line-height: 1em;
 }
-/* line 70, ../src/_leaderboard.scss */
+/* line 86, ../src/_leaderboard.scss */
 #ldr-header .intro p {
   font-size: 12px;
 }
-/* line 73, ../src/_leaderboard.scss */
+/* line 89, ../src/_leaderboard.scss */
 #ldr-header .greeting {
   display: inline-block;
   width: 600px;
@@ -3447,7 +3455,7 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   border-radius: 6px;
   padding: 8px;
 }
-/* line 75, ../src/_leaderboard.scss */
+/* line 91, ../src/_leaderboard.scss */
 #ldr-header .greeting h2 {
   font-size: 20px;
   font-weight: bold;
@@ -3456,18 +3464,18 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   text-shadow: 0 1px 2px #eee;
   margin: 0 0 0 10px;
 }
-/* line 76, ../src/_leaderboard.scss */
+/* line 92, ../src/_leaderboard.scss */
 #ldr-header .greeting ul {
   float: left;
   width: 450px;
 }
-/* line 77, ../src/_leaderboard.scss */
+/* line 93, ../src/_leaderboard.scss */
 #ldr-header .greeting li {
   float: left;
   width: 49%;
   font-size: 14px;
 }
-/* line 78, ../src/_leaderboard.scss */
+/* line 94, ../src/_leaderboard.scss */
 #ldr-header .greeting p {
   float: right;
   font-size: 10px;
@@ -3475,7 +3483,7 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   text-align: center;
   margin: 0 10px 0 0;
 }
-/* line 80, ../src/_leaderboard.scss */
+/* line 96, ../src/_leaderboard.scss */
 #ldr-header .greeting p #btn-register {
   width: 107px;
   height: 31px;
@@ -3487,11 +3495,11 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   margin: -2px 0 3px 0;
   text-indent: -9999px;
 }
-/* line 83, ../src/_leaderboard.scss */
+/* line 99, ../src/_leaderboard.scss */
 #ldr-header .greeting.logged-in h2 {
   margin: 2px 0 0 160px;
 }
-/* line 84, ../src/_leaderboard.scss */
+/* line 100, ../src/_leaderboard.scss */
 #ldr-header .greeting.logged-in p {
   float: none;
   font-family: Georgia, Times New Roman, serif;
@@ -3501,17 +3509,17 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   width: 260px;
   font-size: 12px;
 }
-/* line 86, ../src/_leaderboard.scss */
+/* line 102, ../src/_leaderboard.scss */
 #ldr-header .greeting.logged-in p strong {
   color: #009900;
   font-style: italic;
 }
-/* line 88, ../src/_leaderboard.scss */
+/* line 104, ../src/_leaderboard.scss */
 #ldr-header .greeting.logged-in h4 {
   float: right;
   margin: -30px 10px 0 0;
 }
-/* line 90, ../src/_leaderboard.scss */
+/* line 106, ../src/_leaderboard.scss */
 #ldr-header .greeting.logged-in h4 a {
   width: 109px;
   height: 31px;
@@ -3520,7 +3528,7 @@ div#rankings_detailed_list > h3 a:hover, #ldr-content .rankings_nav_bottom a:hov
   background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
 }
 
-/* line 97, ../src/_leaderboard.scss */
+/* line 113, ../src/_leaderboard.scss */
 span.rank {
   background: #e7e7e7;
   color: #666;
@@ -3531,26 +3539,26 @@ span.rank {
   float: left;
   margin-left: 0;
 }
-/* line 99, ../src/_leaderboard.scss */
+/* line 115, ../src/_leaderboard.scss */
 span.rank.went-up {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -100px;
   padding-left: 15px;
 }
-/* line 100, ../src/_leaderboard.scss */
+/* line 116, ../src/_leaderboard.scss */
 span.rank.went-down {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -149px;
   padding-left: 15px;
 }
 
-/* line 103, ../src/_leaderboard.scss */
+/* line 119, ../src/_leaderboard.scss */
 div#rankings_detailed_list .breakdown {
   float: right;
   color: #848484;
   margin: -40px 10px 15px 0;
 }
-/* line 105, ../src/_leaderboard.scss */
+/* line 121, ../src/_leaderboard.scss */
 div#rankings_detailed_list .breakdown li {
   float: left;
   padding: 2px 10px;
@@ -3563,60 +3571,60 @@ div#rankings_detailed_list .breakdown li {
   font-size: 10px;
   list-style-type: none;
 }
-/* line 107, ../src/_leaderboard.scss */
+/* line 123, ../src/_leaderboard.scss */
 div#rankings_detailed_list .breakdown li em {
   display: block;
   font-size: 20px;
   font-weight: normal;
 }
-/* line 108, ../src/_leaderboard.scss */
+/* line 124, ../src/_leaderboard.scss */
 div#rankings_detailed_list .breakdown li.last {
   border: 0;
 }
 
-/* line 112, ../src/_leaderboard.scss */
+/* line 128, ../src/_leaderboard.scss */
 .total {
   font-size: 22px;
   margin: 0 0 0 165px;
   color: #848484;
 }
-/* line 114, ../src/_leaderboard.scss */
+/* line 130, ../src/_leaderboard.scss */
 .total span {
   font-size: 12px;
 }
 
-/* line 118, ../src/_leaderboard.scss */
+/* line 134, ../src/_leaderboard.scss */
 #ldr-sidebar > div {
   margin-bottom: 35px;
 }
-/* line 119, ../src/_leaderboard.scss */
+/* line 135, ../src/_leaderboard.scss */
 #ldr-sidebar h3 {
   font-size: 16px;
   color: #666;
   text-transform: none;
 }
-/* line 120, ../src/_leaderboard.scss */
+/* line 136, ../src/_leaderboard.scss */
 #ldr-sidebar h4 {
   font-size: 20px;
   color: #597d9c;
   font-weight: bold;
 }
-/* line 122, ../src/_leaderboard.scss */
+/* line 138, ../src/_leaderboard.scss */
 #ldr-sidebar .inner {
   background: white;
   padding: 9px;
   border: 1px solid #c4c7d2;
 }
-/* line 124, ../src/_leaderboard.scss */
+/* line 140, ../src/_leaderboard.scss */
 #ldr-sidebar .inner p {
   font-size: 14px;
   margin: 10px 0;
 }
-/* line 125, ../src/_leaderboard.scss */
+/* line 141, ../src/_leaderboard.scss */
 #ldr-sidebar .inner ul {
   margin: 0;
 }
-/* line 127, ../src/_leaderboard.scss */
+/* line 143, ../src/_leaderboard.scss */
 #ldr-sidebar .inner ul li {
   list-style-type: none;
   font-size: 18px;
@@ -3626,7 +3634,7 @@ div#rankings_detailed_list .breakdown li.last {
   padding: 5px 9px 0 9px;
   height: 35px;
 }
-/* line 129, ../src/_leaderboard.scss */
+/* line 145, ../src/_leaderboard.scss */
 #ldr-sidebar .inner ul li em {
   list-style-type: none;
   font-weight: normal;
@@ -3634,63 +3642,58 @@ div#rankings_detailed_list .breakdown li.last {
   color: #009900;
 }
 
-/* line 135, ../src/_leaderboard.scss */
+/* line 151, ../src/_leaderboard.scss */
 #quickanswer_promo .inner {
   display: block;
   padding-right: 110px;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
-  background-position: -310px -210px;
+  background-position: -25px -210px;
 }
-/* line 137, ../src/_leaderboard.scss */
-#quickanswer_promo .inner > a {
+/* line 153, ../src/_leaderboard.scss */
+#quickanswer_promo .inner a {
   display: block;
   margin: 5px 0;
   font-size: 14px;
 }
 
-/* line 140, ../src/_leaderboard.scss */
+/* line 156, ../src/_leaderboard.scss */
 div#rankings_stats {
   visibility: hidden;
 }
 
-/* line 141, ../src/_leaderboard.scss */
-div.rankings_nav_bottom {
-  padding: 10px 0 0 0;
-}
-
-/* line 144, ../src/_leaderboard.scss */
+/* line 159, ../src/_leaderboard.scss */
 .sports {
   display: none;
 }
 
 /* browser fixes  */
-/* line 150, ../src/_leaderboard.scss */
+/* line 165, ../src/_leaderboard.scss */
 .IE7 span.rank {
   width: auto!important;
 }
-/* line 151, ../src/_leaderboard.scss */
+/* line 166, ../src/_leaderboard.scss */
 .IE7 div.profile_pic {
   float: left;
   margin: 0 0 0 55px;
 }
-/* line 152, ../src/_leaderboard.scss */
+/* line 167, ../src/_leaderboard.scss */
 .IE7 div.intro {
   float: left;
 }
-/* line 153, ../src/_leaderboard.scss */
+/* line 168, ../src/_leaderboard.scss */
 .IE7 div#rankings_search {
   margin-top: 20px;
 }
-/* line 154, ../src/_leaderboard.scss */
+/* line 169, ../src/_leaderboard.scss */
 .IE7 #content-types .inner ul li {
   position: relative;
 }
-/* line 156, ../src/_leaderboard.scss */
+/* line 171, ../src/_leaderboard.scss */
 .IE7 #content-types .inner ul li em {
   position: absolute;
   right: 7px;
 }
-/* line 158, ../src/_leaderboard.scss */
+/* line 173, ../src/_leaderboard.scss */
 .IE7 .greeting.logged-in {
   position: relative;
 }
