@@ -22,9 +22,9 @@ $current-page-indicator:#DE7B1E;
 
 
 // layout
-#ldr-header, #ldr-content { width:1000px; margin:0 auto}
+// #ldr-header, #ldr-content { width:1000px; margin:0 auto}
 #ldr-sidebar {float:right; width:262px; padding:33px 0 0 0 }
-div#rankings_inner_right {margin:0; width:728px}
+div#rankings_inner_right {margin:0 282px 0 0; }
 
 div#rankings_search{
 	float:right; @include ldrbrd-sprite; background-position:-10px -51px; width:262px; height:42px;
@@ -36,10 +36,10 @@ div#rankings_search{
 div#rankings_detailed_list {
     margin:10px 0; width:100%;
     ol{
-        list-style:none; margin:0; border:1px solid #C5C8D2; overflow:hidden;
+        list-style:none; margin:0; border:1px solid #C5C8D2; // overflow:hidden;
         // individual entry
         > li {
-            display:block; margin:0 0 10px 0; padding:10px 0; @include ldrbrd-sprite; background-position:bottom left; background-repeat:repeat-x; list-style-type:none; 
+            display:inline-block; margin:0 0 10px 0; padding:10px 0; @include ldrbrd-sprite; background-position:bottom left; background-repeat:repeat-x; list-style-type:none; width:100%;
             &:last-child {margin-bottom:0;}
         }
     }
@@ -66,17 +66,15 @@ div#rankings_detailed_list {
 
 	> h4 {
 	    color:#fff; background:#597D9C; padding:10px 5px; margin:0; font-size:12px;
-		span {display:inline-block}
-		.position {padding:0 0 0 10px; width:169px;}
-		.identity {width:320px;}
-		.activity {width:200px;}
+		span {display:inline-block; text-align:left; width:160px;}
+		.activity {text-align:center; float:right; width:300px; }
 	}
 
     h5 { font-family:Georgia, Times New Roman, serif; font-family:12px; font-style:italic; color:#666; font-size:12px; margin:0 0 0 165px; }
 }
 
 #ldr-header {
-	min-height:100px;
+	// min-height:100px;
 	.intro {
 		display:inline-block; width:350px; margin:10px 0 0 0;
 		h1 {
@@ -154,8 +152,6 @@ div#rankings_detailed_list .breakdown {
 }
 
 div#rankings_stats {visibility:hidden}
-//.total
-//div#rankings_detailed_list .breakdown li.last {border:0;}
 .sports {display:none;}
 
 
@@ -172,3 +168,6 @@ div#rankings_stats {visibility:hidden}
 	}
 	.greeting.logged-in {position:relative;}
 }
+
+// dev only
+body { width:90%!important; min-width:1024px;}
