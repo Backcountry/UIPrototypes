@@ -1,13 +1,12 @@
 #ldr-sidebar {
-    
     float:right; width:262px; padding:33px 0 0 0;
 	> div {margin-bottom:35px;}
-	h3 {font-size:16px; color:$dark-primary-color; text-transform:none;}
-	h4 {font-size:20px; color:$entry-header-background; font-weight:bold}
+	h3 { font-size:16px; color:$dark-primary-color; text-transform:none; }
+	h4 { font-size:20px; color:$entry-header-background; font-weight:bold; }
 
 	.inner {
-		background:$entry-header-color; padding:9px; border:1px solid #c4c7d2;
-		p {font-size:14px; margin:10px 0}
+		background:$entry-header-color; padding:9px; border:1px solid $light-quaternary-color;
+		p { font-size:14px; margin:10px 0; }
 		ul {
 			margin:0;
 			li {
@@ -19,7 +18,7 @@
 
     #quickanswer_promo .inner {
         display:block; padding-right:110px; @include ldrbrd-sprite; background-position: -25px -210px;
-        a {display:block; margin:5px 0; font-size:14px;}
+        a { display:block; margin:5px 0; font-size:14px; }
     }
 
     #rankings_search{

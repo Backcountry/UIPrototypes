@@ -1,10 +1,5 @@
-#rankings.bcs #left_nav_tracking { display:none;}
+// compass imports
 @import "compass/css3/box-shadow";
-@import "profile-pic";
-
-// init
-@mixin ldrbrd-sprite { background:url(../img/spr_leaderboard.jpg) top left no-repeat; }
-.profile-pic { @include profile-pic; }
 
 // colors:
 $primary-link-color: #3e59ff;
@@ -16,7 +11,9 @@ $dark-secondary-color:#848484;
 $light-primary-color:#e7e7e7;
 $light-secondary-color:#ccc;
 $light-terciary-color:#f8f8f8;
+$light-quaternary-color:#c4c7d2;
 $highlight-color:#009900;
+
 
 // pagination
 $current-page-indicator:#DE7B1E;
@@ -25,7 +22,22 @@ $current-page-indicator:#DE7B1E;
 $entry-header-color:#fff;
 $entry-header-background:#597D9C;
 
-#ldr-content, #ldr-header {
+// sidebar 
+$sidebar-width:262px;
+
+// images 
+@mixin ldrbrd-sprite { background:url(../img/spr_leaderboard.jpg) top left no-repeat; }
+
+// page imports
+@import "profile-pic";
+@import "pagination";
+@import "ldr-header";
+@import "ldr-sidebar";
+
+// init
+.profile-pic { @include profile-pic; }
+
+#content {
     a {
         color:$primary-link-color; text-decoration:none;
         &:hover {color:$primary-link-color; text-decoration:underline;}
@@ -33,25 +45,23 @@ $entry-header-background:#597D9C;
 }
 
 // layout
-$sidebar-width:262px;
-
-div#rankings_inner_right {margin-right:$sidebar-width + 20px; }
+div#rankings_inner_right { margin-right:$sidebar-width + 20px; }
 
 div#rankings_detailed_list {
-    margin:10px 0; width:100%;
+    margin:10px 0;
     ol{
         list-style:none; margin:0; border:1px solid #C5C8D2; padding:5px 0 0 0;
         // individual entry
         > li {
             display:inline-block; margin:0 0 10px 0; padding:10px 0; @include ldrbrd-sprite; background-position:bottom left; background-repeat:repeat-x; list-style-type:none; width:100%;
-            &:last-child {margin-bottom:0;}
-            .profile-pic {margin:-5px 0 5px 0;}
+            &.last { margin-bottom:0; }
+            .profile-pic { margin:-5px 0 5px 0; }
             .total {
                 font-size:22px; margin:0 0 0 165px; color:$dark-secondary-color;
-                span {font-size:12px; }
+                span { font-size:12px; }
             }
             .rank {
-                background:$light-primary-color; color:$dark-primary-color; padding:8px 10px; font-size:20px; position:inherit; top:8px; float:left; margin-left:0;
+                background:$light-primary-color; color:$dark-primary-color; padding:8px 10px; font-size:20px; float:left; margin-left:0;
                 &.went-up { @include ldrbrd-sprite; background-position:0 -100px; padding-left:15px; }
                 &.went-down { @include ldrbrd-sprite; background-position: 0 -149px; padding-left:15px; }
             }
@@ -59,44 +69,37 @@ div#rankings_detailed_list {
                 float:right; color:$dark-secondary-color; margin:-40px 10px 15px 0;
                 li {
                     float:left; padding:2px 10px; width:auto; margin:0; position:inherit; border:none; border-right:1px solid #d0d0d0; text-align:center; font-size:10px; list-style-type:none;
-                    em {display:block; font-size:20px; font-weight:normal}
-                    &.last {border:0;}
+                    em { display:block; font-size:20px; font-weight:normal; }
+                    &.last { border:0; }
                 }
             }
         }
 
     }
+
+    .pagination {
+        @include pagination;
+        &.bottom { padding:10px 0 0 0; }
+    }
+
     h3 { background:$light-terciary-color; color:$secondary-text-color; font-weight:bold; text-transform:none; font-size:13px; line-height:1em; padding:10px 5px; margin:0; overflow:auto; }
 
-    // pagination
-    .rankings_nav_top, .rankings_nav_bottom {
-        float:right; font-size:12px; white-space:nowrap; font-weight:bold; color:$current-page-indicator;
-        a {
-            color:$primary-text-color;
-            &:hover { font-weight:normal; cursor:pointer; }
-        }
-    }
-    &.rankings_nav_bottom { padding:10px 0 0 0; }
-    
     h4{
         line-height:1em; margin:8px 5px 0 165px; font-size:22px;
         a { color:$dark-primary-color; font-weight:bold; text-decoration:none;
-            span{font-weight:normal}
+            span { font-weight:normal; }
         }
     }
 
-    // header for the individual entries,
+    // 'table header' 
 	> h4 {
 	    color:$entry-header-color; background:$entry-header-background; padding:10px 5px; margin:0; font-size:12px;
-		span {display:inline-block; text-align:left; width:160px;}
-		.activity {text-align:center; float:right; width:300px; }
+		span { display:inline-block; text-align:left; width:160px; }
+		.activity { text-align:center; float:right; width:300px; }
 	}
 
-    h5 { font-family:Georgia, Times New Roman, serif; font-family:12px; font-style:italic; color:$dark-primary-color; font-size:12px; margin:0 0 0 165px; }
+    h5 { font-family:Georgia, Times New Roman, serif; font-style:italic; color:$dark-primary-color; font-size:12px; margin:0 0 0 165px; }
 }
-
-@import "ldr-header";
-@import "ldr-sidebar";
 
 // .sports {display:none;}
 

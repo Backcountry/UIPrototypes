@@ -1,0 +1,7 @@
+@mixin pagination {
+    float:right; font-size:12px; white-space:nowrap; font-weight:bold; color:$current-page-indicator;
+    a {
+        color:$primary-text-color;
+        &:hover { font-weight:normal; cursor:pointer; }
+    }
+}
