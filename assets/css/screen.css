@@ -3245,61 +3245,35 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* line 17, ../src/_leaderboard.scss */
+/* line 29, ../src/_leaderboard.scss */
 #ldr-content a, #ldr-header a {
   color: #3e59ff;
   text-decoration: none;
 }
-/* line 19, ../src/_leaderboard.scss */
+/* line 31, ../src/_leaderboard.scss */
 #ldr-content a:hover, #ldr-header a:hover {
   color: #3e59ff;
   text-decoration: underline;
 }
 
-/* line 26, ../src/_leaderboard.scss */
+/* line 38, ../src/_leaderboard.scss */
 div#rankings_inner_right {
-  margin: 0 282px 0 0;
+  margin-right: 282px;
 }
 
-/* line 28, ../src/_leaderboard.scss */
-div#rankings_search {
-  float: right;
-  background: url(../img/spr_leaderboard.jpg) top left no-repeat;
-  background-position: -10px -51px;
-  width: 262px;
-  height: 42px;
-}
-/* line 30, ../src/_leaderboard.scss */
-div#rankings_search #search_terms_block {
-  margin: 6px 0 0 4px;
-}
-/* line 31, ../src/_leaderboard.scss */
-div#rankings_search #search_terms_lbl {
-  display: none;
-}
-/* line 32, ../src/_leaderboard.scss */
-div#rankings_search #search_terms {
-  border: 0;
-  color: #337999;
-  font-family: Georgia, Times New Roman, serif;
-  font-style: italic;
-  font-size: 22px;
-  margin: 0 0 0 7px;
-  width: 240px;
-}
-
-/* line 35, ../src/_leaderboard.scss */
+/* line 40, ../src/_leaderboard.scss */
 div#rankings_detailed_list {
   margin: 10px 0;
   width: 100%;
 }
-/* line 37, ../src/_leaderboard.scss */
+/* line 42, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol {
   list-style: none;
   margin: 0;
   border: 1px solid #C5C8D2;
+  padding: 5px 0 0 0;
 }
-/* line 40, ../src/_leaderboard.scss */
+/* line 45, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol > li {
   display: inline-block;
   margin: 0 0 10px 0;
@@ -3310,204 +3284,28 @@ div#rankings_detailed_list ol > li {
   list-style-type: none;
   width: 100%;
 }
-/* line 42, ../src/_leaderboard.scss */
+/* line 47, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol > li:last-child {
   margin-bottom: 0;
 }
-/* line 45, ../src/_leaderboard.scss */
-div#rankings_detailed_list h3 {
-  background: #f8f8f8;
-  color: #555555;
-  font-weight: bold;
-  text-transform: none;
-  font-size: 13px;
-  line-height: 1em;
-  padding: 10px 5px;
-  margin: 0;
-  overflow: auto;
+/* line 48, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .profile-pic {
+  margin: -5px 0 5px 0;
 }
 /* line 49, ../src/_leaderboard.scss */
-div#rankings_detailed_list .rankings_nav_top, div#rankings_detailed_list .rankings_nav_bottom {
-  float: right;
-  font-size: 12px;
-  white-space: nowrap;
-  font-weight: bold;
-  color: #de7b1e;
+div#rankings_detailed_list ol > li .total {
+  font-size: 22px;
+  margin: 0 0 0 165px;
+  color: #848484;
 }
 /* line 51, ../src/_leaderboard.scss */
-div#rankings_detailed_list .rankings_nav_top a, div#rankings_detailed_list .rankings_nav_bottom a {
-  color: #333333;
+div#rankings_detailed_list ol > li .total span {
+  font-size: 12px;
 }
 /* line 53, ../src/_leaderboard.scss */
-div#rankings_detailed_list .rankings_nav_top a:hover, div#rankings_detailed_list .rankings_nav_bottom a:hover {
-  font-weight: normal;
-  cursor: pointer;
-}
-/* line 56, ../src/_leaderboard.scss */
-div#rankings_detailed_list .rankings_nav_bottom {
-  padding: 10px 0 0 0;
-}
-/* line 58, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 a:link, div#rankings_detailed_list div#rankings_detailed_list h4 a:visited {
-  font-weight: bold;
-  text-decoration: none;
-}
-/* line 59, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 {
-  font-size: 14px;
-  line-height: 1em;
-  margin: 0 175px 10px 0;
-  margin: 8px 5px 0 165px;
-  font-size: 22px;
-}
-/* line 61, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 a {
-  color: #666666;
-}
-/* line 62, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 a span {
-  font-weight: normal;
-}
-/* line 66, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 {
-  color: #fff;
-  background: #597D9C;
-  padding: 10px 5px;
-  margin: 0;
-  font-size: 12px;
-}
-/* line 68, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 span {
-  display: inline-block;
-  text-align: left;
-  width: 160px;
-}
-/* line 69, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 .activity {
-  text-align: center;
-  float: right;
-  width: 300px;
-}
-/* line 72, ../src/_leaderboard.scss */
-div#rankings_detailed_list h5 {
-  font-family: Georgia, Times New Roman, serif;
-  font-family: 12px;
-  font-style: italic;
-  color: #666;
-  font-size: 12px;
-  margin: 0 0 0 165px;
-}
-
-/* line 77, ../src/_leaderboard.scss */
-#ldr-header .intro {
-  width: 350px;
-  margin: 10px 0 0 0;
-  float: left;
-}
-/* line 79, ../src/_leaderboard.scss */
-#ldr-header .intro h1 {
-  color: #434343;
-  font-size: 46px;
-  font-weight: bold;
-  margin: 0;
-  line-height: 35px;
-}
-/* line 81, ../src/_leaderboard.scss */
-#ldr-header .intro h1.long {
-  font-size: 24px;
-  line-height: 1em;
-}
-/* line 83, ../src/_leaderboard.scss */
-#ldr-header .intro p {
-  font-size: 12px;
-}
-/* line 86, ../src/_leaderboard.scss */
-#ldr-header .greeting {
-  width: 600px;
-  background: #ccc;
-  float: right;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  padding: 8px;
-}
-/* line 88, ../src/_leaderboard.scss */
-#ldr-header .greeting h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  -webkit-text-shadow: 0 1px 2px #eee;
-  text-shadow: 0 1px 2px #eee;
-  margin: 0 0 0 10px;
-}
-/* line 89, ../src/_leaderboard.scss */
-#ldr-header .greeting ul {
-  float: left;
-  width: 450px;
-}
-/* line 90, ../src/_leaderboard.scss */
-#ldr-header .greeting li {
-  float: left;
-  width: 49%;
-  font-size: 14px;
-}
-/* line 91, ../src/_leaderboard.scss */
-#ldr-header .greeting p {
-  float: right;
-  font-size: 10px;
-  width: 105px;
-  text-align: center;
-  margin: 0 10px 0 0;
-}
-/* line 93, ../src/_leaderboard.scss */
-#ldr-header .greeting p #btn-register {
-  width: 107px;
-  height: 31px;
-  display: block;
-  clear: both;
-  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -12px -10px;
-  color: #fff;
-  line-height: 25px;
-  margin: -2px 0 3px 0;
-  text-indent: -9999px;
-}
-/* line 96, ../src/_leaderboard.scss */
-#ldr-header .greeting.logged-in h2 {
-  margin: 2px 0 0 160px;
-}
-/* line 97, ../src/_leaderboard.scss */
-#ldr-header .greeting.logged-in p {
-  float: none;
-  font-family: Georgia, Times New Roman, serif;
-  font-style: italic;
-  text-align: left;
-  margin: 7px 0 0 160px;
-  width: 260px;
-  font-size: 12px;
-}
-/* line 99, ../src/_leaderboard.scss */
-#ldr-header .greeting.logged-in p strong {
-  color: #009900;
-  font-style: italic;
-}
-/* line 101, ../src/_leaderboard.scss */
-#ldr-header .greeting.logged-in h4 {
-  float: right;
-  margin: -30px 10px 0 0;
-}
-/* line 103, ../src/_leaderboard.scss */
-#ldr-header .greeting.logged-in h4 a {
-  width: 109px;
-  height: 31px;
-  display: block;
-  text-indent: -9999px;
-  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
-}
-
-/* line 110, ../src/_leaderboard.scss */
-span.rank {
+div#rankings_detailed_list ol > li .rank {
   background: #e7e7e7;
-  color: #666;
+  color: #666666;
   padding: 8px 10px;
   font-size: 20px;
   position: inherit;
@@ -3515,27 +3313,26 @@ span.rank {
   float: left;
   margin-left: 0;
 }
-/* line 112, ../src/_leaderboard.scss */
-span.rank.went-up {
+/* line 55, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .rank.went-up {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -100px;
   padding-left: 15px;
 }
-/* line 113, ../src/_leaderboard.scss */
-span.rank.went-down {
+/* line 56, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .rank.went-down {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -149px;
   padding-left: 15px;
 }
-
-/* line 116, ../src/_leaderboard.scss */
-div#rankings_detailed_list .breakdown {
+/* line 58, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .breakdown {
   float: right;
   color: #848484;
   margin: -40px 10px 15px 0;
 }
-/* line 118, ../src/_leaderboard.scss */
-div#rankings_detailed_list .breakdown li {
+/* line 60, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .breakdown li {
   float: left;
   padding: 2px 10px;
   width: auto;
@@ -3547,66 +3344,240 @@ div#rankings_detailed_list .breakdown li {
   font-size: 10px;
   list-style-type: none;
 }
-/* line 120, ../src/_leaderboard.scss */
-div#rankings_detailed_list .breakdown li em {
+/* line 62, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .breakdown li em {
   display: block;
   font-size: 20px;
   font-weight: normal;
 }
-/* line 121, ../src/_leaderboard.scss */
-div#rankings_detailed_list .breakdown li.last {
+/* line 63, ../src/_leaderboard.scss */
+div#rankings_detailed_list ol > li .breakdown li.last {
   border: 0;
 }
-
-/* line 125, ../src/_leaderboard.scss */
-.total {
-  font-size: 22px;
-  margin: 0 0 0 165px;
-  color: #848484;
+/* line 69, ../src/_leaderboard.scss */
+div#rankings_detailed_list h3 {
+  background: #f8f8f8;
+  color: #555555;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 1em;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: auto;
 }
-/* line 127, ../src/_leaderboard.scss */
-.total span {
+/* line 72, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top, div#rankings_detailed_list .rankings_nav_bottom {
+  float: right;
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #de7b1e;
+}
+/* line 74, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top a, div#rankings_detailed_list .rankings_nav_bottom a {
+  color: #333333;
+}
+/* line 76, ../src/_leaderboard.scss */
+div#rankings_detailed_list .rankings_nav_top a:hover, div#rankings_detailed_list .rankings_nav_bottom a:hover {
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 79, ../src/_leaderboard.scss */
+div#rankings_detailed_list.rankings_nav_bottom {
+  padding: 10px 0 0 0;
+}
+/* line 81, ../src/_leaderboard.scss */
+div#rankings_detailed_list h4 {
+  line-height: 1em;
+  margin: 8px 5px 0 165px;
+  font-size: 22px;
+}
+/* line 83, ../src/_leaderboard.scss */
+div#rankings_detailed_list h4 a {
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 84, ../src/_leaderboard.scss */
+div#rankings_detailed_list h4 a span {
+  font-weight: normal;
+}
+/* line 89, ../src/_leaderboard.scss */
+div#rankings_detailed_list > h4 {
+  color: white;
+  background: #597d9c;
+  padding: 10px 5px;
+  margin: 0;
   font-size: 12px;
 }
+/* line 91, ../src/_leaderboard.scss */
+div#rankings_detailed_list > h4 span {
+  display: inline-block;
+  text-align: left;
+  width: 160px;
+}
+/* line 92, ../src/_leaderboard.scss */
+div#rankings_detailed_list > h4 .activity {
+  text-align: center;
+  float: right;
+  width: 300px;
+}
+/* line 95, ../src/_leaderboard.scss */
+div#rankings_detailed_list h5 {
+  font-family: Georgia, Times New Roman, serif;
+  font-family: 12px;
+  font-style: italic;
+  color: #666666;
+  font-size: 12px;
+  margin: 0 0 0 165px;
+}
 
-/* line 130, ../src/_leaderboard.scss */
+/* line 3, ../src/_ldr-header.scss */
+#ldr-header .intro {
+  width: 350px;
+  margin: 10px 0 0 0;
+  float: left;
+}
+/* line 5, ../src/_ldr-header.scss */
+#ldr-header .intro h1 {
+  color: #333333;
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 35px;
+}
+/* line 7, ../src/_ldr-header.scss */
+#ldr-header .intro h1.long {
+  font-size: 24px;
+  line-height: 1em;
+}
+/* line 9, ../src/_ldr-header.scss */
+#ldr-header .intro p {
+  font-size: 12px;
+}
+/* line 12, ../src/_ldr-header.scss */
+#ldr-header .greeting {
+  width: 600px;
+  background: #cccccc;
+  float: right;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 8px;
+}
+/* line 14, ../src/_ldr-header.scss */
+#ldr-header .greeting h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  -webkit-text-shadow: 0 1px 2px #eee;
+  text-shadow: 0 1px 2px #eee;
+  margin: 0 0 0 10px;
+}
+/* line 15, ../src/_ldr-header.scss */
+#ldr-header .greeting ul {
+  float: left;
+  width: 450px;
+}
+/* line 16, ../src/_ldr-header.scss */
+#ldr-header .greeting li {
+  float: left;
+  width: 49%;
+  font-size: 14px;
+}
+/* line 17, ../src/_ldr-header.scss */
+#ldr-header .greeting p {
+  float: right;
+  font-size: 10px;
+  width: 105px;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+/* line 19, ../src/_ldr-header.scss */
+#ldr-header .greeting p #btn-register {
+  width: 107px;
+  height: 31px;
+  display: block;
+  clear: both;
+  background: url(../img/spr_leaderboard.jpg) top left no-repeat;
+  background-position: -12px -10px;
+  color: white;
+  line-height: 25px;
+  margin: -2px 0 3px 0;
+  text-indent: -9999px;
+}
+/* line 22, ../src/_ldr-header.scss */
+#ldr-header .greeting.logged-in h2 {
+  margin: 2px 0 0 160px;
+}
+/* line 23, ../src/_ldr-header.scss */
+#ldr-header .greeting.logged-in p {
+  float: none;
+  font-family: Georgia, Times New Roman, serif;
+  font-style: italic;
+  text-align: left;
+  margin: 7px 0 0 160px;
+  width: 260px;
+  font-size: 12px;
+}
+/* line 25, ../src/_ldr-header.scss */
+#ldr-header .greeting.logged-in p strong {
+  color: #009900;
+  font-style: italic;
+}
+/* line 27, ../src/_ldr-header.scss */
+#ldr-header .greeting.logged-in h4 {
+  float: right;
+  margin: -30px 10px 0 0;
+}
+/* line 29, ../src/_ldr-header.scss */
+#ldr-header .greeting.logged-in h4 a {
+  width: 109px;
+  height: 31px;
+  display: block;
+  text-indent: -9999px;
+  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
+}
+
+/* line 1, ../src/_ldr-sidebar.scss */
 #ldr-sidebar {
   float: right;
   width: 262px;
   padding: 33px 0 0 0;
 }
-/* line 132, ../src/_leaderboard.scss */
+/* line 4, ../src/_ldr-sidebar.scss */
 #ldr-sidebar > div {
   margin-bottom: 35px;
 }
-/* line 133, ../src/_leaderboard.scss */
+/* line 5, ../src/_ldr-sidebar.scss */
 #ldr-sidebar h3 {
   font-size: 16px;
-  color: #666;
+  color: #666666;
   text-transform: none;
 }
-/* line 134, ../src/_leaderboard.scss */
+/* line 6, ../src/_ldr-sidebar.scss */
 #ldr-sidebar h4 {
   font-size: 20px;
   color: #597d9c;
   font-weight: bold;
 }
-/* line 136, ../src/_leaderboard.scss */
+/* line 8, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner {
   background: white;
   padding: 9px;
   border: 1px solid #c4c7d2;
 }
-/* line 138, ../src/_leaderboard.scss */
+/* line 10, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner p {
   font-size: 14px;
   margin: 10px 0;
 }
-/* line 139, ../src/_leaderboard.scss */
+/* line 11, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul {
   margin: 0;
 }
-/* line 141, ../src/_leaderboard.scss */
+/* line 13, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul li {
   list-style-type: none;
   font-size: 18px;
@@ -3616,54 +3587,74 @@ div#rankings_detailed_list .breakdown li.last {
   padding: 5px 9px 0 9px;
   height: 35px;
 }
-/* line 143, ../src/_leaderboard.scss */
+/* line 15, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul li em {
-  list-style-type: none;
   font-weight: normal;
   float: right;
   color: #009900;
 }
-/* line 147, ../src/_leaderboard.scss */
+/* line 20, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #quickanswer_promo .inner {
   display: block;
   padding-right: 110px;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: -25px -210px;
 }
-/* line 149, ../src/_leaderboard.scss */
+/* line 22, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #quickanswer_promo .inner a {
   display: block;
   margin: 5px 0;
   font-size: 14px;
 }
-
-/* line 155, ../src/_leaderboard.scss */
-div#rankings_stats {
-  visibility: hidden;
+/* line 25, ../src/_ldr-sidebar.scss */
+#ldr-sidebar #rankings_search {
+  float: right;
+  background: url(../img/spr_leaderboard.jpg) top left no-repeat;
+  background-position: -10px -51px;
+  width: 262px;
+  height: 42px;
 }
-
-/* line 156, ../src/_leaderboard.scss */
-.sports {
+/* line 27, ../src/_ldr-sidebar.scss */
+#ldr-sidebar #rankings_search #search_terms_block {
+  margin: 6px 0 0 4px;
+}
+/* line 28, ../src/_ldr-sidebar.scss */
+#ldr-sidebar #rankings_search #search_terms_lbl {
   display: none;
+}
+/* line 29, ../src/_ldr-sidebar.scss */
+#ldr-sidebar #rankings_search #search_terms {
+  border: 0;
+  color: #337999;
+  font-family: Georgia, Times New Roman, serif;
+  font-style: italic;
+  font-size: 22px;
+  margin: 0 0 0 7px;
+  width: 240px;
 }
 
 /* browser fixes  */
-/* line 160, ../src/_leaderboard.scss */
+/* line 104, ../src/_leaderboard.scss */
 .ie7 {
   /*span.rank {width:auto!important;}
   div.profile_pic {float:left; margin:0 0 0 55px}
-  #content-types .inner ul li {
-  	position:relative;
-  	em {position:absolute;right:7px;}
-  }
   .greeting.logged-in {position:relative;}*/
 }
-/* line 168, ../src/_leaderboard.scss */
+/* line 105, ../src/_leaderboard.scss */
+.ie7 #content-types .inner ul li {
+  position: relative;
+}
+/* line 107, ../src/_leaderboard.scss */
+.ie7 #content-types .inner ul li em {
+  position: absolute;
+  right: 7px;
+}
+/* line 112, ../src/_leaderboard.scss */
 .ie7 #ldr-sidebar {
   padding-top: 42px;
 }
 
-/* line 172, ../src/_leaderboard.scss */
+/* line 116, ../src/_leaderboard.scss */
 body {
   width: 90%!important;
   min-width: 1024px;

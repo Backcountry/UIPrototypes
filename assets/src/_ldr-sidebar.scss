@@ -1,0 +1,32 @@
+#ldr-sidebar {
+    
+    float:right; width:262px; padding:33px 0 0 0;
+	> div {margin-bottom:35px;}
+	h3 {font-size:16px; color:$dark-primary-color; text-transform:none;}
+	h4 {font-size:20px; color:$entry-header-background; font-weight:bold}
+
+	.inner {
+		background:$entry-header-color; padding:9px; border:1px solid #c4c7d2;
+		p {font-size:14px; margin:10px 0}
+		ul {
+			margin:0;
+			li {
+				list-style-type:none; font-size:18px; font-weight:bold; background:#eee; margin:1px -9px; padding:5px 9px 0 9px; height:35px;
+				em { font-weight:normal; float:right; color:$highlight-color; }
+			}
+		}
+	}
+
+    #quickanswer_promo .inner {
+        display:block; padding-right:110px; @include ldrbrd-sprite; background-position: -25px -210px;
+        a {display:block; margin:5px 0; font-size:14px;}
+    }
+
+    #rankings_search{
+        float:right; @include ldrbrd-sprite; background-position:-10px -51px; width:$sidebar-width; height:42px;
+        #search_terms_block { margin:6px 0 0 4px; }
+        #search_terms_lbl { display:none; }
+        #search_terms { border:0; color:$search-box-text-color; font-family:Georgia, Times New Roman, serif; font-style:italic; font-size:22px; margin:0 0 0 7px; width:240px; }
+    }
+}
+
