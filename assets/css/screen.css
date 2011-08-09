@@ -3221,17 +3221,17 @@ body {
   background: url(../img/footer.jpg) top left;
 }
 
-/* line 1, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 1, ../src/_ldr-header.scss */
 #ldr-header {
   margin: 0 0 15px 0;
 }
-/* line 3, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 3, ../src/_ldr-header.scss */
 #ldr-header .intro {
   width: 350px;
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
   float: left;
 }
-/* line 5, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 5, ../src/_ldr-header.scss */
 #ldr-header .intro h1 {
   color: #333333;
   font-size: 46px;
@@ -3239,45 +3239,48 @@ body {
   margin: 0;
   line-height: 35px;
 }
-/* line 7, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 7, ../src/_ldr-header.scss */
 #ldr-header .intro h1.long {
   font-size: 24px;
   line-height: 1em;
 }
-/* line 9, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 9, ../src/_ldr-header.scss */
 #ldr-header .intro p {
   font-size: 12px;
 }
-/* line 12, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 12, ../src/_ldr-header.scss */
 #ldr-header .greeting {
+  width: 600px;
   background: #cccccc;
   float: right;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
   border-radius: 6px;
   padding: 8px;
 }
-/* line 15, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 14, ../src/_ldr-header.scss */
 #ldr-header .greeting h2 {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
-  -webkit-text-shadow: 0 1px 2px #eee;
-  text-shadow: 0 1px 2px #eee;
+  text-shadow: 0 1px 2px #eeeeee;
   margin: 0 0 0 10px;
 }
-/* line 16, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 15, ../src/_ldr-header.scss */
 #ldr-header .greeting ul {
   float: left;
   width: 450px;
 }
-/* line 17, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 16, ../src/_ldr-header.scss */
 #ldr-header .greeting li {
   float: left;
   width: 49%;
   font-size: 14px;
 }
-/* line 18, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 17, ../src/_ldr-header.scss */
 #ldr-header .greeting p {
   float: right;
   font-size: 10px;
@@ -3285,7 +3288,7 @@ body {
   text-align: center;
   margin: 0 10px 0 0;
 }
-/* line 20, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 19, ../src/_ldr-header.scss */
 #ldr-header .greeting p #btn-register {
   width: 107px;
   height: 31px;
@@ -3298,11 +3301,11 @@ body {
   margin: -2px 0 3px 0;
   text-indent: -9999px;
 }
-/* line 24, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 23, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h2 {
   margin: 2px 0 0 100px;
 }
-/* line 25, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 24, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in p {
   float: none;
   font-family: Georgia, Times New Roman, serif;
@@ -3312,17 +3315,17 @@ body {
   width: 260px;
   font-size: 12px;
 }
-/* line 27, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 26, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in p strong {
   color: #009900;
   font-style: italic;
 }
-/* line 29, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 28, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h4 {
   float: right;
   margin: -30px 10px 0 0;
 }
-/* line 31, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-header.scss */
+/* line 30, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h4 a {
   width: 109px;
   height: 31px;
@@ -3331,44 +3334,46 @@ body {
   background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
 }
 
-/* line 1, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 1, ../src/_ldr-sidebar.scss */
 #ldr-sidebar {
   float: right;
   width: 262px;
   padding: 33px 0 0 0;
 }
-/* line 3, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 4, ../src/_ldr-sidebar.scss */
 #ldr-sidebar > div {
   margin-bottom: 35px;
+  float: left;
+  width: 100%;
 }
-/* line 4, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 5, ../src/_ldr-sidebar.scss */
 #ldr-sidebar h3 {
   font-size: 16px;
   color: #666666;
   text-transform: none;
 }
-/* line 5, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 6, ../src/_ldr-sidebar.scss */
 #ldr-sidebar h4 {
   font-size: 20px;
   color: #597d9c;
   font-weight: bold;
 }
-/* line 7, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 8, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner {
   background: white;
   padding: 9px;
   border: 1px solid #c4c7d2;
 }
-/* line 9, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 10, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner p {
   font-size: 14px;
   margin: 10px 0;
 }
-/* line 10, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 11, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul {
   margin: 0;
 }
-/* line 12, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 13, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul li {
   list-style-type: none;
   font-size: 18px;
@@ -3378,42 +3383,40 @@ body {
   padding: 5px 9px 0 9px;
   height: 35px;
 }
-/* line 14, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 15, ../src/_ldr-sidebar.scss */
 #ldr-sidebar .inner ul li em {
   font-weight: normal;
   float: right;
   color: #009900;
 }
-/* line 19, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 20, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #quickanswer_promo .inner {
   display: block;
   padding-right: 110px;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: -25px -210px;
 }
-/* line 21, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 22, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #quickanswer_promo .inner a {
   display: block;
   margin: 5px 0;
   font-size: 14px;
 }
-/* line 24, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 25, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #rankings_search {
-  float: right;
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: -10px -51px;
-  width: 262px;
   height: 42px;
 }
-/* line 26, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 27, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #rankings_search #search_terms_block {
   margin: 6px 0 0 4px;
 }
-/* line 27, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 28, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #rankings_search #search_terms_lbl {
   display: none;
 }
-/* line 28, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_ldr-sidebar.scss */
+/* line 29, ../src/_ldr-sidebar.scss */
 #ldr-sidebar #rankings_search #search_terms {
   border: 0;
   color: #337999;
@@ -3424,12 +3427,12 @@ body {
   width: 240px;
 }
 
-/* line 38, ../src/_leaderboard.scss */
+/* line 40, ../src/_leaderboard.scss */
 .profile-pic {
   float: left;
   padding: 0 15px 0 0;
 }
-/* line 3, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_profile-pic.scss */
+/* line 3, ../src/_profile-pic.scss */
 .profile-pic img {
   display: block;
   font-size: 10px;
@@ -3443,25 +3446,21 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* line 41, ../src/_leaderboard.scss */
+/* line 43, ../src/_leaderboard.scss */
 #content a {
   color: #3e59ff;
   text-decoration: none;
 }
-/* line 43, ../src/_leaderboard.scss */
+/* line 45, ../src/_leaderboard.scss */
 #content a:hover {
   color: #3e59ff;
   text-decoration: underline;
 }
 
-/* line 48, ../src/_leaderboard.scss */
-div#rankings_inner_right {
-  margin-right: 282px;
-}
-
-/* line 50, ../src/_leaderboard.scss */
+/* line 49, ../src/_leaderboard.scss */
 div#rankings_detailed_list {
   margin: 10px 0;
+  margin-right: 282px;
 }
 /* line 52, ../src/_leaderboard.scss */
 div#rankings_detailed_list ol {
@@ -3557,11 +3556,11 @@ div#rankings_detailed_list .pagination {
   font-weight: bold;
   color: #de7b1e;
 }
-/* line 3, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_pagination.scss */
+/* line 3, ../src/_pagination.scss */
 div#rankings_detailed_list .pagination a {
   color: #333333;
 }
-/* line 5, C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/UIPrototypes/assets/src/_pagination.scss */
+/* line 5, ../src/_pagination.scss */
 div#rankings_detailed_list .pagination a:hover {
   font-weight: normal;
   cursor: pointer;
@@ -3628,27 +3627,22 @@ div#rankings_detailed_list h5 {
 }
 
 /* browser fixes  */
-/* line 107, ../src/_leaderboard.scss */
+/* line 105, ../src/_leaderboard.scss */
 .ie7 {
   /*span.rank {width:auto!important;}
   div.profile_pic {float:left; margin:0 0 0 55px}
   .greeting.logged-in {position:relative;}*/
 }
-/* line 108, ../src/_leaderboard.scss */
-.ie7 #content-types .inner ul li {
-  position: relative;
+/* line 106, ../src/_leaderboard.scss */
+.ie7 #content-types .inner ul li em {
+  margin: -25px 0 0 0;
 }
 /* line 110, ../src/_leaderboard.scss */
-.ie7 #content-types .inner ul li em {
-  position: absolute;
-  right: 7px;
-}
-/* line 115, ../src/_leaderboard.scss */
 .ie7 #ldr-sidebar {
   padding-top: 42px;
 }
 
-/* line 119, ../src/_leaderboard.scss */
+/* line 115, ../src/_leaderboard.scss */
 body {
   width: 90%!important;
   min-width: 1024px;

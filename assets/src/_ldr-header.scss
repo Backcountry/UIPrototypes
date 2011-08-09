@@ -1,7 +1,7 @@
 #ldr-header {
 	margin:0 0 15px 0;
 	.intro {
-		width:350px; margin:10px 0 0 0; float:left;
+		width:350px; margin:15px 0 0 0; float:left;
 		h1 {
 			color:$primary-text-color; font-size:46px; font-weight:bold; margin:0; line-height:35px;
 			&.long { font-size:24px; line-height:1em; }
@@ -10,9 +10,8 @@
 	}
 
  .greeting {
-	// width:600px;
-	background:$light-secondary-color; float:right; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; padding:8px;
-	h2 { font-size:20px; font-weight:bold; margin:0; -webkit-text-shadow:0 1px 2px #eee; text-shadow:0 1px 2px #eee; margin:0 0 0 10px; }
+	width:600px; background:$light-secondary-color; float:right;  @include border-radius(6px); padding:8px;
+    h2 { font-size:20px; font-weight:bold; margin:0; @include text-shadow(0 1px 2px #eee); margin:0 0 0 10px; }
 	ul { float:left; width:450px; }
 	li { float:left; width:49%; font-size:14px; }
 	p {

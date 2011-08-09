@@ -1,6 +1,7 @@
 #ldr-sidebar {
-    float:right; width:262px; padding:33px 0 0 0;
-	> div {margin-bottom:35px;}
+    float:right; width:$sidebar-width; padding:33px 0 0 0;
+    // containers
+	> div {margin-bottom:35px; float:left; width:100%; }
 	h3 { font-size:16px; color:$dark-primary-color; text-transform:none; }
 	h4 { font-size:20px; color:$entry-header-background; font-weight:bold; }
 
@@ -22,7 +23,7 @@
     }
 
     #rankings_search{
-        float:right; @include ldrbrd-sprite; background-position:-10px -51px; width:$sidebar-width; height:42px;
+        @include ldrbrd-sprite; background-position:-10px -51px; height:42px;
         #search_terms_block { margin:6px 0 0 4px; }
         #search_terms_lbl { display:none; }
         #search_terms { border:0; color:$search-box-text-color; font-family:Georgia, Times New Roman, serif; font-style:italic; font-size:22px; margin:0 0 0 7px; width:240px; }
