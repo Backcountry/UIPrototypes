@@ -1,7 +1,7 @@
 @mixin pagination {
-    float:right; font-size:12px; white-space:nowrap; font-weight:bold; color:$current-page-indicator;
+    font-size:12px; font-weight:bold; color:$current-page-indicator; display:block; width:100%; text-align:right; padding:5px 0;
     a {
         color:$primary-text-color;
-        &:hover { font-weight:normal; cursor:pointer; }
+        &:hover { font-weight:normal; cursor:pointer; color:$primary-link-color;  }
     }
 }

@@ -11,13 +11,19 @@
 
  .greeting {
 	width:600px; background:$light-secondary-color; float:right;  @include border-radius(6px); padding:8px;
+
     h2 { font-size:20px; font-weight:bold; margin:0; @include text-shadow(0 1px 2px #eee); margin:0 0 0 10px; }
-	ul { float:left; width:450px; }
-	li { float:left; width:49%; font-size:14px; }
+    
+	ul {
+	    float:left; width:450px;
+	    li { float:left; width:49%; font-size:14px; }
+	}
+
 	p {
 		float:right; font-size:10px; width:105px; text-align:center; margin:0 10px 0 0;
 		#btn-register { width:107px; height:31px; display:block; clear:both; @include ldrbrd-sprite; background-position: -12px -10px; color:$entry-header-color; line-height:25px; margin:-2px 0 3px 0; text-indent:-9999px; }
 	}
+
 	&.logged-in {
 	    $left-margin:100px;
 		h2 { margin:2px 0 0 $left-margin; }
@@ -27,7 +33,7 @@
 		}
 		h4 {
 			float:right; margin:-30px 10px 0 0;
-			a { width:109px; height:31px; display:block; text-indent:-9999px; background:url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px; }
+			a { width:109px; height:31px; display:block; text-indent:-9999px; @include ldrbrd-sprite; background-position: -129px -10px; }
 		}
 	}
  }

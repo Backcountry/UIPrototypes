@@ -3261,7 +3261,7 @@ body {
   border-radius: 6px;
   padding: 8px;
 }
-/* line 14, ../src/_ldr-header.scss */
+/* line 15, ../src/_ldr-header.scss */
 #ldr-header .greeting h2 {
   font-size: 20px;
   font-weight: bold;
@@ -3269,18 +3269,18 @@ body {
   text-shadow: 0 1px 2px #eeeeee;
   margin: 0 0 0 10px;
 }
-/* line 15, ../src/_ldr-header.scss */
+/* line 17, ../src/_ldr-header.scss */
 #ldr-header .greeting ul {
   float: left;
   width: 450px;
 }
-/* line 16, ../src/_ldr-header.scss */
-#ldr-header .greeting li {
+/* line 19, ../src/_ldr-header.scss */
+#ldr-header .greeting ul li {
   float: left;
   width: 49%;
   font-size: 14px;
 }
-/* line 17, ../src/_ldr-header.scss */
+/* line 22, ../src/_ldr-header.scss */
 #ldr-header .greeting p {
   float: right;
   font-size: 10px;
@@ -3288,7 +3288,7 @@ body {
   text-align: center;
   margin: 0 10px 0 0;
 }
-/* line 19, ../src/_ldr-header.scss */
+/* line 24, ../src/_ldr-header.scss */
 #ldr-header .greeting p #btn-register {
   width: 107px;
   height: 31px;
@@ -3301,11 +3301,11 @@ body {
   margin: -2px 0 3px 0;
   text-indent: -9999px;
 }
-/* line 23, ../src/_ldr-header.scss */
+/* line 29, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h2 {
   margin: 2px 0 0 100px;
 }
-/* line 24, ../src/_ldr-header.scss */
+/* line 30, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in p {
   float: none;
   font-family: Georgia, Times New Roman, serif;
@@ -3315,23 +3315,24 @@ body {
   width: 260px;
   font-size: 12px;
 }
-/* line 26, ../src/_ldr-header.scss */
+/* line 32, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in p strong {
   color: #009900;
   font-style: italic;
 }
-/* line 28, ../src/_ldr-header.scss */
+/* line 34, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h4 {
   float: right;
   margin: -30px 10px 0 0;
 }
-/* line 30, ../src/_ldr-header.scss */
+/* line 36, ../src/_ldr-header.scss */
 #ldr-header .greeting.logged-in h4 a {
   width: 109px;
   height: 31px;
   display: block;
   text-indent: -9999px;
-  background: url(/images/bcs/rankings/spr_leaderboard.jpg) no-repeat -129px -10px;
+  background: url(../img/spr_leaderboard.jpg) top left no-repeat;
+  background-position: -129px -10px;
 }
 
 /* line 1, ../src/_ldr-sidebar.scss */
@@ -3403,21 +3404,21 @@ body {
   font-size: 14px;
 }
 /* line 25, ../src/_ldr-sidebar.scss */
-#ldr-sidebar #rankings_search {
+#ldr-sidebar #rankings-search {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: -10px -51px;
   height: 42px;
 }
 /* line 27, ../src/_ldr-sidebar.scss */
-#ldr-sidebar #rankings_search #search_terms_block {
+#ldr-sidebar #rankings-search #search-terms-block {
   margin: 6px 0 0 4px;
 }
 /* line 28, ../src/_ldr-sidebar.scss */
-#ldr-sidebar #rankings_search #search_terms_lbl {
+#ldr-sidebar #rankings-search #search-terms-lbl {
   display: none;
 }
 /* line 29, ../src/_ldr-sidebar.scss */
-#ldr-sidebar #rankings_search #search_terms {
+#ldr-sidebar #rankings-search #search-terms {
   border: 0;
   color: #337999;
   font-family: Georgia, Times New Roman, serif;
@@ -3458,19 +3459,19 @@ body {
 }
 
 /* line 49, ../src/_leaderboard.scss */
-div#rankings_detailed_list {
+#ldr-main {
   margin: 10px 0;
   margin-right: 282px;
 }
 /* line 52, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol {
+#ldr-main ol {
   list-style: none;
   margin: 0;
   border: 1px solid #C5C8D2;
   padding: 5px 0 0 0;
 }
 /* line 55, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li {
+#ldr-main ol > li {
   display: inline-block;
   margin: 0 0 10px 0;
   padding: 10px 0;
@@ -3481,25 +3482,25 @@ div#rankings_detailed_list ol > li {
   width: 100%;
 }
 /* line 57, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li.last {
+#ldr-main ol > li.last {
   margin-bottom: 0;
 }
 /* line 58, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .profile-pic {
+#ldr-main ol > li .profile-pic {
   margin: -5px 0 5px 0;
 }
 /* line 59, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .total {
+#ldr-main ol > li .total {
   font-size: 22px;
   margin: 0 0 0 165px;
   color: #848484;
 }
 /* line 61, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .total span {
+#ldr-main ol > li .total span {
   font-size: 12px;
 }
 /* line 63, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .rank {
+#ldr-main ol > li .rank {
   background: #e7e7e7;
   color: #666666;
   padding: 8px 10px;
@@ -3508,25 +3509,25 @@ div#rankings_detailed_list ol > li .rank {
   margin-left: 0;
 }
 /* line 65, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .rank.went-up {
+#ldr-main ol > li .rank.went-up {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -100px;
   padding-left: 15px;
 }
 /* line 66, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .rank.went-down {
+#ldr-main ol > li .rank.went-down {
   background: url(../img/spr_leaderboard.jpg) top left no-repeat;
   background-position: 0 -149px;
   padding-left: 15px;
 }
 /* line 68, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .breakdown {
+#ldr-main ol > li .breakdown {
   float: right;
   color: #848484;
   margin: -40px 10px 15px 0;
 }
 /* line 70, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .breakdown li {
+#ldr-main ol > li .breakdown li {
   float: left;
   padding: 2px 10px;
   width: auto;
@@ -3539,38 +3540,41 @@ div#rankings_detailed_list ol > li .breakdown li {
   list-style-type: none;
 }
 /* line 72, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .breakdown li em {
+#ldr-main ol > li .breakdown li em {
   display: block;
   font-size: 20px;
   font-weight: normal;
 }
 /* line 73, ../src/_leaderboard.scss */
-div#rankings_detailed_list ol > li .breakdown li.last {
+#ldr-main ol > li .breakdown li.last {
   border: 0;
 }
 /* line 80, ../src/_leaderboard.scss */
-div#rankings_detailed_list .pagination {
-  float: right;
+#ldr-main .pagination {
   font-size: 12px;
-  white-space: nowrap;
   font-weight: bold;
   color: #de7b1e;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 5px 0;
 }
 /* line 3, ../src/_pagination.scss */
-div#rankings_detailed_list .pagination a {
+#ldr-main .pagination a {
   color: #333333;
 }
 /* line 5, ../src/_pagination.scss */
-div#rankings_detailed_list .pagination a:hover {
+#ldr-main .pagination a:hover {
   font-weight: normal;
   cursor: pointer;
+  color: #3e59ff;
 }
 /* line 82, ../src/_leaderboard.scss */
-div#rankings_detailed_list .pagination.bottom {
+#ldr-main .pagination.bottom {
   padding: 10px 0 0 0;
 }
 /* line 85, ../src/_leaderboard.scss */
-div#rankings_detailed_list h3 {
+#ldr-main h3 {
   background: #f8f8f8;
   color: #555555;
   font-weight: bold;
@@ -3582,23 +3586,23 @@ div#rankings_detailed_list h3 {
   overflow: auto;
 }
 /* line 87, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 {
+#ldr-main h4 {
   line-height: 1em;
   margin: 8px 5px 0 165px;
   font-size: 22px;
 }
 /* line 89, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 a {
+#ldr-main h4 a {
   color: #666666;
   font-weight: bold;
   text-decoration: none;
 }
 /* line 90, ../src/_leaderboard.scss */
-div#rankings_detailed_list h4 a span {
+#ldr-main h4 a span {
   font-weight: normal;
 }
 /* line 95, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 {
+#ldr-main > h4 {
   color: white;
   background: #597d9c;
   padding: 10px 5px;
@@ -3606,19 +3610,19 @@ div#rankings_detailed_list > h4 {
   font-size: 12px;
 }
 /* line 97, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 span {
+#ldr-main > h4 span {
   display: inline-block;
   text-align: left;
   width: 160px;
 }
 /* line 98, ../src/_leaderboard.scss */
-div#rankings_detailed_list > h4 .activity {
+#ldr-main > h4 .activity {
   text-align: center;
   float: right;
   width: 300px;
 }
 /* line 101, ../src/_leaderboard.scss */
-div#rankings_detailed_list h5 {
+#ldr-main h5 {
   font-family: Georgia, Times New Roman, serif;
   font-style: italic;
   color: #666666;

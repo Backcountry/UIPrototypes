@@ -46,7 +46,7 @@ $sidebar-width:262px;
     }
 }
 
-div#rankings_detailed_list {
+#ldr-main {
     // the reason this margin is not short-handed is because we need to add the 20px margin to whatever size the sidebar is
      margin:10px 0; margin-right:$sidebar-width + 20px; 
     ol{
