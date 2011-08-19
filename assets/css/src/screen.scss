@@ -4,7 +4,15 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
 body{
   background:#ccc;
   margin:20px auto;
 }
+
+/* layout */
+body {width:1024px; margin:25px auto; -moz-box-shadow:0 0 15px #333; -webkit-box-shadow:0 0 15px #333; -box-shadow:0 0 15px #333; background:#fff;}
+body > h1 {display:none}
+#header, #footer {text-indent:-9999px; display:block; height:110px; }
+#header { background:url(../img/header.jpg) top left;}
+#footer {height:487px; background:url(../img/footer.jpg) top left;}

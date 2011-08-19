@@ -8,3 +8,6 @@ javascripts_dir = "js/"
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 # Sass::Plugin.options[:debug_info] = true
+
+# require 960
+require 'ninesixty'
