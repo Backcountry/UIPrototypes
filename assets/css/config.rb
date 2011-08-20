@@ -11,3 +11,5 @@ javascripts_dir = "js/"
 
 # require 960
 require 'ninesixty'
+
+output_style = :compressed
