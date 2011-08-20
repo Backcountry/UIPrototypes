@@ -1,6 +1,21 @@
 @import "compass/reset";
 @import "compass/css3";
-// @import "960";
-@import "960-grid-system/code/css/960"; 
+@import "960-grid-system/code/css/960";
 
-body { background:#ccc; }
+body { background:#ccc; font-family: 'Francois One', sans-serif; }
+
+.btn {
+    background: url("../img/bg-btn-secondary.png") top left no-repeat; display:inline-block;
+    color:#fff; font-family: 'Oswald', sans-serif; padding:8px 16px; margin:10px; text-decoration:none;
+    text-transform:uppercase; @include border-radius(4px); font-size:16px; text-align:center;
+    @include text-shadow(rgba(black, 0.7) 2px 1px 1px);
+    &:hover { background-position:center left; color:#eee; }
+}
+
+.btn.primary {
+    @extend .btn; background-image: url("../img/bg-btn-primary.png");
+}
+
+.container_12 { margin:10px auto; }
+
+h1 { margin:20px 0; }
