@@ -9,26 +9,34 @@
 <body>
 <div id="wrapper">
     <div class="container_12">
-        <div class="grid_6">
+        <div class="grid_12">
             <h1>One image, pattern on top of the gradients. </h1>
             <ul>
-                <li>Google Font: <a href="http://www.google.com/webfonts/specimen/Francois+One">Francois One</a></li>
+                <li>Font: <a href="http://www.google.com/webfonts/specimen/Francois+One">Francois One</a></li>
                 <li>Image(s) <span style="background: url('assets/img/btn-stripes.png'); display:inline-block; height:20px; width: 20px; margin-bottom: -5px;"></span></li>
                 <li>Pro: Gradients via CSS3, totally reusable.</li>
-                <li>Con: no easy way to address buttons that have ornaments</li>
+                <li>Con: no way to address buttons that have ornaments</li>
             </ul>
-            <div class="grid_4"><h2>Base buttons</h2> </div>
-            <div class="grid_3 prefix_1 suffix_2"> <a class="btn" href="#">continue shopping &gt;&gt;</a> </div>
-            <div class="grid_2 prefix_1 suffix_3"> <a class="btn" href="#">continue shopping</a> </div>
-            <div class="grid_1 prefix_1 suffix_4"> <a class="btn" href="#">update</a> </div>
-            <div class="grid_4"><h2>Primary buttons</h2> </div>
-            <div class="grid_3 prefix_1 suffix_2"> <a class="btn primary" href="#">continue shopping &gt;&gt;</a> </div>
-            <div class="grid_2 prefix_1 suffix_3"> <a class="btn primary" href="#">redeem</a> </div>
-            <div class="grid_1 prefix_1 suffix_4"> <a class="btn primary" href="#">go</a> </div>
-            <div class="grid_4"><h2>Secondary buttons</h2> </div>
-            <div class="grid_3 prefix_1 suffix_2"> <a class="btn secondary" href="#">continue shopping &gt;&gt;</a> </div>
-            <div class="grid_2 prefix_1 suffix_3"> <a class="btn secondary" href="#">continue shopping</a> </div>
-            <div class="grid_1 prefix_1 suffix_4"> <a class="btn secondary" href="#">go</a> </div>
+            <div class="grid_6 alpha">
+		<h2>Base buttons</h2>
+		<p>gray, more common buttons</p>
+            <div class="grid_2 alpha"> <a class="btn" href="#">click here &gt;&gt;</a> </div>
+            <div class="grid_2"> <a class="btn" href="#">update</a> </div>	
+            <div class="grid_2 omega"> <a class="btn" href="#">shop!</a> </div>
+	   </div>
+            <div class="grid_6 omega">
+		<h2>Primary buttons</h2>
+		<p>redish</p>
+            <div class="grid_2 alpha"> <a class="btn primary" href="#">continue shopping &gt;&gt;</a> </div>
+            <div class="grid_2"> <a class="btn primary" href="#">redeem</a> </div>
+            <div class="grid_2 omega"> <a class="btn primary" href="#">go</a> </div>
+	   </div>
+	   <div class="clear"></div>
+		<h2>Secondary buttons</h2>
+		<p>Teal-ish</p>
+            <div class="grid_4 alpha"> <a class="btn secondary" href="#">this is a four line button with two arrows at the right, it can expand to whatever height or width and it will try to keep it's ratio &gt;&gt;</a> </div>
+            <div class="grid_4 omega"> <a class="btn secondary" href="#">continue shopping our site</a>  <a class="btn secondary" href="#">went</a> </div>
+	   <div class="clear"></div>
         </div>
     </div>
 </div>
