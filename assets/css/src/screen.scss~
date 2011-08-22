@@ -2,7 +2,7 @@
 @import "compass/css3";
 @import "960";
 
-html { background:#eee; }
+html { background:#eee	; }
 h1 { margin:10px 0; font-size:22px; color:#666;}
 h2 { margin:5px 0; font-size:18px; color:#999; text-transform:lowercase; }
 ul { margin:10px 0; }
