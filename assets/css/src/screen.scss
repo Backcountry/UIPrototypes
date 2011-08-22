@@ -12,7 +12,7 @@ strong {font-weight:bold;}
 
 .btn {
     @include background(image-url("btn-stripes.png"), linear-gradient(#8e8e8e, #414141));
-    display:inline-block; color:#fff; font-family: 'Francois One', sans-serif; padding:3px 9px; margin:10px;
+    display:inline-block; color:#fff; font-family: 'Francois One', sans-serif; padding:3px 9px; margin:5px 0;
     text-decoration:none; text-transform:uppercase; @include border-radius(4px); font-size:16px;
     text-align:center; @include text-shadow(rgba(black, 0.7) 2px 1px 1px);
     &:hover { @include background(image-url("btn-stripes.png"), linear-gradient(#414141, #8e8e8e)); }
@@ -23,10 +23,14 @@ strong {font-weight:bold;}
     @include background(image-url("btn-stripes.png"), linear-gradient(#c11011, #850f0a));
     &:hover { @include background(image-url("btn-stripes.png"), linear-gradient(#850f0a, #c11011)); }
     &:active { @include background(image-url("btn-stripes.png"), linear-gradient(#850f0a, #e41618)); }
+    &:before { content:" "; background:url("../img/spr-ornaments.png");
+	       position:relative; top:-1px; left:-6px; display:inline-block; width:16px; height:16px; }
 }
 
 .btn.secondary {
     @include background(image-url("btn-stripes.png"), linear-gradient(#5e7e83, #133338));
     &:hover { @include background(image-url("btn-stripes.png"), linear-gradient(#133338, #5e7e83)); }
     &:active { @include background(image-url("btn-stripes.png"), linear-gradient(#133338, #0d8092)); }
+    &:before { content:" "; background:url("../img/spr-ornaments.png") -20px top;
+	       position:relative; top:-1px; left:-6px; display:inline-block; width:16px; height:16px; }
 }
