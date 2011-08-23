@@ -1,0 +1,51 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "960";
+@import "pie";
+
+html { background:#eee; }
+h1 { padding:0 10px; color:#850F0A; font-family: 'Oswald', sans-serif;  }
+h2 { color:#999; text-transform:lowercase; }
+
+p, li {color:#333; }
+strong {font-weight:bold;}
+#wrapper { background:#fff; overflow:auto; margin:20px auto; border:10px solid #f1f1f1; padding:10px 0 20px 0;}
+
+.btn {
+    @include pie;
+    @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#8e8e8e, #414141));
+    display:inline-block; color:#fff; font-family: 'Francois One', sans-serif; padding:3px 9px; margin:5px 0;
+    text-decoration:none; text-transform:uppercase; @include border-radius(4px); font-size:16px;
+    text-align:center; @include text-shadow(rgba(black, 0.7) 2px 1px 1px);
+    &:hover { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#414141, #8e8e8e)); }
+    &:active { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#414141, #626262)); }
+}
+
+.btn.primary {
+    @include pie;
+    @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#c11011, #850f0a));
+    &:hover { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#850f0a, #c11011)); }
+    &:active { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#850f0a, #e41618)); }
+    &:before { content:" "; background:url("/projects/bc/UIPrototypes/assets/img/spr-ornaments.png");
+	       display:inline-block; width:16px; height:16px; margin:0 2px; }
+}
+
+.btn.secondary {
+    @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#5e7e83, #133338));
+    &:hover { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#133338, #5e7e83)); }
+    &:active { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#133338, #0d8092)); }
+    &:after { content:" "; background:url("/projects/bc/UIPrototypes/assets/img/spr-ornaments.png") -20px top;
+	       display:inline-block; width:16px; height:16px; }
+}
+
+.bucket {
+    li { list-style-type:none; border-bottom:1px solid #ccc; line-height:2em; }
+    .header { background:#e3e3e3; color:#000; padding:0 10px; font-size:16px; }
+    ul {
+        margin:-5px 0 0 0;
+        li {
+            padding-left:2em; margin-bottom:0.5em;
+            &:last-child {border:none;}
+        }
+    }
+}
