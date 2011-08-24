@@ -11,12 +11,25 @@ p, li {color:#333; }
 strong {font-weight:bold;}
 #wrapper { background:#fff; overflow:auto; margin:20px auto; border:10px solid #f1f1f1; padding:10px 0 20px 0;}
 
+@font-face {
+    font-family: 'FrancoisOneRegular';
+    src: url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.eot');
+    src: url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.woff') format('woff'),
+         url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.ttf') format('truetype'),
+         url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.svg#FrancoisOneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .btn {
     @include pie;
     @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#8e8e8e, #414141));
-    display:inline-block; color:#fff; font-family: 'Francois One', sans-serif; padding:3px 9px; margin:5px 0;
+    display:inline-block; color:#fff; font-family: 'FrancoisOneRegular', sans-serif; padding:3px 9px; margin:5px 0;
     text-decoration:none; text-transform:uppercase; @include border-radius(4px); font-size:16px;
     text-align:center; @include text-shadow(rgba(black, 0.7) 2px 1px 1px);
+    // filter: progid:DXImageTransform.Microsoft.Shadow(color='#999', Direction=0, Strength=1);
     &:hover { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#414141, #8e8e8e)); }
     &:active { @include background(image-url("/projects/bc/UIPrototypes/assets/img/btn-stripes.png"), linear-gradient(#414141, #626262)); }
 }
