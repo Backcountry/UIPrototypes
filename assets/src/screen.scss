@@ -18,10 +18,11 @@ strong {font-weight:bold;}
          url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.woff') format('woff'),
          url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.ttf') format('truetype'),
          url('/projects/bc/UIPrototypes/assets/misc/FrancoisOne/FrancoisOne-webfont.svg#FrancoisOneRegular') format('svg');
-    font-weight: normal;
+    font-weight: normal; 
     font-style: normal;
-
 }
+
+$experimental-support-for-svg: true;
 
 .btn {
     @include pie;
